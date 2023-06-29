@@ -1,0 +1,665 @@
+﻿#BeU-9
+
+######################################
+- background: SkyWalk
+- music: main-03
+- delay: 1
+
+- msg: "โหยคุณ ที่นี่สวยมากๆอะ"
+  character: me
+  
+- msg: "อากาศก็ดีสุดๆ ชื่นใจจังงง"
+  character: me
+ 
+- character: Thames
+  position: center
+  act: Idle-Half
+  
+- msg: "แต่ก็ไม่เท่าคุณหรอก"
+  character: Thames
+
+- msg: "ตาบ้าา"
+  character: me
+
+- msg: "ฮ่าๆๆ"
+  character: Thames
+  
+- msg: "ผมคิดมาตลอดเลยว่าอยากพาใครสักคนมาบนนี้ด้วยกัน"
+  character: Thames
+  
+- msg: "เซฟโซนของผมเลยนะ"
+  character: Thames
+
+- msg: "ฉันด้วยหรือเปล่า"
+  character: me
+
+- msg: "แน่นอนสิ"
+  character: Thames
+  
+- msg: "ไม่งั้นผมไม่ชวนคุณมาหรอก"
+  character: Thames
+
+- msg: "(งือ รู้สึกอบอุ่นแบบบอกไม่ถูกแฮะ)"
+  character: me
+
+- msg: "คุณ มาตรงนี้สิ้"
+  character: Thames
+
+- msg: "(เธมส์เรียกฉันเข้าไปยืนใกล้ๆเขา)"
+  character: me
+
+- msg: "ตรงนี้"
+  character: Thames
+
+- msg: "อ๊ะ!!"
+  character: me
+
+- msg: "นุ่มนิ่มจังง"
+  character: Thames
+
+- msg: "คุุณ!! "
+  character: me
+
+- msg: "ขอผมกอดแบบนี้สักพักนะ"
+  character: Thames
+  
+- choice:
+  - msg: "(กอดกลับ)"
+    goto: ChoiceCh22-A1-1
+  - msg: "อื้ม..."
+    goto: ChoiceCh22-A1-2
+  - msg: "ปล่อยเถอะ"
+    goto: ChoiceCh22-A1-3
+  skip:
+    goto: ChoiceCh22-A1-Sk
+  state: ChoiceState22-V1
+  character: me
+
+- label: ChoiceCh22-A1-1
+  msg: "ผมมีความสุขจัง"
+  character: Thames
+
+- msg: "(ฉันก็ด้วย)"
+  character: me
+ 
+- goto: ChoiceCh22-A1-Sk
+
+- label: ChoiceCh22-A1-2
+  msg: "ขอบคุณนะ"
+  character: Thames
+  
+- goto: ChoiceCh22-A1-Sk
+
+- label: ChoiceCh22-A1-3
+  msg: "งั้นขออีก5วิก็ได้"
+  character: Thames
+  
+- goto: ChoiceCh22-A1-Sk
+
+- label: ChoiceCh22-A1-Sk
+  msg: "(สักพักเธมส์ก็ปล่อยฉัน)"
+  character: me
+
+- msg: "(ใจฉันเต้นแรงจัง)"
+  character: me
+
+- msg: "คุณจะมากับผมที่นี่บ่อยๆมั้ยนะ"
+  character: Thames
+
+- msg: "อันนี้คำถามหรือบอกเล่าง่ะ"
+  character: me
+
+- msg: "คุุณมีคำตอบไหมล่ะ"
+  character: Thames
+ 
+- choice:
+  - msg: "มาสิ ฉันจะมากับคุณเอง"
+    goto: ChoiceCh22-A2-1
+  - msg: "นานๆมาทีก็โอเคนะ"
+    goto: ChoiceCh22-A2-2
+  - msg: "..."
+    goto: ChoiceCh22-A2-Sk
+  skip:
+    goto: ChoiceCh22-A2-Sk
+  state: ChoiceState22-V2
+  character: me
+
+- label: ChoiceCh22-A2-1
+  msg: "คุณพูดแล้วนะ"
+  character: Thames
+
+- msg: "ฉันพูดคำไหนคำนั้นน่า"
+  character: me
+  
+- msg: "เย่ ^^"
+  character: Thames
+ 
+- goto: ChoiceCh22-A2-Sk
+
+- label: ChoiceCh22-A2-2
+  msg: "ก็ยังดีที่คุณมานะ"
+  character: Thames
+  
+- goto: ChoiceCh22-A2-Sk
+
+- label: ChoiceCh22-A2-Sk
+  msg: "คุณอยากรู้เรื่องอะไรเกี่ยวกับผมอีกไหม"
+  character: Thames
+
+- msg: "คุณอยากเล่าหรอ"
+  character: me
+
+- msg: "ผมแค่รู้สึกว่าผมรู้ชีวิตคุณเยอะนะจากที่จันจิเล่าให้ฟัง"
+  character: Thames
+  
+- msg: "แต่ผมไม่รู้ว่าคุณอยากรู้อะไรเกี่ยวกับผมบ้างรึเปล่า"
+  character: Thames
+  
+- msg: "เพราะคุณเองก็ไม่เคยถามเลย"
+  character: Thames
+
+- msg: "คุณอยากเล่าเรื่องอะไรล่ะ"
+  character: me
+
+- msg: "ฉันฟังหมดแหละ"
+  character: me
+  
+- msg: "แล้วคุณอยากรู้เรื่องอะไรล่ะ"
+  character: Thames
+
+- choice:
+  - msg: "คุณมีอะไรที่ยังไม่ได้บอกไหมล่ะ"
+    goto: ChoiceCh22-A3-1
+  - msg: "ไม่มีนะ"
+    goto: ChoiceCh22-A3-2
+  - msg: "เรื่องครอบครัวคุณแล้วกัน"
+    goto: ChoiceCh22-A3-3
+  skip:
+    goto: ChoiceCh22-A3-Sk
+  state: ChoiceState22-V3
+  character: me
+
+- label: ChoiceCh22-A3-1
+  msg: "อืม...ยังไม่ได้บอกคุณหรอ"
+  character: Thames
+
+- msg: "หมายความว่าไง"
+  character: Thames
+  
+- msg: "เรื่องที่ผมเคยเล่าไปแล้วงั้นหรอ"
+  character: Thames
+
+- msg: "..."
+  character: me
+ 
+- msg: "ผมคุยกับคุณจริงๆจังๆก็น่าจะตั้งแต่ริมทะเล"
+  character: Thames
+  
+- msg: "ตอนนั้นผมเล่าเรื่องชีวิตรักๆใช่ไหม"
+  character: Thames
+
+- msg: "อืม..."
+  character: Thames
+  
+- msg: "ผมคิดไม่ออกอะ ก็เล่าหมดแล้วนะ"
+  character: Thames
+
+- msg: "ถ้าคุณว่าหมดแล้วก็หมด"
+  character: me
+  
+- msg: "หรือคุณไปได้ยินอะไรมา บอกผมหน่อยสิ{me}"
+  character: Thames
+
+- goto: ChoiceCh22-A3-Sk
+
+- label: ChoiceCh22-A3-2
+  msg: "ว้า แย่จัง"
+  character: Thames
+  
+- msg: "อุส่าอยากให้ถามสักหน่อย"
+  character: Thames
+
+- msg: "คุณอยากเล่าก็เล่ามาสิ"
+  character: me
+  
+- msg: "ผมคิดไม่ออกนี่หน่า"
+  character: Thames
+  
+- goto: ChoiceCh22-A3-Sk
+
+- label: ChoiceCh22-A3-3
+  msg: "ครอบครัวผมหรอ"
+  character: Thames
+ 
+- msg: "ผมอยู่กับแม่แล้วก็น้องสาว2คน"
+  character: Thames
+  
+- msg: "พึ่งย้ายออกมาอยู่คนเดียวก็ตอนหลังๆนี่แหละ"
+  character: Thames
+
+- msg: "จริงๆก็ไม่มีอะไรมากนะ "
+  character: Thames
+  
+- msg: "แต่มีแม่นี่แหละที่หวงผมยิ่งกว่ามินนี่10เท่า ฮ่าๆๆ"
+  character: Thames
+
+- msg: "ชักจะกลัวแล้วแฮะ"
+  character: me
+  
+- msg: "ผมจะปกป้องคุณเองง"
+  character: Thames
+
+- msg: "อะจ้าาา "
+  character: me
+  
+- msg: "มีเรื่องอะไรอีก ผมอยากตอบๆ"
+  character: Thames
+
+- msg: "คุณอยากเล่าก็เล่ามาสิ"
+  character: me
+
+- msg: "มีอะไรที่คุณยังไม่ได้บอกอีก "
+  character: me
+  
+- msg: "คิดไม่ออกแล้วอ่า"
+  character: Thames
+  
+- goto: ChoiceCh22-A3-Sk
+
+- label: ChoiceCh22-A3-Sk
+  msg: "แล้วเรื่องจันจิล่ะ"
+  character: me
+
+- msg: "(ฉันถามออกไปแล้ววว)"
+  character: me
+
+- msg: "(อัดอั้นมานาน อยากได้ยินเรื่องนี้จากเขาเองจริงๆ)"
+  character: me
+   
+- msg: "ฮันแน่ ไหนบอกว่าไม่มีจะถาม"
+  character: Thames
+
+- msg: "คุณแอบไปคิดมากคนเดียวจริงๆด้วย"
+  character: Thames
+  
+- msg: "ไหนบอกผมสิ้ คุณไปสงสัยอะไรมา"
+  character: Thames
+
+- choice:
+  - msg: "ฉันคุยกับจันจิแล้ว"
+    goto: ChoiceCh22-A4-1
+  - msg: "ฉันคุยกับมินนี่แล้ว"
+    goto: ChoiceCh22-A4-2
+  - msg: "แค่รู้สึกว่ายังมีอะไรเฉยๆ"
+    goto: ChoiceCh22-A4-Sk
+  skip:
+    goto: ChoiceCh22-A4-Sk
+  state: ChoiceState22-V4
+  character: me
+
+- label: ChoiceCh22-A4-1
+  msg: "คุยว่าอะไร?"
+  character: Thames
+
+- msg: "จันจิก็ถามเกี่ยวกับเรื่องคุณกับฉัน"
+  character: me
+  
+- msg: "แต่ฉันรู้สึกแปลกๆ"
+  character: me
+  
+- msg: "แปลกยังไง จันจิน่ะหรอแปลก"
+  character: Thames
+
+- msg: "ฉันคิดว่าแปลกนะ"
+  character: me
+ 
+- goto: ChoiceCh22-A4-Sk
+
+- label: ChoiceCh22-A4-2
+  msg: "มินนี่เล่าเรื่องจันจิหรอ?"
+  character: Thames
+  
+- msg: "แล้วมินนี่ว่าอะไรคุณรึเปล่า"
+  character: Thames
+
+- msg: "ก็เล่านิดๆหน่อย"
+  character: me
+
+- msg: "ไม่หรอก มินนี่แค่หวังดีกับคุณ"
+  character: me
+  
+- msg: "ฉันไม่ถือสาอะไร"
+  character: me
+  
+- msg: "แต่แค่อยากได้ยินจากปากคุณ"
+  character: me
+ 
+- goto: ChoiceCh22-A4-Sk
+
+- label: ChoiceCh22-A4-Sk
+  msg: "เรื่องของผมกับจันจิมันซับซ้อนมาก"
+  character: Thames
+ 
+- msg: "ผมขอเรียบเรียงก่อนนะ"
+  character: Thames
+
+- msg: "คุณไม่สะดวกเล่าก็ไม่เป็นไรนะ ฉันเข้าใจสถานะการณ์"
+  character: me
+
+- msg: "ไม่ๆ ผมจะเล่าให้ฟัง"
+  character: Thames
+ 
+- msg: "ผมรู้ว่าคุณไม่สบายใจเท่าไร"
+  character: Thames
+
+- msg: "งั้นฉันจะรอฟัง"
+  character: me
+
+- msg: "(เธมส์เงียบไปสักพักหนึ่ง ก่อนจะเล่าออกมา)"
+  character: me
+
+- msg: "ผมกับจันจิเป็นเพื่อนสนิทกัน อันนี้คุณน่าจะรู้อยู่แล้ว"
+  character: Thames
+
+- msg: "ผมยอมรับว่าพอเวลาผ่านไปผมก็รู้สึกกับจันจิมากกว่าเพื่อน"
+  character: Thames
+ 
+- msg: "พอผมบอกเธอไป เธอบอกว่าเป็นเพื่อนกันดีกว่า"
+  character: Thames
+
+- msg: "ผมก็เลยตีตัวออกห่างเธอ จนวันนึงได้กลับมาคุยกันใหม่"
+  character: Thames
+ 
+- msg: "เธอบอกว่าตอนนั้นเธอก็ชอบผมนะ แต่ผมดูไม่ได้สนใจเธอจริงๆขนาดนั้น"
+  character: Thames
+
+- msg: "เพราะผมก็ยังเที่ยวเล่น ยังอยากทำนู่นทำนี่"
+  character: Thames
+ 
+- msg: "เธอรู้ว่าถ้าคบกันไปเธอไม่โอเคกับไลฟ์สไตล์ผมแน่"
+  character: Thames
+
+- msg: "แล้วตอนนี้ล่ะ?"
+  character: me
+
+- msg: "ผมชอบคุณนี่ไง วันนี้ผมพร้อมแล้วนะที่จะดูแลใครสักคน"
+  character: Thames
+
+- msg: "คุุณเชื่อผมสิ"
+  character: Thames
+
+- msg: "ฉันเชื่อคุณนะ คุณพยายามแสดงความจริงใจทุกอย่าง"
+  character: me
+  
+- msg: "ซึ่งฉันก็ขอบคุณคุณนะ"
+  character: me
+  
+- msg: "แต่ฉันหมายถึงจันจิ"
+  character: me
+
+- msg: "จันจิทำไม?"
+  character: Thames
+  
+- choice:
+  - msg: "ช่างมันเถอะ"
+    goto: ChoiceCh22-A5-1
+  - msg: "เธอชอบคุณอยู้รึเปล่า"
+    goto: ChoiceCh22-A5-2
+  - msg: "เธอคิดยังไงกับคุณ"
+    goto: ChoiceCh22-A5-3
+  skip:
+    goto: ChoiceCh22-A5-Sk
+  state: ChoiceState22-V5
+  character: me
+
+- label: ChoiceCh22-A5-1
+  msg: "ทำไมคุณชอบขายฝันนักนะ"
+  character: Thames
+
+- msg: "ก็ฉันไม่อยากถามแล้วนี่"
+  character: me
+
+- msg: "แน่ใจนะว่าสบายใจแล้วอะ"
+  character: Thames
+
+- msg: "ใช่! ฉันไม่อยากถามแล้วฉันเก็ทแล้ว"
+  character: me
+  
+- msg: "คุณนี่แปลกๆนะ"
+  character: Thames
+
+- msg: "หรือว่าหึงผมกับจันจิหรอ"
+  character: Thames
+ 
+- msg: "ฮั่นแน่ๆๆ"
+  character: Thames
+
+- msg: "จะบ้าหรอคุณ ไม่ใช่"
+  character: me
+  
+- msg: "ฮ่าๆๆ"
+  character: Thames
+
+- goto: ChoiceCh22-A5-Sk
+
+- label: ChoiceCh22-A5-2
+  msg: "ทำไมคุณคิดอย่างนั้นล่ะ"
+  character: Thames
+
+- msg: "เพราะคุณได้คุยกับจันจิหรอ"
+  character: Thames
+
+- msg: "ก็ไม่รู้สิ เซนท์ผู้หญิงบอกมา"
+  character: me
+  
+- msg: "เซนท์คุณจะทำให้ผมงานเข้าไหมเนี่ย"
+  character: Thames
+
+- msg: "นี่ อย่าดูถูกเซนท์ผู้หญิงเชียวนะ"
+  character: me
+
+- msg: "เอาจริงๆผมคิดว่าไม่นะ หลังจากวันนั้นเราก็วางตัวเป็นเพื่อนห่างๆกันตลอด"
+  character: Thames
+ 
+- msg: "หรือถ้าคุณหึง ผมไม่คุยเลยก็ได้นะ"
+  character: Thames
+
+- msg: "ไม่ใช่ย่ะ ไม่ต้องขนาดนั้นหรอก ฉันก็แค่ถามดูเฉยๆ"
+  character: me
+  
+- goto: ChoiceCh22-A5-Sk
+
+- label: ChoiceCh22-A5-3
+  msg: "หมายถึงยังไงผมไม่ค่อยเข้าใจ"
+  character: Thames
+
+- msg: "โอ้ยย คุณนี่นะ"
+  character: me
+  
+- msg: "คือจันจิคิดยังไง ก็เพื่อนไม่ใช่หรอ"
+  character: Thames
+
+- msg: "คุณว่าไงฉันก็ว่างั้น"
+  character: me
+
+- msg: "อ่าว หรือคุณคิดว่าไม่ใช่"
+  character: Thames
+
+- msg: "เปล่า ฉันแค่ถามคุณดู"
+  character: me
+  
+- msg: "แปลกๆนะคุณอะ"
+  character: Thames
+ 
+- msg: "หรือว่าจริงๆแล้วคุณหึง ผมไม่คุยก็ได้นะ"
+  character: Thames
+
+- msg: "ไม่ใช่ย่ะ ไม่ต้องขนาดนั้นหรอก ฉันก็แค่ถามดูเฉยๆ"
+  character: me
+
+- goto: ChoiceCh22-A5-Sk
+
+- label: ChoiceCh22-A5-Sk
+  msg: "แต่ผมก็มีเรื่องอยากถามเหมือนกันนะ"
+  character: Thames
+  
+- msg: "อะไรหรอ?"
+  character: me
+
+- msg: "คุณคิดยังไงกับผมหรอตอนนี้"
+  character: Thames
+
+- msg: "คิดว่าคุณเป็นเจ้านายที่ใจดีม้ากมาก"
+  character: me
+  
+- msg: "ผมรู้อยู่แล้วเรื่องนั้นน่ะ"
+  character: Thames
+  
+- msg: "ม่ายย เอาดีๆสิคุณ"
+  character: Thames
+ 
+- msg: "แบบคุณปิดใจให้ผมมั่งยังอะ"
+  character: Thames
+
+- choice:
+  - msg: "ฉันยังตอบไม่ได้อะ"
+    goto: ChoiceCh22-A6-1
+  - msg: "นิดนึง"
+    goto: ChoiceCh22-A6-2
+  - msg: "ก็... อืม"
+    goto: ChoiceCh22-A6-3
+  skip:
+    goto: ChoiceCh22-A6-Sk
+  state: ChoiceState22-V6
+  character: me
+
+- label: ChoiceCh22-A6-1
+  msg: "นิดนึงก็ไม่ได้หรอ"
+  character: Thames
+
+- msg: "ม่ายได้"
+  character: me
+
+- msg: "เพราะว่าผมไม่เข้าตาใช่มะ"
+  character: Thames
+
+- msg: "ผมเริ่มท้อใจแล้วนะ"
+  character: Thames
+
+- msg: "ท้อง่ายจัง"
+  character: me
+  
+- msg: "ก็คุณเล่นไม่บอกอะไรผมเลยนี่"
+  character: Thames
+
+- msg: "ก็ฉันไม่รู้จะตอบยังไงอ่า"
+  character: me
+ 
+- msg: "โอเคผมจะไม่คาดคั้นคุณแล้วกัน"
+  character: Thames
+
+- goto: ChoiceCh22-A6-Sk
+
+- label: ChoiceCh22-A6-2
+  msg: "จริงอะ"
+  character: Thames
+
+- msg: "ทำไมล่ะ"
+  character: me
+  
+- msg: "เย่ๆๆ ดีใจจัง"
+  character: Thames
+
+- msg: "ขนาดนั้นเลยหรอคุณ ฮ่าๆ"
+  character: me
+
+- msg: "ใช่สิ"
+  character: Thames
+ 
+- msg: "ผมทำสำเร็จแล้ว แค่นิดเดียวกสำเร็จคิคิ"
+  character: Thames
+
+- msg: "ดีใจเหมือนเด็กเลย ฮ่าๆ"
+  character: me
+  
+- msg: "ผมไม่สนใจแล้วจะเด็กไม่เด็กอะ"
+  character: Thames
+ 
+- msg: "ผมดีใจ เย่ๆ"
+  character: Thames
+
+- msg: "เอ็นดูคุณอะ"
+  character: me
+ 
+- msg: "แฮ่"
+  character: Thames
+
+- goto: ChoiceCh22-A6-Sk
+
+- label: ChoiceCh22-A6-3
+  msg: "อืม?? อืมคือ?"
+  character: Thames
+
+- msg: "อืมก็อืมไง"
+  character: me
+  
+- msg: "อืมแปลว่าใช่รึเปล่า"
+  character: Thames
+
+- msg: "อืม"
+  character: me
+
+- msg: "อืมคือใช่ ใช่ในใช่เท่ากับคุณเปิดใจใช่ไหม"
+  character: Thames
+
+- msg: "อืม"
+  character: me
+  
+- msg: "ฮ่าๆๆๆ "
+  character: Thames
+ 
+- msg: "เย่ๆ ^^"
+  character: Thames
+
+- msg: "น่ารักที่สุดเลย"
+  character: Thames
+
+- msg: "ไม่ต้องดีใจขนาดนั้นก็ได้"
+  character: me
+
+- msg: "ดูแต่ละอย่างที่คุณทำให้ฉันสิ"
+  character: me
+
+- msg: "ฉันต้องเกรงใจแล้วก็ดีใจมากกว่าคุณอีกนะ"
+  character: me
+
+- msg: "ดูีใจสิ ดีใจที่อย่างน้อยมันก็มีค่า"
+  character: Thames
+
+- goto: ChoiceCh22-A6-Sk
+
+- label: ChoiceCh22-A6-Sk
+  msg: "เรากลับกันเลยไหม ดึกแล้ว"
+  character: Thames
+
+- msg: "ก็ดีนะ ลมโกรกจนฉันเริ่มหนาวแล้ว"
+  character: me
+
+- msg: "ที่นีถึงจะมีครอบแก้วกรองอากาศแต่ก็จำลองลมแรงๆได้ด้วยนะ"
+  character: Thames
+
+- msg: "จริงสิ ฉันลืมไปเลยว่านี่มีอะไรครอบอยู่"
+  character: me
+  
+- msg: "เจ๋งใช่ไหมล่ะ"
+  character: Thames
+ 
+- msg: "ป่ะ ไปกันเถอะ"
+  character: Thames
+
+- msg: "เดี๋ยวผมพาไปหาไรกินก่อนกลับนะ ^^"
+  character: me
+  
+- msg: "ค่ะ ^^"
+  character: Thames
+

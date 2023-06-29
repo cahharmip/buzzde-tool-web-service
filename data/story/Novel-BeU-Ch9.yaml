@@ -1,0 +1,269 @@
+﻿#BeU-9
+
+######################################
+- background: SeaRoomNight
+- music: main-03
+- delay: 1
+
+- msg: "(เฮ้ออ ถึงเวลานอนของฉันสักที)"
+  character: me
+  
+- msg: "(ทำงานกับเธมส์เหมือนจะไม่มีอะไร แต่ทำไมเหนื่อยจัง)"
+  character: me
+  
+- msg: "ก๊อก ก๊อก ก๊อก"
+  character: Thames
+
+- character: Thames
+  position: center
+  act: Idle-Half
+
+- msg: "คุณณณ"
+  character: Thames
+
+- msg: "เปิดหน่อย"
+  character: Thames
+
+- msg: "(เขาอีกแล้วหรอ TT)"
+  character: me
+  
+- msg: "มีอะไรคุณ ฉันจะนอนแล้วนะ วันนี้เหนื่อยแล้ว"
+  character: me
+  
+- msg: "ผมมีเรื่องเดือดร้อน"
+  character: Thames
+  
+- msg: "พรุ่งนี้ได้ไหม ฉันอยากนอนอ่า"
+  character: me
+  
+- msg: "ไม่ได้ เรื่องคอขาดบาดตายนะคุณ"
+  character: Thames
+
+- msg: "(ฉันต้องลุกสินะ)"
+  character: me
+
+- msg: "ว่าไงคุณ"
+  character: me
+
+- character: Thames
+  position: center
+  act: Smile-Half
+
+- msg: "แหะๆ"
+  character: Thames
+  
+- msg: "อย่าทำหน้าเซ็งแบบนั้นสิ"
+  character: Thames
+  
+- msg: "ประตูระเบียงผมล็อคไม่ได้"
+  character: Thames
+  
+- msg: "แล้วคุณไม่ไปบอกพนักงานล่ะ"
+  character: me
+  
+- msg: "ผมบอกแล้ว แต่เขาช่วยอะไรไม่ได้ แล้วห้องมันก็เต็มด้วย"
+  character: Thames
+
+- msg: "แล้ว? ยังไงต่อคะ"
+  character: me
+
+- msg: "ผมขอนอนด้วย"
+  character: Thames
+  
+- msg: "ห้ะ!?"
+  character: me
+  
+- choice:
+  - msg: "คุณจะบ้าหรอ"
+    goto: ChoiceCh9-A1-1
+  - msg: "ไม่ได้หรอกคุณ"
+    goto: ChoiceCh9-A1-2
+  - msg: "คุณจะนอนได้ยังไง"
+    goto: ChoiceCh9-A1-3
+  skip:
+    goto: ChoiceCh9-A1-Sk
+  state: ChoiceState9-V1
+  character: me
+
+- label: ChoiceCh9-A1-1
+  msg: "จะมานอนด้วยกันได้ยังไง"
+  character: me
+
+- goto: ChoiceCh9-A1-Sk
+
+- label: ChoiceCh9-A1-2
+  msg: "คุณเป็นผู้ชายจะมานอนกับฉันได้ยังไง"
+  character: me
+
+- goto: ChoiceCh9-A1-Sk
+
+- label: ChoiceCh9-A1-3
+  msg: "คุณเป็นผู้ชายมานอนกับผู้หญิงที่ไม่ใช่แฟนได้ยังไง"
+  character: me
+
+- goto: ChoiceCh9-A1-Sk
+
+- label: ChoiceCh9-A1-Sk
+  msg: "ทำไมจะนอนไม่ได้ คุณก็เป็นลูกน้องผมนี่"
+  character: Thames
+
+- msg: " แต่คุณเป็นผู้ชายนะ มันดูไม่ดี"
+  character: me
+  
+- msg: "แล้วกะอีแค่ระเบียงปิดไม่ได้ ถามหน่อยมันจะเป็นอะไร"
+  character: me
+  
+- msg: "เอ้าคุณ เกิดใครลอบทำร้ายผมล่ะ"
+  character: Thames
+
+- msg: "คุณเอาเวลาไหนไปดูละครน่ะ"
+  character: me
+
+- msg: "มันก็เป็นไปได้ไหมล่ะ"
+  character: Thames
+  
+- msg: "คุณเป็นเลขาที่ไม่ห่วงเจ้านายหรอ"
+  character: Thames
+  
+- msg: "(นายนี่เหตุผลร้อยแปดมาก)"
+  character: me
+    
+- msg: "(แต่ฉันจะยอมให้เขานอนไม่ได้หรอก จันจิกับมินนี่จะคิดยังไง)"
+  character: me
+  
+- msg: "ไม่ได้ ยังไงก็ไม่ได้"
+  character: me
+
+- msg: "งั้นถ้าผมตายคุณก็จะไม่มีเจ้านาย"
+  character: Thames
+
+- msg: "ไม่มีเจ้านายก็ไม่งาน"
+  character: Thames
+
+- msg: "ไม่งานก็ไม่มีเงิน"
+  character: Thames
+
+- msg: "แล้วเงินระดับนี้น่ะนะ ไม่มีทางหาได้แล้ว"
+  character: Thames
+    
+- msg: "(โอ้ยย ถึงจะดูละคร แต่ถ้าเขาไม่ปลอดภัยจริงๆ ฉันก็ไม่มีเงินจริงๆนะ)"
+  character: me
+  
+- msg: "งั้้นฉันถามหน่อย"
+  character: me
+
+- choice:
+  - msg: "จันจิแฟนคุณจะมองฉันยังไง"
+    goto: ChoiceCh9-A2-1
+  - msg: "ฉันจะต่างอะไรกับที่มินนี่บอก"
+    goto: ChoiceCh9-A2-2
+  skip:
+    goto: ChoiceCh9-A2-Sk
+  state: ChoiceState9-V2
+  character: me
+
+- label: ChoiceCh9-A2-1
+  msg: "จันจิ? จันจิเกี่ยวอะไร"
+  character: Thames
+    
+- msg: "ก็เธอเป็นแฟนคุณ"
+  character: me
+  
+- msg: "เป็นฉันฉันก็ไม่ชอบหรอกนะ"
+  character: me
+
+- msg: "จันจิไม่ได้เป็นแฟนผม"
+  character: Thames
+    
+- msg: "คุณจะอ้างอะไรก็ได้ แต่พูดแบบนี้กับจันจิมันไม่โอเคเลย"
+  character: me
+
+- msg: "คุณ จันจิไม่ใช่เป็นแฟนผม เราไม่เคยคบกัน"
+  character: Thames
+    
+- msg: "แล้วผมก็ไม่มีแฟนด้วย"
+  character: Thames
+    
+- msg: "อ้าว"
+  character: me
+  
+- msg: "แล้วในข่าว.."
+  character: me
+
+- msg: "มันก็แค่ข่าว เรารู้จักกันตั้งแต่เรียนเมืองนอก"
+  character: Thames
+    
+- msg: "ผมหล่อ แล้วก็รวย ใครๆก็อยากเล่นข่าวผม"
+  character: Thames
+
+- msg: "เลิกสนใจคนอื่นแล้วแคร์แค่ผมได้แล้ว"
+  character: Thames
+
+- goto: ChoiceCh9-A2-Sk
+
+- label: ChoiceCh9-A2-2
+  msg: "คุณจะสนใจมินนี่ทำไม"
+  character: Thames
+    
+- msg: "ฉันไม่อยากเป็นผู้หญิงเหมือนที่มินนี่บอก"
+  character: me
+  
+- msg: "ไม่อยากให้ใครหาว่าฉันจะจับคุณ"
+  character: me
+
+- msg: "ไม่มีใครจับผมได้ทั้งนั้นแหละถ้าผมไม่เต็มใจ"
+  character: Thames
+  
+- msg: "แต่..."
+  character: me
+
+- msg: "ก็ในเมื่อคุณไม่ได้ต้องการทำแบบนั้น"
+  character: Thames
+    
+- msg: "เลิกแคร์คนอื่นแล้วสนใจแค่ผมได้แล้ว"
+  character: Thames
+  
+- msg: "แล้วแฟนคุณล่ะ จันจิมารู้มันไม่ดีอยู่ดีแหละ"
+  character: me
+
+- msg: "คุณ จันจิไม่ใช่เป็นแฟนผม แล้วเราไม่เคยคบกัน"
+  character: Thames
+    
+- msg: "แล้วผมก็ไม่มีแฟนด้วย"
+  character: Thames
+
+- msg: "เคลียร์นะ"
+  character: Thames
+  
+- msg: "(เฮ้อ กลายเป็นฉันที่เข้าใจผิดหรอ)"
+  character: me
+
+- goto: ChoiceCh9-A2-Sk
+
+- label: ChoiceCh9-A2-Sk
+  msg: "ทีนี้ให้ผมนอนที่นี่ได้หรือยัง"
+  character: Thames
+    
+- msg: "ผมก็ง่วงแล้ว"
+  character: Thames
+  
+- msg: "(ฉันยังไม่ทันได้พูดอะไรเลย เขากระโดดขึ้นเตียงฉันไปแล้ว)"
+  character: me
+    
+- msg: "ผมนอนก่อนนะ "
+  character: Thames
+  
+- msg: "นี่คุณ ถ้าจะนอนข้างบนงั้นฉันนอนข้างล่างนะ"
+  character: me
+    
+- msg: "อ้าว มันปวดหลัง"
+  character: Thames
+
+- msg: "ผมก็อยากนอนข้างบน คุณก็นอนได้นะผมไม่ถือ"
+  character: Thames
+  
+- msg: "นอนไปเถอะคุณ ฝันดี ฉันนอนข้างล่างนี่แหละ"
+  character: me
+    
+- msg: "งั้นก็ตามใจ"
+  character: Thames

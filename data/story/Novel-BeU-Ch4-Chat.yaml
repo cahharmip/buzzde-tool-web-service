@@ -1,0 +1,176 @@
+- sys: "เธมส์ เข้าสู่สนทนา"
+  delay: 1
+
+- msg: "สวัสดีเลขา"
+  avatar: Thames-Avatar-1
+
+- msg: "หืม คุณเอาIDฉันมาจากไหนน่ะ"
+  avatar: me
+
+- msg: "นั่นคือคำทักทายเจ้านายหรอ"
+  avatar: Thames-Avatar-1
+
+- choice:
+  - msg: "สวัสดีค่าเจ้านาย"
+    goto: ChatCh4-A1-1
+  - msg: "นี่ฉันคิดผิดรึเปล่านะ"
+    goto: ChatCh4-A1-2
+  - msg: "ว่าไงคะบอส"
+    goto: ChatCh4-A1-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh4-A1-Sk
+  state: ChatState4-V1
+  avatar: me
+
+- label: ChatCh4-A1-1
+  msg: "หึหึ ค่อยดีขึ้นหน่อย"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh4-A1-Sk
+
+- label: ChatCh4-A1-2
+  msg: "ก็เสียใจด้วย เพราะไม่ทันแล้วล่ะ"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh4-A1-Sk
+
+- label: ChatCh4-A1-3
+  msg: "ดีมาก ผมชอบให้เรียกบอสนะ "
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh4-A1-Sk
+
+- label: ChatCh4-A1-Sk
+  msg: "แล้วสรุปคุณเอาIDฉันมาได้ยังไง"
+  avatar: me
+
+- msg: "มันจะยากตรงไหนล่ะคุณ"
+  avatar: Thames-Avatar-1
+
+- msg: "(จันจิสินะ)"
+  avatar: me
+
+- msg: "ฉันก็ลืมไปว่าคุณทำได้ทุกอย่าง"
+  avatar: me
+
+- msg: "จะว่าไป"
+  avatar: Thames-Avatar-1
+
+- msg: "ก็ถูกอย่างที่คุณว่า"
+  avatar: Thames-Avatar-1
+  
+- msg: "ไม่งั้นผมคงให้คุณมาทำกับผมไม่ได้"
+  avatar: Thames-Avatar-1
+
+- msg: "แล้วคุณมีอะไรหรือเปล่า"
+  avatar: me
+
+- msg: "เปล่า"
+  avatar: Thames-Avatar-1
+
+- msg: "ผมแค่จะทักทายลูกน้องเฉยๆ"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่ได้หรอ?"
+  avatar: Thames-Avatar-1
+
+- choice:
+  - msg: "ทำไมจะไม่ได้ล่ะคะเจ้านาย"
+    goto: ChatCh4-A2-1
+  - msg: "แต่นี่มันนอกเวลางานนะคะ"
+    goto: ChatCh4-A2-2
+  - msg: "มีอะไรค่อยคุยพรุ่งนี้ก็ได้นี่"
+    goto: ChatCh4-A2-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh4-A2-Sk
+  state: ChatState4-V2
+  avatar: me
+
+- label: ChatCh4-A2-1
+  msg: "ฮ่าๆ "
+  avatar: Thames-Avatar-1
+
+- msg: "หวังว่าพรุ่งนี้ลูกน้องของผมจะไม่มาสายนะ?"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh4-A2-Sk
+
+- label: ChatCh4-A2-2
+  msg: "ผมก็ไม่ได้ใช้งานคุณนี่"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่ต้องห่วงหรอกพรุ่งนี้คุณได้เริ่มงานแน่"
+  avatar: Thames-Avatar-1
+
+- msg: "หวังว่าจะไม่มาสายนะ"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh4-A2-Sk
+
+- label: ChatCh4-A2-3
+  msg: "ผมแค่อยากจะย้ำน่ะว่าคุณจะไม่มาสาย"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh4-A2-Sk
+
+- label: ChatCh4-A2-Sk
+  msg: "(ว่าแต่ว่า ฉันต้องเข้าไปเจอเขากี่โมงนะ)"
+  avatar: me
+
+- msg: "เอ่อ.... ฉันต้องเข้างานกี่โมงนะคะ"
+  avatar: me
+
+- choice:
+  - msg: "6:00น."
+    goto: ChatCh4-A3-1
+  - msg: "7:00น."
+    goto: ChatCh4-A3-Sk
+  - msg: "8:00น."
+    goto: ChatCh4-A3-1
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh4-A3-Sk
+  state: ChatState4-V3
+  avatar: me
+
+- label: ChatCh4-A3-1
+  msg: "เจอกันค่ะ "
+  avatar: me
+
+- msg: "..."
+  avatar: Thames-Avatar-1
+
+- msg: "หรือว่าเป็นผมที่คิดผิดที่รับคุณ"
+  avatar: Thames-Avatar-1
+
+- msg: " 7 โมงตรงเจอกันครับ "
+  avatar: Thames-Avatar-1
+
+- msg: "ฉันจำได้น่า"
+  avatar: me
+
+- goto: ChatCh4-A3-Sk
+
+- label: ChatCh4-A3-Sk
+  msg: "เก่งจริงๆ"
+  avatar: Thames-Avatar-1
+
+- msg: "พรุ่งนี้เจอกันครับ"
+  avatar: Thames-Avatar-1
+  
+- sys: "เธมส์ ออกจากแชท"
+  delay: 1
+
+- msg: "เดี๋ยวสิคุณ"
+  avatar: me
+
+- msg: "เจอที่ไหนอะ"
+  avatar: me
+
+- msg: "(อ้าว ทำไมเอาแต่ใจแบบนี้นะ) "
+  avatar: me
+
+- msg: "(แล้วฉันต้องทำไงล่ะเนี้ย)"
+  avatar: me

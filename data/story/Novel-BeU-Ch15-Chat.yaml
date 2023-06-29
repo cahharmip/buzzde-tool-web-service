@@ -1,0 +1,347 @@
+- sys: "จันจิ ออนไลน์"
+  delay: 1
+
+- msg: "{me} ถึงบ้านยังจ๊ะ"
+  avatar: Junji-Avatar-1
+
+- msg: "พึ่งถึงเองจันจิ"
+  avatar: me
+
+- msg: "รถติดหรอ ทำไมนานจังง"
+  avatar: Junji-Avatar-1
+
+- msg: "รถติดด้วยจ้ะ แล้วก็ไปส่งเธมส์มา"
+  avatar: me
+
+- msg: "เป็นเลขาต้องขับรถรับส่งด้วยหรอ"
+  avatar: Junji-Avatar-1
+
+- msg: "แต่ฉันจำได้ว่าเธมส์ก็มีคนขับรถนะ"
+  avatar: Junji-Avatar-1
+
+- msg: "ฉันขับให้ตลอดเลย"
+  avatar: me
+  
+- msg: "ไม่แน่ใจเหมือนกันว่าเมื่อก่อนมีไหม"
+  avatar: me
+
+- msg: "ฉันมั่นใจว่ามี เพราะฉันเคยเห็นอยู่"
+  avatar: Junji-Avatar-1
+
+- msg: "เธมส์ต้องตั้งใจให้เธอขับให้แน่ๆ"
+  avatar: Junji-Avatar-1
+  
+- msg: "อาจจะเป็นเพราะฉันต้องทำให้คุ้มเงินเดือนหรือเปล่าฮ่าๆ"
+  avatar: me
+
+- msg: "หนอยแน่ เธมส์ใช้งานเธอหนักจริงๆ"
+  avatar: Junji-Avatar-1
+    
+- msg: "ฮ่าๆ ไม่หรอกจ้ะ ฉันยังรู้สึกว่าสบายมาก"
+  avatar: me
+
+- msg: "แต่เธมส์ดูใกล้ชิดกับเธอมากกว่าเลขาคนก่อนๆนะ"
+  avatar: Junji-Avatar-1
+
+- msg: "แอบไปสนิทกันมากกว่าฉันแล้วหรือเปล่าเนี่ย"
+  avatar: Junji-Avatar-1
+
+- choice:
+  - msg: "บ้า เธออะคิดมาก"
+    goto: ChatCh15-A1-1
+  - msg: "ไม่จริงหรอกจ้ะ"
+    goto: ChatCh15-A1-2
+  - msg: "คงเป็นเพราะงานฉันเยอะน่ะ"
+    goto: ChatCh15-A1-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh15-A1-Sk
+  state: ChatState15-V1
+  avatar: me
+
+- label: ChatCh15-A1-1
+  msg: "จริงอะ ฉันหวงเธอนี่หน่า ฮ่าๆ"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh15-A1-Sk
+
+- label: ChatCh15-A1-2
+  msg: "ก็ปกติแหละ เธออาจจะสนิทกับฉันเลยรู้สึกแบบนั้น"
+  avatar: me
+
+- msg: "ก็เป็นไปได้ ฉันหวงเธอนี่หน่า ฮ่าๆ"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh15-A1-Sk
+
+- label: ChatCh15-A1-3
+  msg: "เลยดูเหมือนจะสนิทกัน"
+  avatar: me
+
+- msg: "ก็เป็นไปได้ ฉันหวงเธอนี่หน่า ฮ่าๆ"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh15-A1-Sk
+
+- label: ChatCh15-A1-Sk
+  msg: "หวงฉันทำไมม แอบชอบฉันหรอ ฮ่าๆ"
+  avatar: me
+
+- msg: "เอ่อ ชอบแบบเพื่อนน่ะใช่ แบบอื่นฉันขอเลือกผู้ชายก่อนนะ ฮ่าๆ"
+  avatar: Junji-Avatar-1
+    
+- msg: "อกหักดังเป๊าะ"
+  avatar: me
+
+- msg: "ฮ่าๆ ฮ่าๆ"
+  avatar: Junji-Avatar-1
+    
+- msg: "ฉันคิดว่าเธมส์จีบเธอเสียอีก"
+  avatar: Junji-Avatar-1
+   
+- msg: "(ตรงประเด็นจังล่ะจันนนจิ)"
+  avatar: me
+   
+- msg: "ทำไมเธอคิดแบบนั้นล่ะ"
+  avatar: me
+
+- msg: "ตอบแบบนี้ใช่ใช่ไหม"
+  avatar: Junji-Avatar-1
+    
+- msg: "บอกมานะะ"
+  avatar: Junji-Avatar-1
+
+- choice:
+  - msg: "(บอกไปก็ไม่เป็นไรมั้ง)"
+    goto: ChatCh15-A2-1
+  - msg: "ไม่ใช่น้า"
+    goto: ChatCh15-A2-2
+  - msg: "เอ่อ..."
+    goto: ChatCh15-A2-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh15-A2-Sk
+  state: ChatState15-V2
+  avatar: me
+
+- label: ChatCh15-A2-1
+  msg: "ก็.."
+  avatar: me
+
+- msg: "โอเค รู้เรื่องแล้ว ฮ่าๆ"
+  avatar: Junji-Avatar-1
+
+- msg: "ฉันยังไม่ได้พูดอะไรเลยน้า"
+  avatar: me
+
+- msg: "ถ้าไม่ใช่เธอรีบปฏิเสธแล้วฉันรู้"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh15-A2-Sk
+
+- label: ChatCh15-A2-2
+  msg: "พิรุธสุดๆเลยนะ {me}"
+  avatar: Junji-Avatar-1
+
+- sticker: Junji-Curious
+  avatar: Junji-Avatar-1
+
+- msg: "เปล่าสักหน่อย"
+  avatar: me
+
+- msg: "เปล่าก็เปล่า"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh15-A2-Sk
+
+- label: ChatCh15-A2-3
+  msg: "อ้ำอึ้งแบบนี้ ใช่แน่ๆ"
+  avatar: Junji-Avatar-1
+
+- msg: "ฉันยังไม่ได้พูดอะไรเลยนะ"
+  avatar: me
+
+- msg: "ถ้าไม่ใช่เธอรีบปฏิเสธแล้วฉันรู้"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh15-A2-Sk
+
+- label: ChatCh15-A2-Sk
+  msg: "จริงๆที่ฉันถามน่ะ เพราะฉันว่าฉันดูเธมส์ออก"
+  avatar: Junji-Avatar-1
+
+- msg: "เขายอมมาเดินเล่นเรื่อยๆเอื่อยๆแบบนี้ก็รู้แล้วว่าเขาต้องมีจุดประสงค์"
+  avatar: Junji-Avatar-1
+
+- msg: "เธอดูออกขนาดนั้นเลยหรอ"
+  avatar: me
+
+- msg: "แน่นอนสิ ตั้งแต่ฉันรู้จักกับเขามา นับครั้งที่เขาเดินเล่นที่ห้างได้เลย"
+  avatar: Junji-Avatar-1
+
+- msg: "แล้วฉันก็คิดว่าจุดประสงค์นั้นก็คือเธอแน่ๆ"
+  avatar: Junji-Avatar-1
+
+- msg: "บ้าา อาจจะเป็นอย่างอื่นก็ได้นี่"
+  avatar: me
+
+- msg: "สายตาเธมส์มันฟ้องมาก เธอรู้ไหม"
+  avatar: Junji-Avatar-1
+
+- msg: "ฟ้อง?"
+  avatar: me
+
+- msg: "ฟ้องยังไงอ่า"
+  avatar: me
+
+- msg: "ใช่แล้ว"
+  avatar: Junji-Avatar-1
+
+- msg: "โถ่ ก็ฟ้องว่าเขาจับตามองเธอไง"
+  avatar: Junji-Avatar-1
+
+- msg: "ฉันไม่เห็นเขาจะละสายตาจากเธอเลยนะ"
+  avatar: Junji-Avatar-1
+
+- msg: "(จริงๆฉันเองก็รู้สึกเหมือนกันว่าเขามองตลอดเลย)"
+  avatar: me
+
+- msg: "(แต่มองจนคนอื่นผิดสังเกตนี่กะจะกินฉันเข้าไปหรือไงนะ)"
+  avatar: me
+
+- msg: "นี่ ฉันน้อยใจแล้วนะ"
+  avatar: Junji-Avatar-1
+
+- msg: "เธอไม่เห็นเล่าให้ฟังเลย"
+  avatar: Junji-Avatar-1
+
+- msg: "อย่าพึ่งน้อยใจเลยน้า"
+  avatar: me
+
+- msg: "ตอบแบบนี้ใช่ใช่ไหม"
+  avatar: Junji-Avatar-1
+    
+- msg: "บอกมานะะ"
+  avatar: Junji-Avatar-1
+
+- choice:
+  - msg: "ฉันมัวแต่ยุ่งๆเลยลืมเล่าน่ะ"
+    goto: ChatCh15-A3-1
+  - msg: "ว่าจะเล่าอยู่แล้วล่ะ"
+    goto: ChatCh15-A3-2
+  - msg: "แต่ฉันยังไม่แน่ใจเลย"
+    goto: ChatCh15-A3-Sk
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh15-A3-Sk
+  state: ChatState15-V3
+  avatar: me
+
+- label: ChatCh15-A3-1
+  msg: "ก็ได้ๆ ฉันเข้าใจก็ได้"
+  avatar: Junji-Avatar-1
+
+- msg: "(จริงๆฉันเองก็ยังไม่ค่อยแน่ใจด้วยแหละ)"
+  avatar: me
+
+- msg: "(ไม่กล้าเล่าให้ใครฟังเลยเพราะไม่รู้ว่ามันจะจริงหรือเปล่า)"
+  avatar: me
+
+- msg: "ขอโทษทีน้า"
+  avatar: me
+
+- msg: "เธอจะขอโทษทำไม มันเป็นเรื่องของเธอนะ"
+  avatar: Junji-Avatar-1
+
+- msg: "ยังไงฉันก็ไม่เกี่ยวอยู่แล้วล่ะ"
+  avatar: Junji-Avatar-1
+
+- msg: "ฉันแค่ไม่รู้จะเล่ายังไงด้วยล่ะ"
+  avatar: me
+
+- msg: "เธอกังวลอะไรหรือเปล่า"
+  avatar: Junji-Avatar-1
+
+- msg: "เรื่องเธมส์น่ะหรอ"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh15-A3-Sk
+
+- label: ChatCh15-A3-2
+  msg: "แต่อยากรอให้แน่ใจอีกหน่อย"
+  avatar: me
+
+- goto: ChatCh15-A3-Sk
+
+- label: ChatCh15-A3-Sk
+  msg: "เท่าที่ฉันรู้จักเขามานะ"
+  avatar: Junji-Avatar-1
+
+- msg: "เขาซื่อสัตย์กับคำพูดตัวเองมากเลยแหละ"
+  avatar: Junji-Avatar-1
+
+- msg: "หมายถึงว่าถ้าเธมส์พูดว่าจะทำอะไร หรือรู้สึกยังไง"
+  avatar: Junji-Avatar-1
+
+- msg: "ให้เธอไว้ใจได้เลยว่าเป็นเรื่องจริงนะ"
+  avatar: Junji-Avatar-1
+
+- msg: "เธมส์บอกให้เธอมาบิ้วฉันหรือเปล่าเนี่ย ฮ่าๆ"
+  avatar: me
+
+- msg: "ไม่เลยจ้ะ"
+  avatar: Junji-Avatar-1
+
+- msg: "ฉันพูดจริงๆนะ {me}"
+  avatar: Junji-Avatar-1
+
+- msg: "เธมส์เป็นคนดีมากๆคนหนึ่งเลยแหละ"
+  avatar: Junji-Avatar-1
+
+- msg: "ขอบคุณนะจันจิ ที่เธออธิบายให้ฉันฟัง"
+  avatar: me
+
+- msg: "ฉันสับสนจริงๆแหละฉันยอมรับเลย"
+  avatar: me
+
+- msg: "ไม่เป็นไรเลยจ้ะ"
+  avatar: Junji-Avatar-1
+
+- msg: "ฉันไม่อยากให้เธมส์ต้องผิดหวังอีกแล้วล่ะ"
+  avatar: Junji-Avatar-1
+
+- msg: "เธมส์บอกว่าเธอคือเพื่อนที่เขาไว้ใจมากคนนึงเลยนะ"
+  avatar: me
+
+- msg: "เขาพูดแบบนั้นจริงๆหรอ"
+  avatar: Junji-Avatar-1
+
+- msg: "ใช่แล้ว เขาพูดตอนเล่าเรื่องชีวิตของเขาให้ฟังน่ะ"
+  avatar: me
+
+- msg: "ดีจังอย่างน้อยๆฉันก็ยังเป็นเรื่องดีๆของเขา"
+  avatar: Junji-Avatar-1
+
+- msg: "เธมส์เล่าเรื่องชีวิตตัวเองให้เธอฟัง นี่มันพิเศษมากๆเลยนะ"
+  avatar: Junji-Avatar-1
+
+- msg: "ไม่หรอกมั้งจันจิ"
+  avatar: me
+
+- msg: "แล้วทำไมเธอจะต้องเป็นเรื่องไม่ดีล่ะ?"
+  avatar: me
+
+- msg: "อ๋อ"
+  avatar: Junji-Avatar-1
+
+- msg: "ไม่มีอะไรหรอกจ้ะ"
+  avatar: Junji-Avatar-1
+
+- msg: "เธอนอนเถอะ พรุ่งนี้ต้องทำงานอีก"
+  avatar: Junji-Avatar-1
+
+- msg: "สู้ๆนะ ไว้เจอกันจ้ะ"
+  avatar: Junji-Avatar-1
+
+- sys: "จันจิ ออฟไลน์"
+  delay: 1

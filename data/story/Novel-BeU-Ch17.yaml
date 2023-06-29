@@ -1,0 +1,294 @@
+﻿#BeU-9
+
+######################################
+- background: Luxury
+- music: main-01
+- delay: 1
+
+- msg: "โห ที่นี่สวยมากๆเลยคุณ"
+  character: me
+  
+- msg: "(เธมส์พาฉันเข้ามาในโซนVIPของตึกเพชร)"
+  character: me
+    
+- msg: "(ข้างนอกที่เคยเห็นว่าสวยแล้ว ข้างในนี้สวยกว่ามากๆเลย)"
+  character: me
+
+- character: Thames
+  position: center
+  act: Idle-Half
+  
+- msg: "ใช่ไหมล่ะ^^"
+  character: Thames
+  
+- character: Employees
+  position: left
+  act: Idle-Half
+
+- msg: "สวัสดีครับคุณเธมส์และคุณผู้หญิง"
+  character: Employees
+
+- msg: "ไม่ทราบว่าคุณเธมส์ได้ลงทะเทียนให้คุณผู้หญิงหรือยังครับ"
+  character: Employees
+  
+- msg: "แจ้งไปแล้วครับ"
+  character: Thames
+  
+- msg: "ครับผม งั้นผมขอแจ้งเรื่องSoul Mateให้คุณเธมส์และคุณผู้หญิงทราบนะครับ"
+  character: Employees
+
+- msg: "โดยปกติสมาชิกของตึกเพชรจะพาผู้มาร่วมใช้บริการได้1คนต่อปี"
+  character: Employees
+  
+- msg: "และผู้มาใช้บริการจะต้องมาพร้อมกับสมาชิกเท่านั้น"
+  character: Employees
+
+- msg: "แต่สำหรับสมาชิกVIP จะมีสิทธิ์พาผู้ร่วมใช้บริการมาได้เช่นเดียวกัน "
+  character: Employees
+  
+- msg: "แต่จะมีอีกตำแหน่งคือSoul Mate"
+  character: Employees
+
+- msg: "ซึ่งSoul Mateจะได้รับสิทธิ์เหมือนกับVIP ไม่จำเป็นต้องมาพร้อมกัน"
+  character: Employees
+  
+- msg: "และSoul Mate สามารถมีได้1คนตลอดจนอายุสมาชิก"
+  character: Employees
+
+- msg: "ตรงนี้คุณเธมส์ยืนยันจะเลือกให้คุณผู้หญิงเป็นSoul Mateนะครับ"
+  character: Employees
+    
+- msg: "ยืนยันครับ"
+  character: Thames
+  
+- msg: "ครับผม เชิญคุณเธมส์และคุณผู้หญิงใช้บริการได้เลยครับ"
+  character: Employees
+
+- msg: "เรื่องบัตรสมาชิกSoul Mateทางเราจะส่งไปให้ที่บริษัทคุณเธมส์นะครับ"
+  character: Employees
+    
+- msg: "ขอบคุณครับ"
+  character: Thames
+  
+- msg: "ยินดีให้บริการครับ"
+  character: Employees
+
+- character: empty
+  position: left
+
+- msg: "เดี๋ยวนะคุณ คุณเลือกให้ฉันเป็นSoul Mateเลยหรอ"
+  character: me
+
+- msg: "ใช่ ที่นี่มีบริการชั้น 1 เข้าใช้ได้เลยทุกอย่าง"
+  character: Thames
+  
+- msg: "ผมสบายใจถ้ารู้ว่าคุณจะไม่ขาดเหลืออะไร"
+  character: Thames
+
+- choice:
+  - msg: "คุณให้ฉันเยอะเกินไปหรือเปล่า"
+    goto: ChoiceCh17-A1-1
+  - msg: "ฉันขอไม่รับดีกว่า"
+    goto: ChoiceCh17-A1-2
+  - msg: "ฉันขอเป็นสิทธ์ธรรมดาดีกว่า"
+    goto: ChoiceCh17-A1-3
+  skip:
+    goto: ChoiceCh17-A1-Sk
+  state: ChoiceState17-V1
+  character: me
+
+- label: ChoiceCh17-A1-1
+  msg: "ไม่หรอก ไม่ให้คุณผมก็ไม่รู้จะให้ใคร"
+  character: Thames
+
+- msg: "ก็Soul Mateของคุณจริงๆในอนาคตไง"
+  character: me
+  
+- msg: "แล้วคุณรู้ได้ไงว่าตัวเองไม่ใช่"
+  character: Thames
+  
+- msg: "....."
+  character: me
+
+- msg: "งั้นเดี๋ยวค่อยหาอย่างอื่นกินเพิ่มด้วย"
+  character: Thames
+  
+- goto: ChoiceCh17-A1-Sk
+
+- label: ChoiceCh17-A1-2
+  msg: "ฉันว่านี่มันมากเกินไป"
+  character: me
+  
+- msg: "ฉันรู้สึกไม่สบายใจเท่าไร"
+  character: me
+
+- msg: "ผมไม่ได้ให้อะไรใครบ่อยๆหรอกนะ"
+  character: Thames
+  
+- msg: "แล้วการที่ผมอยากจะเทคแคร์ใครสักคน"
+  character: Thames
+    
+- msg: "ผมก็ไม่รู้ว่าผมจะทำมันได้ดีหรือเปล่า"
+  character: Thames
+
+- goto: ChoiceCh17-A1-Sk
+
+- label: ChoiceCh17-A1-3
+  msg: "ถ้าเป็นสิทธิ์ธรรมดาคุณก็ต้องมาที่นี่พร้อมกับผม"
+  character: Thames
+  
+- msg: "ถ้าผมไม่ว่างคุณก็มาใช้ไม่ได้นะ"
+  character: Thames
+    
+- msg: "แบบนี้สะดวกกว่าเยอะ"
+  character: Thames
+    
+- msg: "คุณอยากทำอะไรคุณก็ทำได้เลยนะ^^"
+  character: Thames
+
+- goto: ChoiceCh17-A1-Sk
+
+- label: ChoiceCh17-A1-Sk
+  msg: "นี่แหละสิ่งที่ผมอยากแสดงความบริสุทธิ์ใจ"
+  character: Thames
+
+- msg: "ผมไม่รู้ว่าผมจะทำอย่างอื่นได้ดีหรือเปล่า"
+  character: Thames
+  
+- msg: "ขอให้สิทธิ์นี้ไว้กับคุณแทนแล้วกันนะ"
+  character: Thames
+  
+- msg: "ขอบคุณนะเธมส์"
+  character: me
+
+- msg: "แล้วไม่ต้องลำบากใจอะไรเลยนะ"
+  character: Thames
+  
+- msg: "เพราะผมคิดมาดีแล้ว แล้วผมก็หวังดีกับคุณจริงๆ"
+  character: Thames
+  
+- msg: "(ฉันไม่คิดว่าเธมส์จะมีมุมโรแมนติกขนาดนี้นะเนี่ย)"
+  character: me
+    
+- msg: "แล้วที่คุณบอกอยากมาที่นี่มีแค่นี้หรอ"
+  character: me
+  
+- msg: "ก็นอกจากจะพาคุณมาเป็นSoul Mateแล้ว"
+  character: Thames
+    
+- msg: "ก็ว่าจะไปแช่ออนเซน"
+  character: Thames
+    
+- msg: "ออนเซนVIPมีแบบส่วนตัวลงกับSoul Mateได้ด้วยนะ"
+  character: Thames
+    
+- msg: "ตาบ้า ใครจะลงออนเซนกับคุณ"
+  character: me
+  
+- msg: "ฮ่าๆๆ ไม่ดีหรอผ่อนคลายดีนะ"
+  character: Thames
+
+- character: Thames
+  position: center
+  act: Funny-Half
+      
+- msg: "มันก็ดี แต่ไม่ใช่แก้ผ้ากับคุณนี่!"
+  character: me
+  
+- msg: "เดี๋ยวผมหลับตาปี๋เลย"
+  character: Thames
+      
+- msg: "ไม่ต้องเลยย่ะ"
+  character: me
+
+- character: Thames
+  position: center
+  act: Smile-Half
+
+- msg: "แล้วที่นี่มีอะไรสนุกๆอีกไหม "
+  character: me
+  
+- msg: "มีทุกอย่างที่คุณคิดไม่ถึงเลยแหละ"
+  character: Thames
+      
+- msg: "อะไรที่ว่าคิดไม่ถึง"
+  character: me
+    
+- msg: "ก็ลองพูดมาดูสิ"
+  character: Thames
+      
+- msg: "อืม..."
+  character: me
+
+- choice:
+  - msg: "น้ำตก"
+    goto: ChoiceCh17-A2-1
+  - msg: "สโนว์บอร์ด"
+    goto: ChoiceCh17-A2-2
+  - msg: "สวรรค์"
+    goto: ChoiceCh17-A2-3
+  skip:
+    goto: ChoiceCh17-A2-Sk
+  state: ChoiceState17-V2
+  character: me
+
+- label: ChoiceCh17-A2-1
+  msg: "มีสิ ป่ะผมพาไป"
+  character: Thames
+
+- msg: "จริงอะ"
+  character: me
+  
+- msg: "(เธมส์จับมือพาฉันไปชั้นหนึ่ง พอเปิดลิฟท์ออกมาเหมือนเราอยู่น้ำตกทีลอซูเลย)"
+  character: me
+ 
+- goto: ChoiceCh17-A2-Sk
+
+- label: ChoiceCh17-A2-2
+  msg: "มีสิ ป่ะผมพาไป"
+  character: Thames
+  
+- msg: "จริงอะ"
+  character: me
+
+- msg: "(เธมส์จับมือพาฉันไปชั้นหนึ่ง พอเปิดลิฟท์ออกมาเหมือนเราอยู่ลานหิมะที่ญี่ปุ่นเลย)"
+  character: me
+  
+- goto: ChoiceCh17-A2-Sk
+
+- label: ChoiceCh17-A2-3
+  msg: "มีสิ ป่ะผมพาไป"
+  character: Thames
+  
+- msg: "จริงอะ"
+  character: me
+
+- msg: "เป็นห้องพักของผมนะ"
+  character: Thames
+
+- msg: "ตาบ้า!!"
+  character: me
+
+- msg: "ฮ่าๆๆ ล้อเล่นน"
+  character: Thames
+
+- msg: "แต่มีที่นึงนะสวยเหมือนมีนางฟ้าเลย"
+  character: me
+
+- msg: "(เธมส์จับมือพาฉันไปชั้นหนึ่ง พอเปิดลิฟท์ออกมากลายเป็นเขาวงกตที่มีแต่กระจก)"
+  character: me
+  
+- msg: "(เฮ้อ มุกเขาเยอะจริงๆแหละ)"
+  character: me
+
+- goto: ChoiceCh17-A2-Sk
+
+- label: ChoiceCh17-A2-Sk
+  msg: "(วันนี้เธมส์พาฉันทำอะไรแปลกๆเยอะแยะเลย)"
+  character: me
+
+- msg: "(ตกเย็นเราได้ดินเนอร์กันที่ระเบียงตึกเพชร)"
+  character: me
+  
+- msg: "(วันนี้ฉันมีความสุขสุดๆ ขอบคุณนะเธมส์)"
+  character: me

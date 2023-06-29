@@ -1,0 +1,300 @@
+- sys: "เธมส์ ออนไลน์"
+  delay: 1
+
+- msg: "ไง คุณเลขา"
+  avatar: Thames-Avatar-1
+
+- msg: "ทำงานวันแรกกับผม ดีใช่ไหมล่ะ"
+  avatar: Thames-Avatar-1
+
+- msg: "ก็...."
+  avatar: me
+
+- choice:
+  - msg: "สนุกดีนะ มันใหม่สำหรับฉันมาก"
+    goto: ChatCh6-A1-1
+  - msg: "ก็เกือบจะดีอะนะ"
+    goto: ChatCh6-A1-2
+  - msg: "ก็ไม่ยากอย่างที่ฉันคิดนะ"
+    goto: ChatCh6-A1-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh6-A1-Sk
+  state: ChatState6-V1
+  avatar: me
+
+- label: ChatCh6-A1-1
+  msg: "มีหลายอย่างที่ฉันไม่เคยทำ"
+  avatar: me
+
+- msg: "คุณก็ช่วยสอนฉันด้วยล่ะ"
+  avatar: me
+
+- msg: "ไม่มีปัญหาอยู่แล้ว"
+  avatar: Thames-Avatar-1
+
+- msg: "ผมจะช่วยดูแลเอง"
+  avatar: Thames-Avatar-1
+
+- msg: "แต่ฉันก็ยังสงสัยบางอย่าง"
+  avatar: me
+
+- goto: ChatCh6-A1-Sk
+
+- label: ChatCh6-A1-2
+  msg: "ฉันยังไม่ค่อยชินกับงานเท่าไร"
+  avatar: me
+
+- msg: "ไม่ต้องห่วงนะ"
+  avatar: Thames-Avatar-1
+
+- msg: "ผมจะค่อยๆสอนคุณเอง"
+  avatar: Thames-Avatar-1
+
+- msg: "แล้วที่ว่าเกือบจะดี อะไรไม่ดีล่ะ"
+  avatar: Thames-Avatar-1
+
+- msg: "เอ่อ...."
+  avatar: me
+
+- goto: ChatCh6-A1-Sk
+
+- label: ChatCh6-A1-3
+  msg: "ใช่ไหมล่ะ"
+  avatar: Thames-Avatar-1
+
+- msg: "แต่ก็ไม่แน่หรอก พึ่งวันแรกเอง"
+  avatar: me
+
+- msg: "ไม่ต้องห่วงหรอก"
+  avatar: Thames-Avatar-1
+
+- msg: "ผมจะค่อยๆ สอนคุณเอง"
+  avatar: Thames-Avatar-1
+
+- msg: "แต่ฉันสงสัยอยูเรื่องหนึ่งน่ะ"
+  avatar: me
+
+- goto: ChatCh6-A1-Sk
+
+- label: ChatCh6-A1-Sk
+  msg: "ว่าไง"
+  avatar: Thames-Avatar-1
+
+- msg: "เรื่องอะไรล่ะ"
+  avatar: Thames-Avatar-1
+
+- msg: "(ฉันจะพูดไปดีไหมนะ)"
+  avatar: me
+
+- choice:
+  - msg: "ช่างมันเถอะค่ะ"
+    goto: ChatCh6-A2-1
+  - msg: "เรื่องมินนี่น่ะ"
+    goto: ChatCh6-A2-2
+  - msg: "คุณก็น่าจะเดาออกนะ"
+    goto: ChatCh6-A2-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh6-A2-Sk
+  state: ChatState6-V2
+  avatar: me
+
+- label: ChatCh6-A2-1
+  msg: "งั้นก็ดีแล้วล่ะ"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่มีอะไรสำคัญไปกว่าผมหรอก"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh6-A2-Sk
+
+- label: ChatCh6-A2-2
+  msg: "คุณไม่ต้องไปสนใจหรอก"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่มีอะไรสำคัญไปกว่าผมทั้งนั้นแหละ"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh6-A2-Sk
+
+- label: ChatCh6-A2-3
+  msg: "เดาไม่ออกหรอก"
+  avatar: Thames-Avatar-1
+
+- msg: "เพราะผมก็ไม่เห็นว่าอะไรมันจะสำคัญกว่าผมนะ"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh6-A2-Sk
+
+- label: ChatCh6-A2-Sk
+  msg: "เอิ่มม"
+  avatar: me
+
+- msg: "คุณนี่นะ"
+  avatar: me
+
+- msg: "แต่ฉันก็ขัดใจอยู่ดีอะ"
+  avatar: me
+
+- msg: "ผมทักมาเพื่อจะบอกคุณเรื่องสำคัญ"
+  avatar: Thames-Avatar-1
+
+- msg: "(นี่เขาเนียนเปลี่ยนเรื่องไปเฉยๆเลยนะ)"
+  avatar: me
+
+- msg: "เรื่องอะไรคะ"
+  avatar: me
+
+- msg: "พรุ่งนี้หลังจากไปกินข้าวกับลูกค้ารอบบ่าย"
+  avatar: Thames-Avatar-1
+
+- msg: "เราจะไปพัทยากัน"
+  avatar: Thames-Avatar-1
+
+- msg: "พัทยา? ไปทำไมคะ"
+  avatar: me
+
+- msg: "มีสัมนากับหลายบริษัท"
+  avatar: Thames-Avatar-1
+
+- msg: "มีแต่บริษัทแนวหน้า"
+  avatar: Thames-Avatar-1
+
+- msg: "ผมเลยต้องไปด้วยตัวเอง"
+  avatar: Thames-Avatar-1
+
+- msg: "แล้วเราจะไปยังไง ไปกี่วันคะ?"
+  avatar: me
+
+- msg: "ผมลืมบอกไป"
+  avatar: Thames-Avatar-1
+
+- msg: "วันนี้ที่ผมไปรับคุณมันก็แค่วันแรก"
+  avatar: Thames-Avatar-1
+
+- msg: "เพราะมันฉุกละหุก"
+  avatar: Thames-Avatar-1
+
+- msg: "แต่ต่อไปนี้คุณจะต้องขับรถมารับผมที่บ้านทุกวัน"
+  avatar: Thames-Avatar-1
+
+- msg: "ทุกวัน?"
+  avatar: me
+
+- msg: "แล้วฉันจะเอารถจากไหน"
+  avatar: me
+
+- msg: "ฉันไม่มีหรอกคุณ"
+  avatar: me
+
+- msg: "ผมให้ลูกน้องเอารถไปจอดหน้าบ้านคุณแล้ว"
+  avatar: Thames-Avatar-1
+
+- msg: "กุญแจอยู่ในกล่องอาหารปลา"
+  avatar: Thames-Avatar-1
+
+- msg: "ทุำไมไม่บอกฉันก่อนล่ะ!"
+  avatar: me
+
+- msg: "ถ้าหายไปจะทำยังไง"
+  avatar: me
+
+- msg: "หายไปก็ส่งไปใหม่ไง"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่เห็นจะยาก"
+  avatar: Thames-Avatar-1
+
+- msg: "ฮ่าฮ่าฮ่า"
+  avatar: Thames-Avatar-1
+
+- msg: "ตามนั้นนะ ผมส่งLocationไปแล้วนะ E-mail "
+  avatar: Thames-Avatar-1
+
+- msg: "จัดกระเป๋าให้เรียบร้อย"
+  avatar: Thames-Avatar-1
+
+- msg: "เราจะไปกัน3วัน2คืน"
+  avatar: Thames-Avatar-1
+
+- msg: "พรุ่งนี้มาตรงเวลานะ เวลาเดิม"
+  avatar: Thames-Avatar-1
+
+- msg: "คุณหายไปไหนน่ะ"
+  avatar: Thames-Avatar-1
+
+- msg: "{me} ???? "
+  avatar: Thames-Avatar-1
+
+- msg: "มาแล้ว"
+  avatar: me
+
+- msg: "ฉันไปเอากุญแจรถมา"
+  avatar: me
+
+- msg: "ฉันกลัวมันหาย"
+  avatar: me
+
+- msg: "ฉันไม่อยากทำงานฟรีนะคุณ"
+  avatar: me
+
+- msg: "โถ่ {me}"
+  avatar: Thames-Avatar-1
+
+- msg: "ฉันเริ่มเอ็นดูเธอจริงๆแล้ว ฮ่าๆ"
+  avatar: Thames-Avatar-1
+
+- msg: "ฉันไม่กวนนอกเวลางานแล้ว"
+  avatar: Thames-Avatar-1
+
+- msg: "นอนเถอะ"
+  avatar: Thames-Avatar-1
+
+- choice:
+  - msg: "ค่ะ พรุ่งนี้เจอกัน"
+    goto: ChatCh6-A3-1
+  - msg: "เดี๋ยวคุณก็กวนฉันอยู่ดี"
+    goto: ChatCh6-A3-2
+  - msg: "ก็ไม่ได้กวนอะไรนะ"
+    goto: ChatCh6-A3-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh6-A3-Sk
+  state: ChatState6-V3
+  avatar: me
+
+- label: ChatCh6-A3-1
+  msg: "ครับ เจอกันพรุ่งนี้ {me}"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh6-A3-Sk
+
+- label: ChatCh6-A3-2
+  msg: "รู้ดี"
+  avatar: Thames-Avatar-1
+
+- msg: "พรุ่งนี้เจอกันครับ"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh6-A3-Sk
+
+- label: ChatCh6-A3-3
+  msg: "เดาไม่ออกหรอก"
+  avatar: Thames-Avatar-1
+
+- msg: "เพราะผมก็ไม่เห็นว่าอะไรมันจะสำคัญกว่าผมนะ"
+  avatar: Thames-Avatar-1
+
+- msg: "เก็บไว้คุยพรุ่งนี้แล้วกัน"
+  avatar: Thames-Avatar-1
+
+- msg: "เจอกันนะครับ"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh6-A3-Sk
+
+- label: ChatCh6-A3-Sk
+  msg: "ออฟไลน์"
+  avatar: "Thames-Avatar-1"
+  

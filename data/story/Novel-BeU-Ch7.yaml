@@ -1,0 +1,197 @@
+﻿#BeU-3
+
+######################################
+- background: InCarSleep
+- music: main-03
+- delay: 1
+
+- msg: "(ฉันขับมาสักพักถึงจุดพักรถแล้ว)"
+  character: me
+  
+- msg: "(เธมส์หลับไม่รู้เรื่องเลย)"
+  character: me
+  
+- msg: "(ไม่ช่วยกันดูทางเลยฉันยิ่งไม่ค่อยชินอยู่TT)"
+  character: me
+
+- msg: "(เรายังไม่ได้กินอะไรกันเลยนี่หน่า)"
+  character: me
+  
+- msg: "(ฉันจะซื้ออะไรไปฝากเขาดีนะ)"
+  character: me
+
+- choice:
+  - msg: "เค้กกับน้ำผลไม้"
+    goto: ChoiceCh7-A1-1
+  - msg: "ขนมปังกับกาแฟ"
+    goto: ChoiceCh7-A1-2
+  - msg: "ผลไม้กับน้ำเปล่า"
+    goto: ChoiceCh7-A1-3
+  skip:
+    goto: ChoiceCh7-A1-Sk
+  state: ChoiceState7-V1
+  character: me
+
+- label: ChoiceCh7-A1-1
+  msg: "(เอาอันนี้แล้วกัน)"
+  character: me
+
+- msg: "คุณ คุณ ตื่นได้แล้วค่ะ"
+  character: me
+
+- background: InCar
+
+- delay: 1
+
+- character: Thames
+  position: center
+  act: Idle-Half
+
+- msg: "หืมม ยังไม่ถึงไหนเลยนี่"
+  character: Thames
+  
+- msg: "ฉันหิวน่ะเลยแวะหาอะไรทานเล่น"
+  character: me
+  
+- msg: "คุณเองก็ยังไม่ได้กินอะไร"
+  character: me
+
+- msg: "ฉันซื้อเค้กกับน้ำผลไม้มาให้"
+  character: me
+
+- msg: "น่าจะสดชื่นขึ้นนะ"
+  character: me
+
+- msg: "ขอบคุณนะ ก็น่าจะพออยู่ท้อง"
+  character: Thames
+
+- goto: ChoiceCh7-A1-Sk
+
+- label: ChoiceCh7-A1-2
+  msg: "(เอาอันนี้แล้วกัน)"
+  character: me
+
+- msg: "คุณ คุณ ตื่นได้แล้วค่ะ"
+  character: me
+
+- background: InCar
+
+- delay: 1
+
+- character: Thames
+  position: center
+  act: Idle-Half
+
+- msg: "หืมม ยังไม่ถึงไหนเลยนี่"
+  character: Thames
+  
+- msg: "ฉันหิวน่ะเลยแวะหาอะไรทานเล่น"
+  character: me
+  
+- msg: "คุณเองก็ยังไม่ได้กินอะไร"
+  character: me
+
+- msg: "ฉันซื้อขนมปังกับกาแฟมาให้"
+  character: me
+
+- msg: "กาแฟเพิ่มนมหรือเปล่า"
+  character: Thames
+
+- msg: "2ช็อตเลยจ้ะ"
+  character: me
+
+- msg: "ฮ่าๆ ขอบคุณนะ ดีเลยจะได้ตื่นขึ้นหน่อย"
+  character: Thames
+
+- goto: ChoiceCh7-A1-Sk
+
+- label: ChoiceCh7-A1-3
+  msg: "(เอาอันนี้แล้วกัน)"
+  character: me
+
+- msg: "คุณ คุณ ตื่นได้แล้วค่ะ"
+  character: me
+
+- background: InCar
+
+- delay: 1
+
+- character: Thames
+  position: center
+  act: Idle-Half
+
+- msg: "หืมม ยังไม่ถึงไหนเลยนี่"
+  character: Thames
+  
+- msg: "ฉันหิวน่ะเลยแวะหาอะไรทานเล่น"
+  character: me
+  
+- msg: "คุณเองก็ยังไม่ได้กินอะไร"
+  character: me
+
+- msg: "ฉันซื้อผลไม้กับน้ำเปล่าให้"
+  character: me
+
+- msg: "ขอบคุณนะ ผมกำลังอยากดื่มน้ำเปล่าเลย"
+  character: Thames
+
+- goto: ChoiceCh7-A1-Sk
+
+- label: ChoiceCh7-A1-Sk
+  msg: "คุณนี่ก็มีน้ำใจเหมือนกันนะ"
+  character: Thames
+
+- msg: "ก็ฉันหิวคุณก็ต้องหิวเหมือนกันแหละ"
+  character: me
+
+- msg: "ตื่นแต่เช้าแถมต้องรีบเข้าบริษัท"
+  character: me
+
+- msg: "ผมชินแล้วล่ะ"
+  character: Thames
+
+- msg: "คุณเคยได้กินข้าวเช้าบ้างหรือเปล่า"
+  character: me
+
+- msg: "ไม่นะ"
+  character: Thames
+
+- msg: "ถามทำไม"
+  character: Thames
+
+- msg: "คุณจะทำให้กินหรอ"
+  character: Thames
+  
+- msg: "บ้า ฉันก็ถามเฉยๆ"
+  character: me
+
+- msg: "ฉันไม่มีเวลาทำให้หรอก"
+  character: me
+
+- msg: "โถ่เอ้ย"
+  character: Thames
+
+- msg: "ถ้าได้กินข้าวเช้าสักหน่อยฉันก็คงไม่ต้องปวดท้องบ่อยๆ"
+  character: Thames
+
+- msg: "ก็ได้ๆ เดี๋ยวฉันจะหาให้กินแล้วกัน"
+  character: me
+
+- character: Thames
+  position: center
+  act: Smile-Half
+
+- msg: "^^"
+  character: Thames
+  
+- msg: "(อ๊ะ เขายิ้มแป้นเลยแฮะ)"
+  character: me
+
+- msg: "(แปลกตาจัง ฉันไม่ค่อยเห็นเขายิ้มเลย)"
+  character: me
+
+- msg: "ป่ะ เราไปกันต่อเถอะจะได้มีเวลาพักผ่อนก่อนดินเนอร์"
+  character: Thames
+  
+- msg: "รับทราบค่ะเจ้านาย"
+  character: me

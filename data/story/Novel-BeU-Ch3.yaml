@@ -1,0 +1,459 @@
+﻿#BeU-3
+
+######################################
+- background: bg_101
+- music: main-02
+- delay: 1
+
+
+- msg: "กริ๊ง กริ๊ง"
+  character: me
+
+- msg: "ร้านพาริเย่ สวัสดีค่าา "
+  character: me
+
+- character: Thames-Before
+  position: center
+  act: Idle
+
+- msg: "(อ๊ะ นายฟองนมนี่ ฉันขอแก้ตัวรอบนี้ละกัน)"
+  character: me
+
+- msg: "รับอะไรดีคะ"
+  character: me
+  
+- msg: "จำผมไม่ได้หรอ"
+  character: Thames-Before
+
+- msg: "จำได้สิ คุณฟองนมเย๊อะๆ"
+  character: me
+  
+- msg: "คงไม่ได้ประชดกันหรอกนะ"
+  character: Thames-Before
+  
+- msg: "ผมเอาเหมือนเดิม"
+  character: Thames-Before
+
+- msg: "รับทราบค่า"
+  character: me
+
+- character: empty
+  position: center
+
+- character: Thames
+  position: center
+  act: Idle
+  
+- msg: "ผมเธมส์"
+  character: Thames-Before
+
+- msg: "(หืมม นายนี่มาไม้ไหน แนะนำตัวเองเฉยเลย)"
+  character: me
+
+- choice:
+  - msg: "ฉัน {me} ค่ะ"
+    goto: ChoiceCh3-A1-Sk
+  - msg: "ค่ะ ฉัน {me} ขอโทษด้วยที่เรียกคุณฟองนม"
+    goto: ChoiceCh3-A1-Sk
+  - msg: "ชื่อเพราะดีนะ ฉัน {me}"
+    goto: ChoiceCh3-A1-Sk
+  skip:
+    goto: ChoiceCh3-A1-Sk
+  state: ChoiceState3-V1
+  character: me
+
+- label: ChoiceCh3-A1-Sk
+  msg: "... ??"
+  character: Thames
+
+- msg: "คุณมีอะไรหรือเปล่า"
+  character: me
+  
+- msg: "คุณจะบอกชื่อตัวเองทำไม"
+  character: Thames-Before
+
+- msg: "อ้าว ก็ตามมารยาทใครแนะนำตัวเองมาเราก็ควรบอกชื่อตัวเองกลับไม่ใช่หรอ"
+  character: me
+  
+- msg: "ฉันไม่ได้แนะนำตัว "
+  character: Thames-Before
+
+- msg: "นี่นายกวนฉันรึเปล่า"
+  character: me
+  
+- msg: "จันจิบอกว่าให้ฉันบอกชื่อตัวเองแล้วคุณจะพาไปห้องประชุม "
+  character: Thames-Before
+
+- msg: "(ตายยยแล้ว ฉันเอ๋ออีกแล้วว นี่มันหุ้นส่วนจันจินี่ โอ้ยๆๆฉันลืมไปซะสนิทเลย)"
+  character: me
+
+- msg: "ฉันขอโทษค่ะคุณเธมส์ เชิญด้านนี้เลยค่ะ (TT)"
+  character: me
+
+- msg: "(ฉันพานายฟองนมเข้าไปหาจันจิ พร้อมส่งยิ้มแก้เขินไป1ที ฉันเบื่อตัวเองจริงๆเล้ย)"
+  character: me
+
+- msg: "...  เวลาผ่านไป "
+  character: me
+
+- character: Junji
+  position: left
+  act: Idle
+
+- msg: "ขอบใจนายมากนะเธมส์ ฉันอาจจะถามเยอะไปหน่อย แต่ฉันเข้าใจขึ้นเยอะเลย "
+  character: Junji
+
+- msg: "(จันจิเดินออกมาพร้อมเธมส์ที่มองมาทางฉันแล้วทำหน้าแปลกๆ)"
+  character: me
+
+- msg: "ไม่เป็นไรหรอก เธอเข้าใจก็ดีแล้ว ฉันอาจจะไม่ได้ว่างมาคุยบ่อยๆ"
+  character: Thames
+
+- msg: "ค่าา ระดับประธานCDAฉันขอรบกวนนานๆทีนะค้าา "
+  character: Junji
+
+- msg: "แน่นอนอยู่แล้วล่ะ"
+  character: Thames
+
+- msg: "(OMG! อย่าบอกนะว่านายนี่คือ เธมส์ เธมนที หนุ่มฮอตๆอะไรนั่นที่ชอบออกข่าว)"
+  character: me
+
+- msg: "(งั้นจันจิก็คือ.. จันจิรา แฟนเธมนทีหรอ?!? O_O)"
+  character: me
+
+- msg: "ว่าแต่เธอ {me}"
+  character: Thames
+
+- msg: "อะ อะไรหรอคะ"
+  character: me
+
+- msg: "ไม่มีอะไร วันนี้กาแฟอร่อยดี ผมชอบ"
+  character: Thames
+
+- msg: "เอ๊ะ ?"
+  character: me
+
+- choice:
+  - msg: "..."
+    goto: ChoiceCh3-A2-1
+  - msg: "ขอบคุณค่ะ"
+    goto: ChoiceCh3-A2-2
+  - msg: "หรอ ดีใจที่ชอบนะคะ"
+    goto: ChoiceCh3-A2-3
+  skip:
+    goto: ChoiceCh3-A2-Sk
+  state: ChoiceState3-V2
+  character: me
+
+- label: ChoiceCh3-A2-1
+  msg: "ไม่ดีใจหน่อยหรอ นี่ฉันชมคุณนะ"
+  character: Thames
+
+- msg: "เอ่ออ.."
+  character: me
+
+- msg: "ฉันก็ดีใจนะแต่ฉันตกใจน่ะ"
+  character: me
+
+- msg: "คุณต้องดีใจมากๆสิ นี่ฉันชมนะ"
+  character: Thames
+
+- goto: ChoiceCh3-A2-Sk
+
+- label: ChoiceCh3-A2-2
+  msg: "เธอดูไม่ดีใจขนาดนั้นเลย "
+  character: Thames
+
+- msg: "ฉันก็ดีใจอยู่นะ"
+  character: me
+
+- msg: "แปลกจัง ฉันชมใครส่วนใหญ่ก็ดีใจมากๆนะ"
+  character: Thames
+
+- goto: ChoiceCh3-A2-Sk
+
+- label: ChoiceCh3-A2-3
+  msg: "แต่หน้าคุณเฉยมากเลยอะ ต้องดีใจกว่านี้สิ "
+  character: Thames
+
+- goto: ChoiceCh3-A2-Sk
+
+- label: ChoiceCh3-A2-Sk
+  msg: "คุณนี่แปลกๆนะ ดีใจก็ดีใจสิ"
+  character: me
+
+- msg: "ไม่รู้สิ พวกผู้หญิงฉันชอบเห็นเค้าดีใจกว่านี้"
+  character: Thames
+
+- msg: "จันจิ ฉันอยากได้ {me} เป็นเลขาส่วนตัว"
+  character: Thames
+
+- msg: "เธอจะว่าอะไรหรือเปล่า"
+  character: Thames
+
+- msg: "ห๊ะ!!"
+  character: me
+
+- msg: "นี่! นายจะอยากทำอะไรตามใจตัวเองมากเกินไปแล้ว"
+  character: Junji
+
+- character: Junji
+  position: left
+  act: Sad  
+  
+- msg: "ถาม {me} เขาหรือยัง แล้วใครจะช่วยฉันเฝ้าร้าน"
+  character: Junji
+
+- msg: "เธอก็รู้นิสัยฉันนี่จันจิ แล้ว {me} เธอว่าไง"
+  character: Thames
+
+- msg: "เดี๋ยวนะ คุณพูดเล่นหรือเปล่า มันจะปุบปับขนาดนั้นได้ยังไง"
+  character: me
+
+- msg: "คิดว่าผมเป็นคนพูดเล่นหรือเปล่าล่ะ ผมจะทำอะไรมันก็เป็นไปได้ทั้งนั้นแหละ"
+  character: Thames
+
+- msg: "แล้วฉันแค่ชงกาแฟถูกปาก เหตุผลแค่นีหรอที่อยากได้ฉันไปทำงานด้วย?"
+  character: me
+
+- msg: "แค่มีเหตุผลก็พอแล้วนี่ "
+  character: Thames
+
+- msg: "งานมันก็ไม่ได้ยากอะไร แล้วคุณก็ดูเป็นคนละเอียดดี"
+  character: Thames
+
+- msg: "คุณรู้ได้ยังไงว่าฉันละเอียด"
+  character: me
+
+- msg: "ผมมองเห็นเมนูคาปูเพิ่มนมในหน้าลูกค้าพิเศษ บนสมุดจดคุณ"
+  character: Thames
+
+- msg: "คุณแอบมองสมุดจดฉันหรอ"
+  character: me
+
+- msg: "ผมไม่ต้องแอบด้วยซ้ำ แค่ผมเข้าร้านมาคุณก็เลิ่กลั่กหาหน้าลูกค้าพิเศษแล้ว "
+  character: Thames
+
+- msg: "สมุดจดเธอได้เรื่องเข้าแล้วสิ {me} "
+  character: Junji
+
+- msg: "เอายังไง ถ้าเป็นคนอื่นฉันไม่มานั่งอธิบายแบบนี้นะ"
+  character: Thames
+
+- msg: "ฉันยังไม่รู้อะไรเกี่ยวกับคุณเลย อยู่ๆจะให้ฉันไปทำงานด้วยได้ยังไง ไหนจะร้านจันจิอีก"
+  character: me
+
+- msg: "ผมเธมส์ ประธานบริษัทCDA บริษัทนำเข้ารถที่ใหญ่ที่สุดในตอนนี้ "
+  character: Thames
+
+- msg: "ผมให้คุณถามได้อีก1คำถามเกี่ยวกับสิ่งที่คุณอยากรู้"
+  character: Thames
+
+- msg: "เดี๋๋ยวก่อนสิ คำถามนี้ขอไม่เกี่ยวกับ1ข้อที่นายบอก"
+  character: me
+
+- msg: "แล้วร้านจันจิจะทำยังไง นายไม่เห็นแก่ตัวไปหน่อยหรอลากลูกน้องของจันจิไปเฉยๆเนี่ยนะ"
+  character: me
+
+- msg: "ถ้าเธออยากไปก็ไม่มีปัญหาอะไรหรอกจ้ะ ฉันรู้ว่าเธมส์จะจัดการยังไง"
+  character: Junji
+
+- msg: "ฉันโอเคจริงๆ ถ้าเธอทำกับเธมส์ยังไงเราก็ต้องได้เจอกันเรื่อยๆแน่ๆ"
+  character: Junji
+
+- msg: "อยู่ที่เธอแล้วแหละ "
+  character: Junji
+
+- msg: "(นั่นสินะ เค้าเป็นแฟนกันนี่ ฉันคงไม่ถูกหาว่าทิ้งเพื่อนนะ)"
+  character: me
+
+- msg: "(จันจิโน้มตัวเข้ามาหาฉันแล้วกระซิบเบาๆ)"
+  character: me
+
+- msg: "จำที่ฉันบอกได้ไหม ถ้ามีโอกาสเข้ามาเธอมีสิทธิ์เลือกนะ"
+  character: Junji
+
+- msg: "จันจิตอบคำถามนั้นไปแล้ว คราวนี้ถามมาได้แล้วว่าอยากรู้อะไรอีก"
+  character: Thames
+
+- choice:
+  - msg: "แล้วฉันจะได้เงินเดือนเท่าไร"
+    goto: ChoiceCh3-A3-1
+  - msg: "งานของฉันมีอะไรบ้าง"
+    goto: ChoiceCh3-A3-2
+  - msg: "ฉันไม่ไปได้ไหม ฉันอยากอยู่กับจันจิที่นี่"
+    goto: ChoiceCh3-A3-3
+  skip:
+    goto: ChoiceCh3-A3-Sk
+  state: ChoiceState3-V3
+  character: me
+
+- label: ChoiceCh3-A3-1
+  msg: "คำถามไม่ผิดคาดเท่าไร"
+  character: Thames
+
+- msg: "ผมเชื่อว่ามากพอที่จะทำให้คุณอยากไปกับผมตอนนี้เลย"
+  character: Thames
+
+- msg: "คุณอย่าเล่นคำเยอะได้ไหม บอกมาเถอะน่า"
+  character: me
+
+- msg: "6หลัก"
+  character: Thames
+
+- msg: "6หลัก!! O_O"
+  character: me
+
+- msg: "ใช่ แต่แลกกับการที่คุณต้องตัวติดผมตลอดเวลาและจดทุกการประชุม"
+  character: Thames
+
+- msg: "รวมไปถึงดูแลเรื่องส่วนตัว"
+  character: Thames
+  
+- msg: "(ทำขนาดนี้ทำไมไม่ให้แฟนตัวเองทำกันนะ หรือแม้แต่จันจิก็ทนไม่ไหว)"
+  character: me
+
+- msg: "(แต่เงินขนาดนี้ฉันอยู่ได้สบายเลยนะเนี่ย)"
+  character: me
+
+- msg: "ว่าไง เธอโอเคไหม 6หลักที่ว่านี่ไม่รวมกับชีวิตประจำวันที่เธอต้องไปกับฉันแล้วฉันจ่ายนะ"
+  character: Thames
+
+- msg: "ยังไงฉันก็ต้องโอเคไหม พูดตรงๆเลยนะ เงินขนาดนี้ฉันหาเองไม่ได้แน่ๆ "
+  character: me
+
+- msg: "ฉันเกรงใจเธอมากเลยจันจิ แต่ถ้าเธอยืนยันว่าเธมส์จะจัดการทุกอย่างให้เธอได้ "
+  character: me
+
+- msg: "เธอไม่ต้องห่วงเลยนะ ทางนี้สบายมาก "
+  character: Junji
+
+- msg: "นอกจากฉันจะดีใจกับเธอแล้ว ฉันก็สบายใจด้วยที่เธอไม่ปฏิเสธโอกาสนี้ "
+  character: Junji
+
+- goto: ChoiceCh3-A3-Sk
+
+- label: ChoiceCh3-A3-2
+  msg: "ก็อยู่กับผมตลอดเวลา ดูแลทุกงาน ตารางเวลาแต่ละวันของผม "
+  character: Thames
+
+- msg: "รวมไปถึงเรื่องส่วนตัว"
+  character: Thames
+
+- msg: "ส่วนเงินเดือนก็6หลัก"
+  character: Thames
+
+- msg: "(ทำขนาดนี้ทำไมไม่ให้แฟนตัวเองทำกันนะ หรือแม้แต่จันจิก็ทนไม่ไหว)"
+  character: me
+
+- msg: "(แต่เงินขนาดนี้ฉันอยู่ได้สบายเลยนะเนี่ย)"
+  character: me
+
+- msg: "ว่าไง เธอโอเคไหม 6หลักที่ว่านี่ไม่รวมกับชีวิตประจำวันที่เธอต้องไปกับฉันแล้วฉันจ่ายนะ"
+  character: Thames
+
+- msg: "ยังไงฉันก็ต้องโอเคไหม พูดตรงๆเลยนะ เงินขนาดนี้ฉันหาเองไม่ได้แน่ๆ "
+  character: me
+
+- msg: "ฉันเกรงใจเธอมากเลยจันจิ แต่ถ้าเธอยืนยันว่าเธมส์จะจัดการทุกอย่างให้เธอได้ "
+  character: me
+
+- msg: "เธอไม่ต้องห่วงเลยนะ ทางนี้สบายมาก "
+  character: Junji
+
+- msg: "นอกจากฉันจะดีใจกับเธอแล้ว ฉันก็สบายใจด้วยที่เธอไม่ปฏิเสธโอกาสนี้ "
+  character: Junji
+
+- goto: ChoiceCh3-A3-Sk
+
+- label: ChoiceCh3-A3-3
+  msg: "นี่ {me} ฉันไม่อยากจะบอกเธอหรอกนะว่านี่มันโอกาสดีมากๆ"
+  character: Junji
+
+- msg: "ไม่มีทางที่เธอจะได้ทำงานใหญ่ขนาดนี้ในเวลานี้นะ"
+  character: Junji
+
+- msg: "อย่างแย่หน่อยก็แค่ต้องอยู่กับเขา"
+  character: Junji
+
+- msg: "(จันจิบอกฉันแล้วชำเลืองตาไปทางเธมส์)"
+  character: me
+
+- msg: "ก็จริงอย่างที่จันจิว่า ไม่งั้นตำแหน่งนี้คงไม่ว่างมาถึงเธอ"
+  character: Thames
+
+- msg: "ก็แค่อยู่กับผมตลอดเวลา ดูแลทุกงาน ตารางเวลาแต่ละวันของผม "
+  character: Thames
+
+- msg: "รวมไปถึงเรื่องส่วนตัว"
+  character: Thames
+
+- msg: "แต่เงินเดือน6หลักนะ"
+  character: Thames
+
+- msg: "(ทำขนาดนี้ทำไมไม่ให้แฟนตัวเองทำกันนะ หรือแม้แต่จันจิก็ทนไม่ไหว)"
+  character: me
+
+- msg: "(แต่เงินขนาดนี้ฉันอยู่ได้สบายเลยนะเนี่ย)"
+  character: me
+
+- msg: "ว่าไง เธอโอเคไหม 6หลักที่ว่านี่ไม่รวมกับชีวิตประจำวันที่เธอต้องไปกับฉันแล้วฉันจ่ายนะ"
+  character: Thames
+
+- msg: "ยังไงฉันก็ต้องโอเคไหม พูดตรงๆเลยนะ เงินขนาดนี้ฉันหาเองไม่ได้แน่ๆ "
+  character: me
+
+- msg: "ฉันเกรงใจเธอมากเลยจันจิ แต่ถ้าเธอยืนยันว่าเธมส์จะจัดการทุกอย่างให้เธอได้ "
+  character: me
+
+- msg: "เธอไม่ต้องห่วงเลยนะ ทางนี้สบายมาก "
+  character: Junji
+
+- msg: "นอกจากฉันจะดีใจกับเธอแล้ว ฉันก็สบายใจด้วยที่เธอไม่ปฏิเสธโอกาสนี้ "
+  character: Junji
+
+- choice:
+  - msg: "เธอดีกับฉันมากจริงๆจันจิ"
+    goto: ChoiceCh3-A3a-1
+  - msg: "ขอบคุณค่ะ"
+    goto: ChoiceCh3-A3a-2
+  - msg: "ฉันจะแวะมาหาเธอบ่อยๆเลยนะ"
+    goto: ChoiceCh3-A3a-3
+  skip:
+    goto: ChoiceCh3-A3-Sk
+  state: ChoiceState3-V3a
+  character: me
+
+- label: ChoiceCh3-A3a-1
+  msg: "ไม่ขนาดนั้นหรอกจ้ะ ถ้าไม่ใช่เธมส์ฉันก็อาจจะไม่ให้เธอไปหรอกนะ^^"
+  character: Junji
+
+- msg: "..."
+  character: Thames
+
+- goto: ChoiceCh3-A3-Sk
+
+- label: ChoiceCh3-A3a-2
+  msg: "ไม่เป็นไรจ้ะ เธมส์ต้องดูแลเธอได้ดีแน่ๆ"
+  character: Junji
+
+- msg: "แน่นอน"
+  character: Thames
+
+- goto: ChoiceCh3-A3-Sk
+
+- label: ChoiceCh3-A3a-3
+  msg: "ยังไงเราก็ได้เจอกันแน่นอน ไม่งั้นฉันไม่ยอมหรอก"
+  character: Junji
+  
+- msg: "จริงไหมเธมส์"
+  character: Junji
+
+- msg: "..."
+  character: Thames 
+- goto: ChoiceCh3-A3-Sk
+
+- label: ChoiceCh3-A3-Sk
+  msg: "เจอกันพรุ่งนี้ 7:00น.ตรง "
+  character: Thames
+  

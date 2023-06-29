@@ -1,0 +1,335 @@
+- sys: "เธมส์ ออนไลน์"
+  delay: 1
+
+- msg: "พรุ่งนี้วันหยุดแล้วนะคุณเลขา"
+  avatar: Thames-Avatar-1
+
+- msg: "(เธมส์เจอหน้าฉันที่ทำงานนับถอยหลังวันหยุดให้ฟังทุกวัน)"
+  avatar: me
+
+- msg: "(นับจนฉันเลิกตื่นเต้นกับวันเสาร์แล้วเนี่ย)"
+  avatar: me
+
+- msg: "ดีใจด้วยนะคุณ"
+  avatar: me
+
+- msg: "ฮ่าๆ แล้วคุณไม่ดีใจหรอ"
+  avatar: Thames-Avatar-1
+
+- msg: "ได้ไปเดทกับCEOแบบจริงๆจังๆเลยนะ"
+  avatar: Thames-Avatar-1
+
+- choice:
+  - msg: "ดีใจที่สุดค่า"
+    goto: ChatCh16-A1-1
+  - msg: "คุณก็พูดไปเรื่อย"
+    goto: ChatCh16-A1-2
+  - msg: "ใครเดทกับคุณคะ"
+    goto: ChatCh16-A1-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh16-A1-Sk
+  state: ChatState16-V1
+  avatar: me
+
+- label: ChatCh16-A1-1
+  msg: "ไม่รู้ว่าเธอเต็มใจพูดหรือหรือเปล่า "
+  avatar: Thames-Avatar-1
+
+- msg: "แต่ดีใจจัง ^^"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh16-A1-Sk
+
+- label: ChatCh16-A1-2
+  msg: "พูดจริงๆต่างหาก"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh16-A1-Sk
+
+- label: ChatCh16-A1-3
+  msg: "ใจร้ายจัง"
+  avatar: Thames-Avatar-1
+
+- msg: "คุณก็รู้ผมนับรอวันทั้งอาทิตย์เลยนะ"
+  avatar: Thames-Avatar-1
+
+- msg: "ฉันพูดเล่นน่า"
+  avatar: me
+
+- goto: ChatCh16-A1-Sk
+
+- label: ChatCh16-A1-Sk
+  msg: "ว่าแต่ว่าครั้งนี้เราไปเดทไหนดี"
+  avatar: Thames-Avatar-1
+
+- msg: "ผมจะมองคุณเป็นหลักแล้ว"
+  avatar: Thames-Avatar-1
+
+- msg: "จริงๆฉันไปไหนก็ได้นะ ไม่ได้อยากไปไหนพิเศษ"
+  avatar: me
+  
+- msg: "กินข้าวเฉยๆก็ได้"
+  avatar: me
+
+- msg: "โถ่คุณ ทุกวันนี้เราก็กินข้าวด้วยกันทุกวันอยู่แล้ว"
+  avatar: Thames-Avatar-1
+
+- msg: "ผมไม่อยากแค่กินข้าวแล้วอ่า"
+  avatar: Thames-Avatar-1
+
+- msg: "อยากกินอย่างอื่นนน"
+  avatar: Thames-Avatar-1
+
+- choice:
+  - msg: "จะเกินไปแล้วนะ"
+    goto: ChatCh16-A2-Sk
+  - msg: "หมายถึงอะไรน่ะ"
+    goto: ChatCh16-A2-Sk
+  - msg: "กินอะไรหว่าา"
+    goto: ChatCh16-A2-Sk
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh16-A2-Sk
+  state: ChatState16-V2
+  avatar: me
+
+- label: ChatCh16-A2-Sk
+  msg: "ก็อย่างอื่นไง เช่นแบบ..."
+  avatar: Thames-Avatar-1
+
+- msg: "เค้ก... พิชซ่า..."
+  avatar: Thames-Avatar-1
+
+- msg: "หรือว่า! คุณคิดทะลึ่งกับผมหรอ"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่ต้องเลยคุณ ก็เล่นพูด2แง่2ง่ามเองหนิ"
+  avatar: me
+
+- msg: "ฮ่าๆ ผมก็แหย่เล่น"
+  avatar: Thames-Avatar-1
+
+- msg: "แต่กินข้าวมันธรรมดาไป"
+  avatar: Thames-Avatar-1
+
+- msg: "ผมจะพาคุณไปที่ที่คุณอยากไป สัก3ที่เป็นไง"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่เยอะไปหน่อยหรอ"
+  avatar: me
+
+- msg: "เรามีเวลาแค่1วันเองนะ  "
+  avatar: me
+
+- msg: "เพราะว่าเรามีแค่1วันไงเลยต้องไปให้ครบ"
+  avatar: Thames-Avatar-1
+
+- msg: "ถ้าคุณชอบที่จะไปกับผมครั้งหน้าเราไปอีก10ที่ก็ได้"
+  avatar: Thames-Avatar-1
+
+- msg: "ซึ่งยังไงคุณก็ต้องชอบ ^^"
+  avatar: Thames-Avatar-1
+
+- msg: "(เธมส์หลงตัวเองอีกแล้ว)"
+  avatar: me
+
+- msg: "(แต่เขาก็น่ารักจริงๆแหละฉันไม่เถียง งือ)"
+  avatar: me
+
+- msg: "ว่ายังไงล่ะ"
+  avatar: Thames-Avatar-1
+
+- msg: "ฉันขอคิดก่อนนะ"
+  avatar: me
+
+- msg: "ถ้าคิดไม่ออกเที่ยวบ้านฉันก็ได้นะ"
+  avatar: Thames-Avatar-1
+
+- msg: "เอาใหญ่แล้วนะ!"
+  avatar: me
+
+- msg: "เอาจริงๆ ฉันคิดไม่ออกเลยอะ ตามใจคุณลยแล้วกัน"
+  avatar: me
+
+- msg: "ผมถามคุณแล้วนะ"
+  avatar: Thames-Avatar-1
+
+- msg: "คุณว่าผมไม่ถามคุณไม่ได้แล้วนะครับ"
+  avatar: Thames-Avatar-1
+
+- msg: "จ้าา"
+  avatar: me
+
+- msg: "ผมอยากไปVIPตึกเพชร"
+  avatar: Thames-Avatar-1
+
+- msg: "VIPตึกเพชร? คืออะไรหรอ"
+  avatar: me
+
+- msg: "(ฉันพอจะรู้จักตึกเพชรนะ เป็นตึกที่จะต้องจ่ายค่าบริการรายปีหลักล้าน)"
+  avatar: me
+
+- msg: "(แต่จะได้การบริการทุกอย่างที่ต้องการ)"
+  avatar: me
+
+- msg: "(ทั้งนวด สปา ออนเซน ทำผม อาหาร เยอะมากๆเลยแหละ)"
+  avatar: me
+
+- msg: "(ถึงเมื่อก่อนถึงฉันจะรวยมาก แต่ก็ไม่กล้าจ่ายค่าสมาชิกอยู่ดี)"
+  avatar: me
+
+- msg: "(ฉันเอาไปซื้อกระเป๋าอาแมสได้หลายใบเลยTT)"
+  avatar: me
+
+- msg: "เธอรู้จักตึกเพชรไหมล่ะ"
+  avatar: Thames-Avatar-1
+
+- msg: "ก็เคยได้ยินมาบ้างแหละ"
+  avatar: me
+
+- msg: "ฉันก็เป็นVIPของตึกนั้นไง"
+  avatar: Thames-Avatar-1
+
+- msg: "แล้วต่างกับปกติยังไงล่ะ"
+  avatar: me
+
+- msg: "ไว้ฉันพาเธอไป เธอก็รู้เองแหละ"
+  avatar: Thames-Avatar-1
+
+- msg: "เธอจะต้องชอบในความพิเศษแน่ๆ"
+  avatar: Thames-Avatar-1
+
+- msg: "ฉันไม่เคยพาใครไปเลยนะ"
+  avatar: Thames-Avatar-1
+
+- choice:
+  - msg: "แล้วทำไมไม่พาไปล่ะ"
+    goto: ChatCh16-A3-1
+  - msg: "ชักจะอยากไปซะแล้ว"
+    goto: ChatCh16-A3-2
+  - msg: "จันจิก็ไม่เคยไปหรอ"
+    goto: ChatCh16-A3-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh16-A3-Sk
+  state: ChatState16-V3
+  avatar: me
+
+- label: ChatCh16-A3-1
+  msg: "ก็อยากหาคนพาไปนะ"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่รู้จะพาใครที่พิเศษขนาดนั้นไปน่ะสิ"
+  avatar: Thames-Avatar-1
+
+- msg: "แต่เลือกพาฉันไปเนี่ยนะ?"
+  avatar: me
+
+- msg: "เธอคนแรกและคนเดียวเลยแหละ"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh16-A3-Sk
+
+- label: ChatCh16-A3-2
+  msg: "เธอจะได้ไปคนแรก"
+  avatar: Thames-Avatar-1
+
+- msg: "และคนเดียวที่ฉันจะพาไปเลยแหละ"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh16-A3-Sk
+
+- label: ChatCh16-A3-3
+  msg: "ไม่เคยสิ"
+  avatar: Thames-Avatar-1
+
+- msg: "ทำไมจันจิจะต้องเคยไปด้วย"
+  avatar: Thames-Avatar-1
+
+- msg: "ฉันเห็นนายสนิทกับจันจิก็เลยถามดูน่ะ"
+  avatar: me
+
+- msg: "ก็ไม่ใช่แค่คนสนิทที่จะพาไปน่ะสิ"
+  avatar: Thames-Avatar-1
+
+- msg: "ฉันอยากเก็บสิทธิ์VIPให้กับคนสำคัญจริงๆ"
+  avatar: Thames-Avatar-1
+
+- msg: "ซึ่งคนนั้นก็คือเธอ"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh16-A3-Sk
+
+- label: ChatCh16-A3-Sk
+  msg: "(งือ นี่เธมส์ต้องพูดขนาดนี้เลยหรอ)"
+  avatar: me
+
+- msg: "(VIPอะไรนี่คงสำคัญจริงๆแหละ)"
+  avatar: me
+  
+- msg: "(หรือเขาแค่พูดให้ฉันตายใจ)"
+  avatar: me
+  
+- msg: "(ถ้าเขาพาใครไปฉันก็ไม่มีทางรู้อยู่แล้วใช่ไหมล่ะ)"
+  avatar: me
+  
+- msg: "แล้วถ้าฉันไม่ได้ไปกับคุณอีก จะไม่เกิดอะไรขึ้นใช่มั้ย"
+  avatar: me
+  
+- msg: "คือยังไง"
+  avatar: Thames-Avatar-1
+  
+- msg: "ก็มันฟังดูสำคัญสำหรับคุณมาก"
+  avatar: me
+  
+- msg: "แต่ฉันคิดว่าถ้าฉันไม่ได้ไปอีก จะไม่กดดันฉันใช่มั้ย"
+  avatar: me
+
+- msg: "หมายถึงถ้าคุณไม่โอเคกับผมใช่มั้ย"
+  avatar: Thames-Avatar-1
+
+- msg: "ก็ไม่เป็นไรครับ"
+  avatar: Thames-Avatar-1
+
+- msg: "ถือว่าผมได้แสดงความบริสุทธิ์ใจกับคุณแล้วกัน"
+  avatar: Thames-Avatar-1
+
+- msg: "แต่ถ้าคุณยังไม่เชื่อผม"
+  avatar: Thames-Avatar-1
+
+- msg: "พรุ่งนี้คุณจะได้รู้นะ"
+  avatar: Thames-Avatar-1
+ 
+- msg: "ขอบคุณนะที่เข้าใจฉัน"
+  avatar: me
+
+- msg: "ผมอยากเข้าใจคุณมากกว่านี้ด้วยซ้ำ"
+  avatar: Thames-Avatar-1
+
+- msg: "พรุุ่งนี้ผมไปรับคุณเย็นๆนะ"
+  avatar: Thames-Avatar-1
+
+- msg: "เราตื่นเช้ากันมาทั้งอาทิตย์แล้ว"
+  avatar: Thames-Avatar-1
+
+- msg: "จะได้พักผ่อนบ้าง"
+  avatar: Thames-Avatar-1
+   
+- msg: "โอเคคุณ"
+  avatar: me
+   
+- msg: "คุณก็ไปพักผ่อนเถอะ"
+  avatar: me
+   
+- msg: "ไว้พรุ่งนี้เจอกัน"
+  avatar: me
+
+- msg: "ครับ"
+  avatar: Thames-Avatar-1
+
+- msg: "ฝันดีนะ"
+  avatar: Thames-Avatar-1
+
+- sys: "เธมส์ ออฟไลน์"
+  delay: 1

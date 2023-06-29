@@ -1,0 +1,314 @@
+﻿#BeU-Intro
+
+######################################
+- background: bg_101
+- music: main-01
+- delay: 1
+
+- msg: "กริ๊ง กริ๊ง"
+  character: me
+
+- msg: "สวัสดีค่าา ร้านพาริเย่ ยินดีต้อ..."
+  character: me
+  
+- msg: "(กรี๊ดด นั่นเพื่อนเก่าสมัยไฮสคูลของฉันนี่)"
+  character: me
+
+- msg: "(ตายๆๆๆ ตายแน่ๆ ฉันจะให้ยัยไฮโซนั่นเห็นฉันสภาพนี้ไม่ได้!)"
+  character: me
+
+- character: Minnie-Before
+  position: center
+  act: Idle
+
+- choice:
+  - msg: "(วิ่งหลบไปที่หลังร้าน)"
+    goto: ChoiceChIntro-A1-1
+  - msg: "(ขอก้มหน้าไม่สบตาแล้วกัน)"
+    goto: ChoiceChIntro-A1-2
+  - msg: "(หยิบมาส์กมาใส่)"
+    goto: ChoiceChIntro-A1-3
+  skip:
+    goto: ChoiceChIntro-A1-Sk
+  state: ChoiceStateIntro-V1
+  character: me
+
+- label: ChoiceChIntro-A1-1
+  msg: "เอ๊ะ พนักงานทำไมถึงไม่มาเฝ้าร้านนะ"
+  character: Minnie-Before
+  
+- msg: "แบบนี้ฉันจะComplainหน่อยแล้ว"
+  character: Minnie-Before
+
+- msg: "(ฮืออ ฉันพึ่งมาทำงานอย่าทำแบบนัั้นกับฉันนะ)"
+  character: me
+  
+- msg: "(อ้ะ จันจิกลับมาแล้วนี่)"
+  character: me
+
+- msg: "อ้าววว จันจิมาพอดีเลย"
+  character: Minnie-Before
+
+- character: empty
+  position: center
+
+- character: Minnie
+  position: center
+  act: Smile
+
+- character: Junji
+  position: left
+  act: Smile
+
+- msg: "สวัสดีจ้ะมินนี่"
+  character: Junji
+
+- msg: "ดีใจจังวันนี้ฉันเข้าร้านมาเจอเธอพอดีเลย"
+  character: Junji
+
+- character: Minnie
+  position: center
+  act: Mad
+
+- msg: "ฉันก็ดีใจจ้ะ"
+  character: Minnie
+
+- msg: "กำลังนึกถึงเธออยู่พอดีเลย"
+  character: Minnie
+
+- msg: "พนักงานเธอหายไปไหนก็ไม่รู้ ไม่มาต้อนรับลูกค้าเลย"
+  character: Minnie
+
+- msg: "(แย่แล้ววว ฉันต้องออกไปเดียวนี้สินะ ฉันยังไม่อยากตกงานน้าา TT )"
+  character: me
+
+- msg: "มาแล้วค่าา"
+  character: me
+
+- msg: "(ฉันออกมาพร้อมก้มหน้าไม่สบตา)"
+  character: me
+
+- msg: "พอดีฉันไปเข้าห้องน้ำมาน่ะค่ะ ขอโทษด้วยนะคะ"
+  character: me
+
+- msg: "ไม่เป็นไรหรอกจ้ะ เธอคงไปไม่นาน"
+  character: Junji
+
+- msg: "ฉันขออเมริกาโน่ไม่ใส่น้ำตาลแก้วเล็กแล้วกันนะ"
+  character: Minnie
+
+- goto: ChoiceChIntro-A1-Sk
+
+- label: ChoiceChIntro-A1-2
+  msg: "สวัสดีจ้ะ ฉันเอาอเมริกาโน่ไม่ใส่น้ำตาลแก้วเล็กแล้วกัน"
+  character: Minnie
+
+- msg: "ดะ..ได้ค่ะ "
+  character: me
+  
+- msg: "เอ... เธอเป็นอะไรรึเปล่าทำไมแปลกๆ"
+  character: Minnie
+
+- msg: "พอดีว่าเหมือนคอฉันจะเคล็ดน่ะค่ะ"
+  character: me
+
+- msg: "อ้าววว จันจิมาพอดีเลย"
+  character: Minnie
+
+- character: empty
+  position: center
+
+- character: Minnie
+  position: center
+  act: Smile
+
+- character: Junji
+  position: left
+  act: Smile
+
+- msg: "สวัสดีจ้ะมินนี่"
+  character: Junji
+
+- msg: "ดีใจจังวันนี้ฉันเข้าร้านมาเจอเธอพอดีเลย"
+  character: Junji
+
+- msg: "ฉันก็ดีใจจ้ะ"
+  character: Minnie
+
+- msg: "พนักงานของเธอบอกว่าปวดต้นคอ เธอใช้งานหนักไปหรือเปล่าเนี่ย"
+  character: Minnie
+
+- msg: "จริงหรออ {me} เธอไม่เห็นบอกฉันเลย"
+  character: Junji
+
+- msg: "จริงๆฉันไม่ได้เป็นอะไรมากหรอกค่ะ"
+  character: me
+
+- msg: "งั้นก็ดีแล้วล่ะจ้ะ"
+  character: Junji
+
+- goto: ChoiceChIntro-A1-Sk 
+
+- label: ChoiceChIntro-A1-3
+  msg: "เอ่ออ..ฉันเอาอเมริกาโน่ไม่ใส่น้ำตาลแก้วเล็กแล้วกัน"
+  character: Minnie
+
+- msg: "ดะ..ได้ค่ะ "
+  character: me
+  
+- msg: "เธอดูไม่คุ้นนะ พึ่งมาทำงานหรอจ้ะ"
+  character: Minnie
+
+- msg: "ใช่ค่ะ ฉันพึ่งมาทำงานได้ไม่นาน"
+  character: me
+
+- msg: "อ้าววว จันจิมาพอดีเลย"
+  character: Minnie
+
+- character: empty
+  position: center
+
+- character: Minnie
+  position: center
+  act: Smile
+
+- character: Junji
+  position: left
+  act: Smile
+
+- msg: "เสวัสดีจ้ะมินนี่"
+  character: Junji
+
+- msg: "ดีใจจังวันนี้ฉันเข้าร้านมาเจอเธอพอดีเลย"
+  character: Junji
+
+- msg: "ฉันก็ดีใจจ้ะ"
+  character: Minnie
+
+- msg: "นี่พนักงานใหม่หรอจันจิ ทำไมฉันพึ่งเคยเห็น"
+  character: Minnie
+
+- goto: ChoiceChIntro-A1-Sk
+
+- label: ChoiceChIntro-A1-Sk
+  msg: "พอดีฉันพึ่งรับ {me} เข้ามาทำงานน่ะ"
+  character: Junji
+
+- msg: "{me} ช่วยฉันได้เยอะมากๆเลยนะ"
+  character: Junji
+
+- msg: "พอดีช่วงนี้ธุรกิจส่งออกของฉันพึ่งเปิดตลาดน่ะ เลยต้องหาคนมาช่วยเพิ่ม"
+  character: Junji
+
+- msg: "ยินดีที่ได้รู้จักนะ ฉันชื่อมินนี่ เป็นเพื่อนกับจันจิเจ้านายเธอ"
+  character: Minnie
+
+- msg: "ฉันคิดว่าเราน่าจะได้เจอกันบ่อย เพราะฉันน่ะเป็นลูกค้าVIPร้านนี้เลยนะ"
+  character: Minnie
+
+- msg: "(ยัยนี่ขิงตัวเองอีกแล้ว ถ้ารู้ว่าฉันเป็นใครจะไม่ยิ่งข่มกันเลยรึยังไง ชิ)"
+  character: me
+
+- msg: "ยินดีที่ได้รู้จักค่ะคุณมินนี่"
+  character: me
+
+- msg: "(ฉันตอบรับพลางกับก้มหน้าทำกาแฟ)"
+  character: me
+
+- msg: "ว่าแต่ธุรกิจของเธอเปิดแล้วหรอ เธอพึ่งเล่าแพลนให้ฉันฟังเมื่อไม่กี่เดือนก่อนเองนะ"
+  character: Minnie
+
+- msg: "จันจิเธอจะเก่งเกินไปแล้ว"
+  character: Minnie
+
+- msg: "เธอก็รู้ฉันไม่ชอบอยู่เฉยๆ ไหนจะเงินที่ฉันชอบใช้เกินตัวอีก ฮ่า ฮ่าๆ"
+  character: Junji
+
+- msg: "อีกอย่างคาเฟ่ตอนนี้ก็เริ่มลงตัวแล้ว มันก็เลยไม่ได้ลำบากอะไรน่ะ"
+  character: Junji
+
+- msg: "ขอโทษนะคะ อเมริกาโน่ไม่ใส่น้ำตาลได้แล้วค่ะ"
+  character: me
+
+- msg: "ขอบใจจ้ะ"
+  character: Minnie
+
+- character: Minnie
+  position: center
+  act: Curious
+
+- msg: "อ้ะ.. หน้าตาเธอดูคุ้นๆจัง เราเคยเจอกันที่ไหนรึเปล่านะ"
+  character: Minnie
+
+- choice:
+  - msg: "ไม่หรอกค่ะ ฉันพึ่งย้ายมาอยู่แถวนี้"
+    goto: ChoiceChIntro-A2-1
+  - msg: "เอ่อ..."
+    goto: ChoiceChIntro-A2-2
+  - msg: "อาจจะเคยเดินสวนกันน่ะค่ะ"
+    goto: ChoiceChIntro-A2-3
+  skip:
+    goto: ChoiceChIntro-A2-Sk
+  state: ChoiceStateIntro-V2
+  character: me
+
+- label: ChoiceChIntro-A2-1
+  msg: "อย่างนั้นหรอ งั้นฉันคงจำผิดไปเอง"
+  character: Minnie
+
+- character: Minnie
+  position: center
+  act: Smile
+
+- msg: "ขอโทษด้วยนะ {me} "
+  character: Minnie
+
+- goto: ChoiceChIntro-A2-Sk
+
+- label: ChoiceChIntro-A2-2
+  msg: "แต่ไม่หรอก ฉันอ๊องๆน่ะ ลำพังจำหน้าเพื่อนยังไม่ค่อยจะได้เลย"
+  character: Minnie
+
+- character: Minnie
+  position: center
+  act: Smile
+
+- goto: ChoiceChIntro-A2-Sk
+
+- label: ChoiceChIntro-A2-3
+  msg: "เป็นไปได้นะ ช่วงนี้ฉันชอบออกไปเดินเล่นบ่อยๆ "
+  character: Minnie
+
+- character: Minnie
+  position: center
+  act: Smile
+  
+- goto: ChoiceChIntro-A2-Sk
+
+- label: ChoiceChIntro-A2-Sk
+  msg: "(Yes!! ยัยไฮโซนี่จำฉันไม่ได้)"
+  character: me
+
+- msg: "(ฉันรอดแล้วว เก่งจริงๆเลย {me} คิดว่าจะต้องหลบหน้าไปตลอดซะแล้ว เฮ้ออ)"
+  character: me
+
+- msg: "เดี๋ยวฉันจะต้องไปแล้วน้ามินนี่ {me} พอดีมีประชุมต่อน่ะ"
+  character: Junji
+
+- msg: "จริงๆฉันตั้งใจจะเข้ามาดูความเรียบร้อยเฉยๆ ขอโทษด้วยนะที่ฉันอยู่คุยต่อไม่ได้ "
+  character: Junji
+
+- msg: "ไม่เป็นไรเลย ฉันก็ต้องไปเหมือนกัน ฝากปากัวร์ไว้ที่ร้านตัดขนน่ะ"
+  character: Minnie
+
+- msg: "ป่านนี้น่าจะหอมฉุยรอฉันไปฟัดแล้ว"
+  character: Minnie
+
+- msg: "(อะไรนะ? ตะกั่ว? นั่นชื่อตัวอะไรน่ะ รสนิยมก็ดีนะแต่ทำไมชื่อเจ้าตัวนั้นดูน่าสงสารจัง)"
+  character: me
+
+- msg: "ฮะๆ ดีแล้วล่ะจ้ะ งั้นฉันไปก่อนนะ ไว้เจอกันนะมินนี่ ฝากร้านด้วยนะ {me} "
+  character: Junji
+
+- msg: "Bye Bye~ See ya Junji"
+  character: Minnie

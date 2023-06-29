@@ -1,0 +1,353 @@
+﻿#BeU-2
+
+######################################
+- background: bg_101
+- music: main-02
+- delay: 1
+
+- character: Junji
+  position: center
+  act: Smile
+
+- msg: "สวัสดีจ้ะ {me} ขยันจังมาร้านแต่เช้าเลยนะ"
+  character: Junji
+
+- choice:
+  - msg: "(ยกมือไหว้)สวัสดีค่ะจันจิ ฉันพึ่งมาทำงานไฟต้องแรงหน่อยสิ ^^"
+    goto: ChoiceCh2-A1-1
+  - msg: "ค่า คุณจันจิ ฉันอยากมาเตรียมตัวก่อนน่ะ ยังไม่ค่อยชินพื้นที่เลย"
+    goto: ChoiceCh2-A1-2
+  - msg: "สวัสดีค่ะจันจิ ฉันกลัวทำอะไรเบ๊อะบ๊ะน่ะ รีบมาเตรียมตัวก่อนดีกว่า"
+    goto: ChoiceCh2-A1-3
+  skip:
+    goto: ChoiceCh2-A1-Sk
+  state: ChoiceState2-V1
+  character: me
+
+- label: ChoiceCh2-A1-1
+  msg: "บอกแล้วไง เรารุ่นๆเดียวกันไม่ต้องสุภาพมากก็ได้จ้ะ ^^ "
+  character: Junji
+
+- msg: "ฮะๆ ฉันไม่ค่อยชินน่ะ เธอเป็นเจ้านายนี่หน่า"
+  character: me
+
+- msg: "โถ่ ฉันก็ไม่ได้ดุกับเธอขนาดนั้นไหม {me} ฉันไม่ค่อยมีเพื่อนกับเขาหรอก "
+  character: Junji
+
+- msg: "คุยกับฉันเหมือนเพื่อนคนนึงเถอะจ้ะ"
+  character: Junji
+
+- goto: ChoiceCh2-A1-Sk
+
+- label: ChoiceCh2-A1-2
+  msg: "ฮ่าๆ เธอเป็นทางการกับฉันไปหรือเปล่า {me} "
+  character: Junji
+
+- msg: "หรือว่าฉันทำให้เธอรู้สึกเกร็งมากเลยหรอ"
+  character: Junji
+
+- msg: "เปล่าหรอกค่ะ ฉันรู้สึกว่าเธอเป็นเจ้านายฉันน่าจะเคารพเธอหน่อยน่ะ"
+  character: me
+
+- msg: "นี่ {me} ฉันอยากให้เธอรู้สึกว่าเราเป็นเพื่อนกันน้าา ฉันไม่ค่อยมีเพื่อนน่ะ"
+  character: Junji
+
+- goto: ChoiceCh2-A1-Sk
+
+- label: ChoiceCh2-A1-3
+  msg: "ฮ่าๆๆ ฉันได้ยินเธอพูดแบบนี้ฉันก็สบายใจ ฉันดีใจที่เธอเป็นกันเองกับฉันนะ"
+  character: Junji
+
+- msg: "ฉันไม่ค่อยมีเพื่อน มีเธอเหมือนฉันได้มีเพื่อนเพิ่มอีกคนเลย^^"
+  character: Junji
+
+- goto: ChoiceCh2-A1-Sk
+
+- label: ChoiceCh2-A1-Sk
+  msg: "เอ๋? เธอไม่ค่อยมีเพื่อนหรอ"
+  character: me
+
+- msg: "น่าแปลกจังเธอทั้งเก่ง น่ารัก แล้วก็ใจดี ใครๆก็น่าจะอยากเข้าหาเธอ"
+  character: me
+
+- msg: "(นั่นสิ ฉันอยู่ที่นี่มาอาทิตย์นึงพึ่งเคยเห็นมินนี่นี่แหละที่เป็นเพื่อนแวะมาหา)"
+  character: me
+
+- msg: "ใช่แล้วล่ะ ฉันต้องทำงานช่วยที่บ้านตั้งแต่เด็ก เรียนเสร็จก็ต้องรีบกลับไปช่วยป๊าม๊า"
+  character: Junji
+
+- msg: "กิจกรรมอะไรฉันก็แทบเคยเข้าเลย ทำให้ฉันเข้าสังคมไม่เก่งสุดๆเลยฮ่าๆ"
+  character: Junji
+
+- choice:
+  - msg: "เธอเก่งจังเลย ฉันก็อยากเป็นให้ได้แบบเธอนะ"
+    goto: ChoiceCh2-A2-1
+  - msg: "แบบนี้เหนื่อยแย่เลย.."
+    goto: ChoiceCh2-A2-1
+  - msg: "โห ทำไมถึงต้องทำขนาดนั้นล่ะ แบบนี้ไม่ยุติธรรมกับเธอเลย"
+    goto: ChoiceCh2-A2-Sk
+  skip:
+    goto: ChoiceCh2-A2-Sk
+  state: ChoiceState2-V2
+  character: me
+
+- label: ChoiceCh2-A2-1
+  msg: "ว่าแต่ที่บ้านเธองานเยอะมากเลยหรอ "
+  character: me
+
+- goto: ChoiceCh2-A2-Sk
+
+- label: ChoiceCh2-A2-Sk
+  msg: "ที่บ้านฉันตอนแรกเริ่มทำเกี่ยวกับโรงงานตุ๊กตาน่ะจ้ะ คนงานไม่พอบ้าง"
+  character: Junji
+
+- msg: "บริหารคนไม่ทั่วถึงบ้าง ฉันเลยต้องเข้าไปช่วยดู แต่สุดท้ายก็ไม่เวิร์คหรอก"
+  character: Junji
+
+- msg: "พอมีประสบการณ์แล้วฉันก็ลองออกมาทำอะไรของฉันดู มันก็เหมือนจะไปได้ดีนะ"
+  character: Junji
+
+- msg: "เธอหมายถึงร้านนี้หรือเปล่า"
+  character: me
+
+- msg: "ใช่แล้วล่ะ ฉันตั้งใจทำมันมากๆเลยนะ แต่ตอนนี้ฉันมีโปรเจคใหม่น่ะฉันถึงรับสมัครหาคนมาช่วย"
+  character: Junji
+
+- msg: "แล้วก็ได้เธอมาอยู่ด้วยนี่ไง^^"
+  character: Junji
+
+- choice:
+  - msg: "ใช่ธุรกิจส่งออกที่คุยกับเพื่อนเธอวันก่อนหรือเปล่า"
+    goto: ChoiceCh2-A3-1
+  - msg: "ดีใจนะที่ได้มาช่วยเธออีกแรง^^"
+    goto: ChoiceCh2-A3-2
+  - msg: "โปรเจคอะไรหรอจ้ะ พอจะบอกฉันได้ไหม"
+    goto: ChoiceCh2-A3-3
+  skip:
+    goto: ChoiceCh2-A3-Sk
+  state: ChoiceState2-V3
+  character: me
+
+- label: ChoiceCh2-A3-1
+  msg: "อ๋ออ กับมินนี่น่ะหรอ ใช่แล้วล่ะ ฉันลองส่งออกผลไม้อบแห้งดู"
+  character: Junji
+
+- msg: "แต่ก็มีDealกับเพื่อนที่เปิดบริษัทเกี่ยวกับShippingด้วย "
+  character: Junji
+
+- msg: "ฉันมือใหม่ก็เลยต้องพึ่งหลายคนอยู่เหมือนกัน^^"
+  character: Junji
+
+- goto: ChoiceCh2-A3-Sk
+
+- label: ChoiceCh2-A3-2
+  msg: "ว่าแต่ดูน่าสนใจจัง เกี่ยวกับอะไรหรอจ้ะ "
+  character: me
+
+- msg: "เกี่ยวกับการส่งออกผลไม้อบแห้งน่ะจ้ะ "
+  character: Junji
+
+- msg: "แต่ก็มีDealกับเพื่อนที่เปิดบริษัทเกี่ยวกับShippingด้วย "
+  character: Junji
+
+- msg: "ฉันมือใหม่ก็เลยต้องพึ่งหลายคนอยู่เหมือนกัน^^"
+  character: Junji
+
+- goto: ChoiceCh2-A3-Sk
+
+- label: ChoiceCh2-A3-3
+  msg: "ได้สิ! ฉันทำเกี่ยวกับการส่งออกผลไม้อบแห้งน่ะจ้ะ "
+  character: Junji
+
+- msg: "แต่ก็มีDealกับเพื่อนที่เปิดบริษัทเกี่ยวกับShippingด้วย "
+  character: Junji
+
+- msg: "ฉันมือใหม่ก็เลยต้องพึ่งหลายคนอยู่เหมือนกัน^^ "
+  character: Junji
+
+- goto: ChoiceCh2-A3-Sk
+
+- label: ChoiceCh2-A3-Sk
+  msg: "ฉันเล่าเรื่องของฉันให้เธอฟังเยอะแล้ว เธอเล่าให้ฉันฟังบ้างสิ^^"
+  character: Junji
+
+- choice:
+  - msg: "เอ่ออ.. "
+    goto: ChoiceCh2-A4-1
+  - msg: "เธออยากฟังเรื่องอะไรล่ะ"
+    goto: ChoiceCh2-A4-2
+  - msg: "ได้สิเราเป็นเพื่อนกันนี่"
+    goto: ChoiceCh2-A4-3
+  skip:
+    goto: ChoiceCh2-A4-Sk
+  state: ChoiceState2-V4
+  character: me
+
+- label: ChoiceCh2-A4-1
+  msg: "นี่เล่าหน่อยหน่า เราเป็นเพื่อนกันแล้วนะ ทำไมเธอถึงมาสมัครร้านคาเฟ่ฉันล่ะ"
+  character: Junji
+
+- msg: "(จันจิเข้ามาจับมือฉันแล้วทำเสียงเล็กเสียงน้อย พูดขนาดนี้ฉันเล่าก็ได้มั้ง)"  #ประโยคแปลก ๆ
+  character: me
+
+- goto: ChoiceCh2-A4-Sk
+
+- label: ChoiceCh2-A4-2
+  msg: "เริ่มจากทำไมเธอถึงมาสมัครทำงานร้านคาเฟ่ฉันแล้วกันจ้ะ"
+  character: Junji
+
+- goto: ChoiceCh2-A4-Sk
+
+- label: ChoiceCh2-A4-3
+  msg: "เย้^^ ฉันอยากรู้ว่าทำไมเธอถึงมาสมัครร้านคาเฟ่ของฉันน่ะ"
+  character: Junji
+
+- goto: ChoiceCh2-A4-Sk
+
+- label: ChoiceCh2-A4-Sk
+  msg: "ไหนๆเราก็เป็นเพื่อนกันแล้ว ฉันจะเล่าแบบตรงไปตรงมาแล้วกันนะ"
+  character: me
+
+- msg: "(จันจิทำหน้าตาตั้งใจฟังมากๆ)"
+  character: me
+  
+- msg: "ตั้งแต่มีโรคเข้ามาระบาดในประเทศเรา ธุรกิจบ่อนของแม่ฉันก็พังไม่เป็นท่า "
+  character: me
+
+- msg: "ฉันที่ไม่เคยต้องทำอะไรเลยตั้งแต่เกิดก็รู้สึกแย่มากๆที่ฐานะจะไม่เหมือนเดิมแล้ว"
+  character: me
+  
+- msg: "ไหนจะหนี้ที่บ้านและที่ฉันสร้างต่างๆ แต่คิดฉันก็เศร้าแล้ว "
+  character: me
+
+- msg: "ฟังดูแย่จัง เธอเลยต้องออกมาหางานทำหรอ?"
+  character: Junji
+
+- character: Junji
+  position: center
+  act: Sad
+  
+- msg: "ใช่แล้ว ฉันอยู่บ้านต่อไปก็ไม่มีอะไรดีขึ้น แม่ก็กดดันจนฉันต้องประชดชีวิตออกมาอยู่คนเดียวซะเลย "
+  character: me
+
+- msg: "ฉันถึงได้ทำผิดทำถูกซุ่มซ่ามบ่อยๆน่ะ ฉันขอโทษทีน้าTT"
+  character: me
+  
+- msg: "(ฉันรู้สึกผิดกับจันจิจริงๆนะ เพราะฉันทำแก้วแตกไม่รู้กี่ใบแล้วแง)"
+  character: me
+
+- character: Junji
+  position: center
+  act: Smile
+  
+- msg: "ฮ่าๆๆ ฉันว่าแล้วเชียว ฉันพอจะเดาออกอยู่นะว่าเธอดูไม่เคยทำอะไรเลยจริงๆ"
+  character: Junji
+  
+- msg: "ขนาดแค่ตวงวัตถุดิบเธอยังถามซ้ำไปซ้ำมาตวงผิดตวงถูกอยู่เรื่อย"
+  character: Junji
+  
+- msg: "ฮืออ แล้วทำไมเธอถึงยังรับฉันทำงานล่ะ"
+  character: me
+
+- msg: "ถึงเธอจะมึนๆหน่อย แต่ฉันเห็นความตั้งใจของเธอน่ะ"
+  character: Junji
+  
+- msg: "เธอทำอะไรผิด เธอก็จะจดๆๆในสมุดเล็กๆของเธอเตือนเอาไว้ตลอดเลย^^"
+  character: Junji
+ 
+- msg: "เธอแอบมองหรอ?? ฉันเขินนะ"
+  character: me
+
+- msg: "ฮ่าๆๆ เปล่าซะหน่อย"
+  character: Junji
+  
+- msg: "ให้ฉันเดา เธอก็ต้องคุณหนูพอสมควรแหละถูกมั้ย เปิดบ่อนไม่ใช่จะทำกันได้ง่ายๆ"
+  character: Junji
+  
+- msg: "นอกจากเงินที่ต้องหนามากๆเส้นสายก็ต้องมี"
+  character: Junji
+  
+- msg: "จะว่าแบบนั้นก็ได้ ฉันอยากได้อะไรฉันก็ได้ ตอนเรียนก็เรียนแต่โรงเรียนดีๆสังคมไฮโซทั้งนั้น"
+  character: me
+
+- msg: "เธอไม่ได้อายใช่ไหมที่เป็นพนักงานคาเฟ่เล็กๆ?"
+  character: Junji
+
+- choice:
+  - msg: "เอาตรงๆก็มีบ้างแหละ "
+    goto: ChoiceCh2-A5-1
+  - msg: "ไม่อายหรอกจ้ะ"
+    goto: ChoiceCh2-A5-2
+  - msg: "อายนะ ไม่อยากเจอคนรู้จักเลย TT"
+    goto: ChoiceCh2-A5-Sk
+  skip:
+    goto: ChoiceCh2-A5-Sk
+  state: ChoiceState2-V5
+  character: me
+
+- label: ChoiceCh2-A5-1
+  msg: "แต่กับเฉพาะคนรู้จักมั้ง.."
+  character: me
+
+- goto: ChoiceCh2-A5-Sk
+
+- label: ChoiceCh2-A5-2
+  msg: "แต่กับคนรู้จักก็ไม่แน่"
+  character: me
+
+- goto: ChoiceCh2-A5-Sk
+
+- label: ChoiceCh2-A5-Sk
+  msg: "แล้วได้เจอบ้างหรือยังล่ะ??"
+  character: Junji
+
+- msg: "เอ่ออ.."
+  character: me
+
+- msg: "เจอแล้วล่ะสิ"
+  character: Junji
+
+- msg: "..."
+  character: me
+
+- msg: "(จันจิยื่นมือมาจับฉันมือฉัน)"
+  character: me
+
+- msg: "มั่นใจในตัวเองหน่อยสิ ลดอีโก้ของเธอลงบ้าง แล้วเธอจะรู้เลยว่ามันไม่น่าอายเลยนะ"
+  character: Junji
+
+- msg: "เงินเดือนมันอาจจะไม่ได้เยอะเหมือนที่เธอเคยได้ แต่ถ้ามีโอกาสอะไรเข้ามา"
+  character: Junji
+
+- msg: "ให้เธอรู้ไว้นะว่าฉันสนับสนุน ยิ่งคนที่มีความตั้งใจฉันช่วยเต็มที่จ้ะ"
+  character: Junji
+
+- msg: "ขอบคุณมากนะจันจิ เธอเป็นคนเดียวในตอนนี้ที่ฉันรู้สึกไว้ใจเลย "
+  character: me
+
+- msg: "ยินดีจ้ะ ^^"
+  character: Junji
+
+- msg: "ฉันไม่กวนงานเธอแล้วนะ เดี๋ยวฉันจะไปรอประชุมห้องด้านใน"
+  character: Junji
+
+- msg: "ถ้ามีคนชื่อเธมส์มาหาฉันบอกว่าเข้ามาในห้องได้เลยนะจ๊ะ"
+  character: Junji
+
+- msg: "ได้เลยย จันจิ"
+  character: me
+
+- msg: "จะเอาน้ำอะไรไหมฉันทำไปให้"
+  character: me
+
+- msg: "ฉันเอาเหมือนเดิมจ้ะ ช็อคโกแลตร้อนนะ"
+  character: Junji
+
+- msg: "จ้า เดี๋ยวฉันเอาไปให้นะ"
+  character: me
+
+
+
+
+
+

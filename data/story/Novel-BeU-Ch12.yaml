@@ -1,0 +1,166 @@
+﻿#BeU-9
+
+######################################
+- background: InCar
+- music: main-01
+- delay: 1
+
+- character: Thames
+  position: center
+  act: Idle-Half
+
+- msg: "ถึงบ้านแล้วนะคุณ"
+  character: me
+
+- msg: "(ฉันปลุกเธมส์ที่หลับตั้งแต่ขึ้นรถ ปล่อยฉันขับเหงาๆคนเดียวตลอด ชิ)"
+  character: me
+
+- msg: "เข้าบ้านไปก่อนสิ ขับมาเหนื่อยๆจะไปเลยหรือไง"
+  character: Thames
+
+- choice:
+  - msg: "ให้ฉันเข้าไปทำอะไรหรอ"
+    goto: ChoiceCh12-A1-1
+  - msg: "ฉันกลับเลยดีกว่า"
+    goto: ChoiceCh12-A1-2
+  - msg: "ไม่เป็นไร คุณจะได้พักผ่อน"
+    goto: ChoiceCh12-A1-Sk
+  skip:
+    goto: ChoiceCh12-A1-Sk
+  state: ChoiceState12-V1
+  character: me
+
+- label: ChoiceCh12-A1-1
+  msg: "วันนี้วันพักผ่อนคุณนะ ไม่มีงานแล้วล่ะ"
+  character: me
+
+- goto: ChoiceCh12-A1-Sk
+
+- label: ChoiceCh12-A1-2
+  msg: "ฉันไม่เหนื่อยเท่าไร คุณพักผ่อนเถอะ"
+  character: me
+
+- goto: ChoiceCh12-A1-Sk
+
+- label: ChoiceCh12-A1-Sk
+  msg: "ฉันอยากกินกาแฟฝีมือเธอ เข้าไปชงให้หน่อยสิ"
+  character: Thames
+
+- msg: "ก็ได้ๆ แม่บ้านคุณก็ชงไม่เหมือนฉันใช่ไหมล่ะ)"
+  character: me
+
+- background: InHome
+
+- msg: "..."
+  character: Thames
+
+- character: Thames
+  position: center
+  act: Smile-Half
+
+- msg: "กาแฟได้แล้วคุณ หมดธุระแล้วฉันกลับเลยนะ"
+  character: me
+
+- msg: "เดี๋ยวสิ"
+  character: Thames
+
+- character: empty
+  position: center
+
+- cg: hand2 
+- delay: 1
+
+- msg: "(เธมส์พูดจบก็จับมือฉันลากเข้าไปชิดกับอกเขา)"
+  character: me
+
+- msg: "มะ มีอะไรคุณ"
+  character: me
+
+- msg: "(นี่มันใกล้ไปหรือเปล่านะ)"
+  character: me
+
+- msg: "(ใจฉันเต้นผิดจังหวะไปหมดแล้ว)"
+  character: me
+
+- msg: "ยังไม่อยากให้กลับเลย"
+  character: Thames
+
+- msg: "นี่คุณไม่สบายหรือเปล่า"
+  character: me
+
+- msg: "ผมอยากคุยกับคุณ"
+  character: Thames
+
+- msg: "คะ คุยอะไร"
+  character: me
+
+- msg: "คุยก็ได้ แต่ไปนั่งที่โซฟาดีๆสิ"
+  character: me
+
+- msg: "ขอคุยแบบนี้แล้วกัน"
+  character: Thames
+
+- msg: "เรื่องอะไรล่ะคุณ"
+  character: me
+
+- msg: "(รีบๆพูดเถอะ ใจฉันจะวายTT)"
+  character: me
+
+- msg: "ผมไม่อยากให้คุณแคร์ใครเลย"
+  character: Thames
+
+- msg: "ไม่แคร์ยังไง"
+  character: me
+
+- msg: "เพราะผมอยากใกล้ชิดกับคุณมากกว่านี้"
+  character: Thames
+
+- msg: "แต่คุณก็จะแคร์ว่าคนอื่นมองคุณไม่ดี"
+  character: Thames
+
+- msg: "ผมไม่อยากให้คุณคิดแบบนั้นแล้ว"
+  character: Thames
+
+- msg: "คุณหมายความว่ายังไง?"
+  character: me
+
+- msg: "ผมอยากทำความรู้จักกับคุณมากกว่านี้"
+  character: Thames
+
+- msg: "มากกว่าเจ้านายกับเลขา และมากกว่าเพื่อนทั่วไป"
+  character: Thames
+
+- msg: "คุณกำลังจีบฉันหรอ"
+  character: me
+
+- msg: "จะว่าแบบนั้นก็ได้ ผมอยากชัดเจนกับคุณ"
+  character: Thames
+
+- choice:
+  - msg: "คุณแน่ใจแล้วหรอ มันไม่เร็วเกินไปหรอ"
+    goto: ChoiceCh12-A2-Sk
+  - msg: "ฉันไม่แน่ใจ ตอนนี้ฉันยังอยากโฟกัสกับงานน่ะ"
+    goto: ChoiceCh12-A2-Sk
+  - msg: "ฉันขอเวลาทบทวนตัวเองก่อนได้ไหม"
+    goto: ChoiceCh12-A2-Sk
+  skip:
+    goto: ChoiceCh12-A2-Sk
+  state: ChoiceState12-V2
+  character: me
+
+- label: ChoiceCh12-A2-Sk
+  msg: "ที่ผมพูดออกไป ผมมั่นใจแล้ว"
+  character: Thames
+
+- msg: "คุณยังไม่ต้องรีบตอบผม"
+  character: Thames
+
+- msg: "คุณกลับไปคิดดูก่อนก็ได้"
+  character: Thames
+
+- msg: "ถ้าคุณพร้อมเปิดใจเมื่อไร คนแรกที่อยากให้นึกถึงคือผมนะ"
+  character: Thames
+
+
+
+

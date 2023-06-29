@@ -1,0 +1,151 @@
+- character: default
+  model: blank
+  name: default
+  action:
+    - default
+  msg_color: ffffffff
+  name_bgcolor: ffffffff
+
+- character: me
+  model: blank
+  name: me
+  action:
+    - default
+  msg_color: ffffffff
+  name_bgcolor: ff8a88ff
+
+- character: character-1
+  model: character-1
+  name: ตัวละคร 1
+  action:
+    - idle
+    - smile
+  msg_color: ffffff
+  name_bgcolor: 6583a8ff
+
+- character: character-2
+  model: character-2
+  name: ตัวละคร 2
+  action:
+    - idle
+  msg_color: ffffff
+  name_bgcolor: d47431ff
+
+- character: Employees
+  model: Employees
+  name: พนักงาน
+  action:
+    - Idle-Half
+  msg_color: ffffff
+  name_bgcolor: 8f97bfff
+
+- character: Junji
+  model: Junji
+  name: จันจิ
+  action:
+    - Idle
+    - Smile
+    - Sad
+    - Funny
+    - Curious
+    - Idle-Half
+    - Smile-Half
+    - Sad-Half
+    - Funny-Half
+    - Curious-Half
+    - Mad-Half
+  msg_color: ffffff
+  name_bgcolor: 8f97bfff
+
+- character: Minnie
+  model: Minnie
+  name: มินนิ
+  action:
+    - Idle
+    - Smile
+    - Curious
+    - Mad
+    - Surprise
+    - Idle-Half
+    - Smile-Half
+    - Curious-Half
+    - Mad-Half
+    - Surprise-Half
+  msg_color: ffffff
+  name_bgcolor: 8f97bfff
+
+- character: Minnie-Before
+  model: Minnie-Before
+  name: "???"
+  action:
+    - Idle
+    - Smile
+  msg_color: ffffff
+  name_bgcolor: 8f97bfff
+
+- character: Thames
+  model: Thames
+  name: เธมส์
+  action:
+    - Idle 
+    - Smile
+    - Sad
+    - Funny
+    - Curious
+    - Surprise
+    - Mad
+    - Shy
+    - Idle-Half
+    - Smile-Half
+    - Sad-Half
+    - Funny-Half
+    - Curious-Half
+    - Surprise-Half
+    - Mad-Half
+    - Shy-Half
+  msg_color: ffffff
+  name_bgcolor: 8f97bfff
+
+- character: Thames-Before
+  model: Thames-Before
+  name: "???"
+  action:
+    - Idle
+    - Smile
+    - Sad
+    - Funny
+    - Curious
+    - Surprise
+    - Mad
+    - Shy
+  msg_color: ffffff
+  name_bgcolor: 8f97bfff
+
+- character: Uncle
+  model: Uncle
+  name: ลุงพล
+  action:
+    - Idle-Half
+    - Smile-Half
+    - Funny-Half
+    - Curious-Half
+  msg_color: ffffff
+  name_bgcolor: 8f97bfff
+
+- character: MM
+  model: MM
+  name: คุณหญิง
+  action:
+    - Idle-Half
+    - Mad-Half
+    - Curious-Half
+  msg_color: ffffff
+  name_bgcolor: 8f97bfff
+  
+- character: Mom
+  model: Mom
+  name: แม่
+  action:
+    - Mom
+  msg_color: ffffff
+  name_bgcolor: 8f97bfff

@@ -1,0 +1,7 @@
+- name: gallery-default
+  label: gallery-default
+  image: gallery-default
+  type: main
+  collect:
+  - cg: cg-02
+  

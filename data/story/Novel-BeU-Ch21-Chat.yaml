@@ -1,0 +1,251 @@
+- sys: "จันจิ ออนไลน์"
+  delay: 1
+
+- msg: "ฮายย {me}"
+  avatar: Junji-Avatar-1
+
+- msg: "สวัสดีจ้าจันจิ"
+  avatar: me
+
+- msg: "วันนี้แวะไปที่ร้านฉันมาหรอจ๊ะ"
+  avatar: Junji-Avatar-1
+
+- msg: "เธอรู้ได้ไงง "
+  avatar: me
+
+- msg: "ฉันดูผ่านแอพกล้องที่ร้านน่ะ ดันเห็นเธอพอดี"
+  avatar: Junji-Avatar-1
+
+- msg: "เข้ามาไม่เห็นบอกฉันเลย"
+  avatar: Junji-Avatar-1
+
+- choice:
+  - msg: "ฉันกลัวรบกวนเธอน่ะ"
+    goto: ChatCh21-A1-1
+  - msg: "กะว่าแวะไปแปปเดียวน่ะจ้ะ"
+    goto: ChatCh21-A1-2
+  - msg: "พอดีกระทันหันอ่า"
+    goto: ChatCh21-A1-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh21-A1-Sk
+  state: ChatState21-V1
+  avatar: me
+
+- label: ChatCh21-A1-1
+  msg: "เธอดูยุ่งๆตลอดเลย แหะๆ"
+  avatar: me
+
+- msg: "รบกวนอะไรกัน ฉันเองก็อยากนั่งเม้าเหมือนกันน้า"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh21-A1-Sk
+
+- label: ChatCh21-A1-2
+  msg: "อดนั่งเม้าด้วยคนเลย"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh21-A1-Sk
+
+- label: ChatCh21-A1-3
+  msg: "หรอจ๊ะ"
+  avatar: Junji-Avatar-1
+
+- msg: "งั้นไว้โอกาสหน้าอย่าลืมบอกก่อนนะ"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh21-A1-Sk
+
+- label: ChatCh21-A1-Sk
+  msg: "ฉันเห็นเธอมากับมินนี่ด้วย"
+  avatar: Junji-Avatar-1
+
+- msg: "ไปสนิทกันตอนไหนเนี่ย"
+  avatar: Junji-Avatar-1
+
+- msg: "อ๋ออ"
+  avatar: me
+
+- msg: "(ลืมไปเลยว่าจันจิชอบดูกล้องที่ร้าน)"
+  avatar: me
+
+- msg: "(ฉันต้องปิดบังเรื่องวันนี้ไหมเนี่ยย)"
+  avatar: me
+
+- choice:
+  - msg: "นัดคุยกันเรื่องงานที่บริษัทเฉยๆจ้า"
+    goto: ChatCh21-A2-1
+  - msg: "มินนี่อยากคุยเรื่องเธมส์น่ะ"
+    goto: ChatCh21-A2-2
+  - msg: "ไม่ได้สนิทหรอก บังเอิญน่ะ"
+    goto: ChatCh21-A2-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh21-A2-Sk
+  state: ChatState21-V2
+  avatar: me
+
+- label: ChatCh21-A2-1
+  msg: "อ๋ออ"
+  avatar: Junji-Avatar-1
+
+- msg: "งั้นดีแล้วแหละที่ฉันไม่ได้เจอ พวกเธอคงยุ่งๆ"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh21-A2-Sk
+
+- label: ChatCh21-A2-2
+  msg: "เกิดอะไรขึ้นรึเปล่า"
+  avatar: Junji-Avatar-1
+
+- msg: "มินนี่ไม่โอเคกับเธอหรอ?"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh21-A2-Sk
+
+- label: ChatCh21-A2-3
+  msg: "อ๋ออ พวกเธอคงได้เจอกันบ่อยแหละ"
+  avatar: Junji-Avatar-1
+
+- msg: "มินนี่เป็นน้องสาวเธมส์นี่หน่า"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh21-A2-Sk
+
+- label: ChatCh21-A2-Sk
+  msg: "แล้วเรื่องเธมส์ไปถึงไหนแล้ว"
+  avatar: Junji-Avatar-1
+
+- msg: "เล่าให้ฉันฟังบ้างสิๆๆ"
+  avatar: Junji-Avatar-1
+
+- msg: "ก็เรื่อยๆน้า"
+  avatar: me
+
+- msg: "เท่าที่เธอรู้ก่อนหน้านี้แหละ"
+  avatar: me
+
+- msg: "ฉันว่าไม่ม้างง"
+  avatar: Junji-Avatar-1
+
+- msg: "แล้วเรื่องSoul Mateล่ะ "
+  avatar: Junji-Avatar-1
+
+- msg: "คิคิ"
+  avatar: Junji-Avatar-1
+
+- msg: "เธอรู้ได้ยังไงล่ะเนี่ย "
+  avatar: me
+
+- msg: "ฉันยังไม่ได้บอกใครเลยน้า แง"
+  avatar: me
+
+- msg: "ในตึกเพชรมีคนเห็นเธมส์มากับSoul Mate "
+  avatar: Junji-Avatar-1
+
+- msg: "ไม่แปลกหรอก เพราะเธมส์คือVIPคนเดียวที่ไม่มีSoul Mate"
+  avatar: Junji-Avatar-1
+
+- msg: "เธอเองก็เป็นเมมเบอร์หรอ"
+  avatar: me
+
+- msg: "พึ่งสมัครน่ะ พวกสาวๆมาถามว่าใช่ฉันหรือเปล่า "
+  avatar: Junji-Avatar-1
+
+- msg: "ฉันก็เลยรู้ทันทีเลยว่าเป็นเธอ ^^"
+  avatar: Junji-Avatar-1
+
+- msg: "อ๋ออ แหะๆ"
+  avatar: me
+
+- msg: "ฉันดีใจด้วยจริงๆนะ ที่เขาดีกับเธอขนาดนี้"
+  avatar: Junji-Avatar-1
+
+- msg: "ขอบคุณนะ"
+  avatar: me
+
+- msg: "แต่จริงๆก็ไม่ขนาดนั้นหรอกจ้ะ"
+  avatar: me
+
+- msg: "อิจฉาเธอจัง"
+  avatar: Junji-Avatar-1
+
+- msg: "อิจฉาฉันทำไม"
+  avatar: me
+
+- choice:
+  - msg: "เธอเองก็มีดีนะ"
+    goto: ChatCh21-A3-1
+  - msg: "เธอโอเคใช่ไหม?"
+    goto: ChatCh21-A3-2
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh21-A3-Sk
+  state: ChatState21-V3
+  avatar: me
+
+- label: ChatCh21-A3-1
+  msg: "ก็แค่ดีแต่ไม่ถูกเลือกนะฮ่าๆ"
+  avatar: Junji-Avatar-1
+
+- msg: "ไม่เอาน่าจันจิ"
+  avatar: me
+
+- goto: ChatCh21-A3-Sk
+
+- label: ChatCh21-A3-2
+  msg: "ทำไมจะไม่โอเคล่ะ"
+  avatar: Junji-Avatar-1
+
+- msg: "ฉันไม่ได้เกี่ยวอะไรกับพวกเธอสักหน่อย"
+  avatar: Junji-Avatar-1
+
+- goto: ChatCh21-A3-Sk
+
+
+- label: ChatCh21-A3-Sk
+  msg: "ช่างมันเถอะจ้ะ"
+  avatar: Junji-Avatar-1
+
+- msg: "(ฉันชักจะไม่สบายใจยังไงก็ไม่รู้สิ)"
+  avatar: me
+
+- msg: "เธอไม่เป็นไรแน่นะ"
+  avatar: me
+
+- msg: "เธออย่าคิดมากสิ"
+  avatar: Junji-Avatar-1
+
+- msg: "ฉันแค่อยากมีคนมาเทคแคร์ฉันบ้างฮ่าๆ"
+  avatar: Junji-Avatar-1
+
+- msg: "ชีวิตฉันมีแต่งานน่าเบื่อจะตาย เฮ้อ"
+  avatar: Junji-Avatar-1
+
+- msg: "แหม น่ารักแบบเธอมีคนต่อแถวอยู่แล้วล่ะจ้ะ"
+  avatar: me
+
+- msg: "สาธุๆๆจ้าา"
+  avatar: Junji-Avatar-1
+
+- msg: "ฮ่าๆๆ ฮ่าๆ"
+  avatar: Junji-Avatar-1
+
+- msg: "ฮ่าๆ"
+  avatar: me
+
+- msg: "ว่าแล้วก็งานเข้า"
+  avatar: Junji-Avatar-1
+
+- msg: "ฉันไปโทรหาลูกค้าก่อนนะ"
+  avatar: Junji-Avatar-1
+
+- msg: "ไว้คุยกันใหม่จ้ะ"
+  avatar: Junji-Avatar-1
+
+- msg: "Love U <3"
+  avatar: Junji-Avatar-1
+
+- sys: "จันจิ ออฟไลน์"
+  delay: 1
+

@@ -1,0 +1,359 @@
+﻿#BeU-9
+
+######################################
+- background: Market
+- music: main-02
+- delay: 1
+
+- character: Thames
+  position: center
+  act: Idle-Half
+
+- msg: "ท๊าดา ถึงแล้วว"
+  character: Thames
+
+- msg: "คุณพาฉันมาห้างทำไม"
+  character: me
+
+- msg: "มีอะไรที่ฉันอยากทำ แล้วก็เผื่อมาช็อปปิ้ง"
+  character: Thames
+
+- msg: "ไม่ถามสิ่งที่ฉันอยากทำหน่อยหรอ"
+  character: me
+
+- msg: "ก็ผู้หญิงไม่ได้ชอบช็อปปิ้งกันหรอ"
+  character: Thames
+
+- choice:
+  - msg: "ส่วนใหญ่ก็ชอบแหละ"
+    goto: ChoiceCh14-A1-1
+  - msg: "ไม่ใช่ทุกคนหรอก"
+    goto: ChoiceCh14-A1-2
+  - msg: "ก็..น่าจะชอบทุกคนแหละ"
+    goto: ChoiceCh14-A1-3
+  skip:
+    goto: ChoiceCh14-A1-Sk
+  state: ChoiceState14-V1
+  character: me
+
+- label: ChoiceCh14-A1-1
+  msg: "ขอให้คุณอยู่ในส่วนใหญ่แล้วกัน"
+  character: Thames
+
+- goto: ChoiceCh14-A1-Sk
+
+- label: ChoiceCh14-A1-2
+  msg: "งั้นหรอ ผมคิดว่าทุกคนเสียอีก"
+  character: Thames
+
+- goto: ChoiceCh14-A1-Sk
+
+- label: ChoiceCh14-A1-3
+  msg: "ดีจัง งั้นคุณก็คงชอบด้วย"
+  character: Thames
+
+- goto: ChoiceCh14-A1-Sk
+
+- label: ChoiceCh14-A1-Sk
+  msg: "คุณอยากได้อะไรไหม"
+  character: Thames
+
+- character: Junji
+  position: left
+  act: Idle-Half
+
+- msg: "สวัสดีจ้ะทั้ง2คน"
+  character: Junji
+
+- msg: "อ้าวจันจิ คิดถึงจังเลย"
+  character: me
+
+- msg: "ขอโทษน้าา ฉันไม่ได้เข้าไปหาเธอที่ร้านเลย"
+  character: me
+
+- msg: "ไม่เป็นไรเลย ฉันเข้าใจว่าพวกเธอยุ่งๆ"
+  character: Junji
+
+- msg: "ว่าแต่มาทำอะไรกันหรอ {me} เธมส์?"
+  character: Junji
+
+- msg: "อ๋ออ"
+  character: me
+
+- choice:
+  - msg: "เธมส์พาฉันมาช็อปปิ้งจ้ะ"
+    goto: ChoiceCh14-A2-1
+  - msg: "เรามีนัดกับลูกค้ากันน่ะ"
+    goto: ChoiceCh14-A2-2
+  - msg: "มาเดินเล่นเฉยๆจ้ะ"
+    goto: ChoiceCh14-A2-3
+  skip:
+    goto: ChoiceCh14-A2-Sk
+  state: ChoiceState14-V2
+  character: me
+
+- label: ChoiceCh14-A2-1
+  msg: "จริงหรือเปล่าเนี่ย"
+  character: Junji
+
+- msg: "เธมส์นายมีเวลาว่างมาทำอะไรแบบนี้ด้วยหรอ"
+  character: Junji
+
+- msg: "เธอจะให้ฉันทำงานอย่างเดียวเลยหรือไง"
+  character: Thames
+
+- msg: "ก็แค่ถามดูเฉยๆน่า"
+  character: Junji
+
+- msg: "พาลูกน้องมาแบบนี้แปลว่าคงว่างจริงๆ"
+  character: Junji
+
+- goto: ChoiceCh14-A2-Sk
+
+- label: ChoiceCh14-A2-2
+  msg: "อ๋อ งั้นฉันไม่กวนแล้วกัน"
+  character: Junji
+  
+- msg: "แต่ลูกค้ายกเลิกนัดไปแล้ว"
+  character: Thames
+  
+- msg: "ฉันว่าจะพา {me} ไปซื้อของต่อ"
+  character: Thames
+
+- msg: "อ้าวหรอ คุณไม่เห็นบอกฉันเลย"
+  character: me
+  
+- msg: "(โอ้ย ฉันอุตส่าห์ไม่อยากให้จันจิเข้าใจผิด)"
+  character: me
+
+- msg: "อ้าวถ้าอย่างนั้น..."
+  character: Junji
+
+- goto: ChoiceCh14-A2-Sk
+
+- label: ChoiceCh14-A2-3
+  msg: "แปลกจัง เธมส์มากับเธอทั้งๆที่ไม่มีธุระเนี่ยนะ"
+  character: Junji
+
+- msg: "ฉันดูเป็นคนใจมารขนาดนั้นหรือยังไง"
+  character: Thames
+
+- msg: "เปล๊า ปกติแค่เวลากินข้าวของตัวเองนายยังไม่มีเลย"
+  character: Junji
+
+- msg: "ฉันก็เลยแปลกใจนิดหน่อย"
+  character: Junji
+
+- msg: "ถ้าอย่างนั้น..."
+  character: Junji
+
+- goto: ChoiceCh14-A2-Sk
+
+- label: ChoiceCh14-A2-Sk
+  msg: "ฉันขอไปเดินเล่นด้วยคนสิ"
+  character: Junji
+
+- msg: "ฉันเหงาแล้วก็เบื่อๆด้วย"
+  character: Junji
+
+- msg: "เธอคงไม่ว่าอะไรนะจ๊ะ {me}"
+  character: Junji
+
+- msg: "ไม่ถามฉันบ้างหรอ"
+  character: Thames
+
+- msg: "ก็นายก็ว่างอยู่แล้วนี่ คงไม่รังเกียจฉันหรอก"
+  character: Junji
+
+- msg: "เอาเป็นว่าขอไปด้วยคนนะ^^"
+  character: Junji
+
+- msg: "ได้สิ ไปหลายๆคนก็สนุกดีนะ"
+  character: me
+  
+- msg: "(เธมส์มองฉันแบบตาขวางสุดๆ)"
+  character: me
+
+- msg: "(ฉันก็เข้าใจเขานะ แต่ก็ไม่อยากให้จันจิรู้สึกไม่ดีอ่าTT)"
+  character: me
+
+- msg: " {me} เราไปดูเสื้อผ้าร้านนั้นกันดีกว่า "
+  character: Junji
+
+- msg: "ถ้าเธอชอบตัวไหนบอกนะ ฉันจะช่วยจ่ายให้"
+  character: Junji
+
+- msg: "ไม่เป็นไรหรอกจันจิ ฉันไม่ซื้อก็ได้ เธมส์อยากมาเดินดูของเขาส่วนใหญ่น่ะ"
+  character: me
+
+- msg: "แต่มันดูเข้ากับเธอมากๆเลยนะ "
+  character: Junji
+
+- msg: "ฉันพาเธอไปลองชุดนี้ดีกว่า"
+  character: Junji
+
+- msg: "(จันจิพาฉันลองชุดเกือบทั้งร้าน)"
+  character: me
+  
+- msg: "(ฉัันมีชุดร้านเกือบทุกคอลเลคชั่น)"
+  character: me
+
+- msg: "(ก็แค่เมื่อก่อนอ่านะ)"
+  character: me
+
+- msg: "ฉันขอซื้อตัวนี้ให้เธอนะ มันเข้ากับเธอมากๆเลยแหละ"
+  character: Junji
+
+- msg: "ไม่เป็นไรจ้ะจันจิ ฉันเกรงใจมากเลย"
+  character: me
+
+- msg: "ฉันซื้อให้{me}เอง เธอไม่ต้องหรอก"
+  character: Thames
+
+- msg: "เกรงใจทำไม เหมือนฉันซื้อให้เพื่อนแหละ"
+  character: Junji
+  
+- msg: "จะให้คนอื่นมาซื้อของให้คนของฉันได้ยังไง"
+  character: Thames
+
+- msg: "คนของนาย?"
+  character: Junji
+
+- msg: "(อีตานี่พูดอะไรของเขาเนี่ยยย)"
+  character: me
+  
+- msg: "เอ่อ เธมส์หมายถึงฉันเป็นลูกน้องเขามากกว่าน่ะ"
+  character: me
+
+- msg: "นายก็ไม่ต้องซื้อหรอก ฉันรอเงินเดือนของฉันได้"
+  character: me
+  
+- msg: "ฉันก็หักจากเงินเดือนเธอไปเลยไง"
+  character: Thames
+    
+- msg: "จะได้ไม่ต้องรอสิ้นเดือนเป็นไง"
+  character: Thames
+
+- msg: "ขี้งกเป็นบ้า "
+  character: Junji
+
+- msg: "ไม่เป็นไรทุกคน ฉันยังไม่อยากได้ตอนนี้หรอก"
+  character: me
+    
+- msg: "เพราะเธอจันจิ {me}ถึงเกรงใจ "
+  character: Thames
+
+- msg: "เพราะนายจะใช้เงิน{me}ต่างหาก"
+  character: Junji
+
+- msg: "งั้นฉันไปจ่ายเงินก่อนนะ"
+  character: Junji
+
+- msg: "เสร็จแล้วเราไปกินข้าวกันน"
+  character: Junji
+   
+- msg: "เธอยังจะไปกับพวกเราต่ออีกหรอ"
+  character: Thames
+
+- msg: "อ้าว"
+  character: Junji
+
+- choice:
+  - msg: "พอดีเลยฉันกำลังหิว"
+    goto: ChoiceCh14-A3-Sk
+  - msg: "นี่ ทำไมนายใจร้ายจัง"
+    goto: ChoiceCh14-A3-Sk
+  - msg: "มาด้วยกันเถอะจันจิ"
+    goto: ChoiceCh14-A3-Sk
+  skip:
+    goto: ChoiceCh14-A3-Sk
+  state: ChoiceState14-V3
+  character: me
+
+- label: ChoiceCh14-A3-Sk
+  msg: "ชิ"
+  character: Thames
+
+- msg: "เธมส์ นายมันไม่มีน้ำใจ"
+  character: Junji
+
+- msg: "งั้ั้นเราไปกินร้านที่ฉันชอบได้ไหม"
+  character: Junji
+
+- msg: "ฉันไม่ได้กินนานแล้วน่ะ"
+  character: Junji
+
+- msg: "ร้านนั้นพนักงานบริการไม่ดี เธอจำไม่ได้หรือไง "
+  character: Thames
+
+- msg: "นายก็เล่นไปพูดจาเหวี่ยงๆแบบนั้นก่อนนี่"
+  character: Junji
+
+- msg: "ก็ร้านมันผิดจริงๆไหมล่ะ "
+  character: Thames
+
+- msg: "(เอ่ออ เหมือนพวกเขาจะมากันบ่อยนะเนี่ย)"
+  character: me
+
+- msg: "โอเคๆ งั้นเราไปกินร้านโปรดอันดับ2"
+  character: Junji
+
+- msg: "ก็มีแค่ร้านนั้นแล้วที่ดีน่ะ"
+  character: Thames
+
+- msg: "..."
+  character: Thames
+
+- character: empty
+  position: left
+
+- msg: "เฮ้อ กลับไปสักที"
+  character: Thames
+
+- msg: "ดีออกมีจันจิ ดูไม่เหงาดีนะ"
+  character: me
+  
+- msg: "เราก็น่าจะกลับกันบ้างนะจะค่ำแล้ว"
+  character: me
+
+- msg: "แต่ฉันยังไม่ได้ทำสิ่งที่ฉันอยากทำเลย"
+  character: Thames
+
+- msg: "แล้วทำไมนายไม่เสนอล่ะ"
+  character: me
+  
+- msg: "เราก็แค่เดินเล่นกันเฉยๆเอง"
+  character: me
+
+- msg: "ก็ฉันตั้งใจอยากมากับเธอนี่"
+  character: Thames
+
+- msg: "นายกับจันจิเองก็ดูสนิทกันมากกว่ากับฉันอีก"
+  character: me
+  
+- msg: "(ฉันต่างหากที่รู้สึกว่าพวกนายน่าจะอยู่ด้วยกันมากกว่า)"
+  character: me
+
+- msg: "ฉันอยู่กับยัยนั่นจนเบื่อแล้วน่ะสิ"
+  character: Thames
+  
+- msg: "เอาเป็นว่าฉันจะหาโอกาสใหม่แล้วกัน"
+  character: Thames
+  
+- msg: "เมื่อไรดีน้า"
+  character: Thames
+
+- msg: "แล้วแต่นายเถอะ แต่อาทิตย์นี้ทำงานกันได้แล้ว"
+  character: me
+  
+- msg: "นายหนีงานมาเยอะแล้วนะ!"
+  character: me
+  
+- msg: "ได้ครับเลขา"
+  character: Thames
+  
+- msg: "งั้นอาทิตย์หน้าจองตัวเลยนะ"
+  character: Thames
+ 
+
+

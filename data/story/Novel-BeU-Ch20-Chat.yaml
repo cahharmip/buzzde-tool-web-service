@@ -1,0 +1,413 @@
+- sys: "เธมส์ ออนไลน์"
+  delay: 1
+
+- msg: "{me}"
+  avatar: Thames-Avatar-1
+
+- msg: "เธอ"
+  avatar: Thames-Avatar-1
+
+- msg: "เธอค้าบ"
+  avatar: Thames-Avatar-1
+
+- choice:
+  - msg: "มีอะไรคุณ"
+    goto: ChatCh20-A1-1
+  - msg: "จ๋าาา"
+    goto: ChatCh20-A1-2
+  - msg: "ค่าบอส"
+    goto: ChatCh20-A1-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh20-A1-Sk
+  state: ChatState20-V1
+  avatar: me
+
+- label: ChatCh20-A1-1
+  msg: "เข้มจังเลย"
+  avatar: Thames-Avatar-1
+
+- msg: "ผมแค่ทักมาคุยเล่นอ่าา"
+  avatar: Thames-Avatar-1
+
+- msg: "ก็ปกตินี่"
+  avatar: me
+  
+- msg: "มันไม่อ่อนโยนนี่หน่า"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh20-A1-Sk
+
+- label: ChatCh20-A1-2
+  msg: "หูยย"
+  avatar: Thames-Avatar-1
+  
+- msg: "ชื่นใจเลยย"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh20-A1-Sk
+
+- label: ChatCh20-A1-3
+  msg: "หูยยย"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่ได้ยินคำนี้ตั้งนาน"
+  avatar: Thames-Avatar-1
+
+- msg: "เธอน่ารักจัง"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh20-A1-Sk
+
+- label: ChatCh20-A1-Sk
+  msg: "ผมเหนื่อยจังเลยวันนี้"
+  avatar: Thames-Avatar-1
+
+- msg: "เหนื่อยคุณก็ไปพักผ่อนสิ"
+  avatar: me
+  
+- msg: "คุยกับคุณนี่ไงพักผ่อน"
+  avatar: Thames-Avatar-1
+  
+- msg: "โอ๋หน่อยสิ"
+  avatar: Thames-Avatar-1
+
+- choice:
+  - msg: "หยอกเก่งจริงๆ"
+    goto: ChatCh20-A2-1
+  - msg: "โอ๋ๆๆนะ"
+    goto: ChatCh20-A2-2
+  - msg: "พูดไปเรื่อย"
+    goto: ChatCh20-A2-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh20-A2-Sk
+  state: ChatState20-V2
+  avatar: me
+
+- label: ChatCh20-A2-1
+  msg: "ไม่เคยหยอกเลยนะ"
+  avatar: Thames-Avatar-1
+
+- msg: "นี่ความจริงล้วนๆ"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh20-A2-Sk
+
+- label: ChatCh20-A2-2
+  msg: "เฮ้ย"
+  avatar: Thames-Avatar-1
+  
+- msg: "ฮึบบบ"
+  avatar: Thames-Avatar-1
+
+- msg: "หายแล้วฮับ"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh20-A2-Sk
+
+- label: ChatCh20-A2-3
+  msg: "อ๋าา แค่นี้ก็ไม่ได้"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh20-A2-Sk
+
+- label: ChatCh20-A2-Sk
+  msg: "แล้ววันนี้ตอนนี้บ่ายคุณไปไหนมา"
+  avatar: Thames-Avatar-1
+  
+- msg: "ผมไม่เห็นคุณเลยอะ"
+  avatar: Thames-Avatar-1
+
+- msg: "ฉันไปทำธุระมานิดหน่อยน่ะ"
+  avatar: me
+  
+- msg: "อ่าวหรอ"
+  avatar: Thames-Avatar-1
+  
+- msg: "เห็นปกติคุณจะบอก"
+  avatar: Thames-Avatar-1
+    
+- msg: "วันนี้คุณดูนิ่งๆเป็นอะไรรึเปล่า"
+  avatar: Thames-Avatar-1
+
+- choice:
+  - msg: "ไม่มีอะไรหรอก"
+    goto: ChatCh20-A3-1
+  - msg: "ฉันเครียดๆนิดหน่อย"
+    goto: ChatCh20-A3-2
+  - msg: "ฉันก็ปกตินะ"
+    goto: ChatCh20-A3-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh20-A3-Sk
+  state: ChatState20-V3
+  avatar: me
+
+- label: ChatCh20-A3-1
+  msg: "เขาบอกว่า ผู้หญิงบอกว่าไม่มีอะไรแปลว่ามี"
+  avatar: Thames-Avatar-1
+
+- msg: "จริงรึเปล่า"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่ใช่ฉันแล้ว1คน"
+  avatar: me
+
+- goto: ChatCh20-A3-Sk
+
+- label: ChatCh20-A3-2
+  msg: "เล่าให้ผมฟังได้นะ"
+  avatar: Thames-Avatar-1
+  
+- msg: "หรือว่าผมใช้งานคุณหนักไปหรอ"
+  avatar: Thames-Avatar-1
+
+- msg: "พรุ่งนี้หยุดเลยแมะ"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่ต้องหรอกคุณ เล่นใหญ่อีกแล้ว"
+  avatar: me
+
+- msg: "แล้วสรุปคุณเครียดอะไร"
+  avatar: Thames-Avatar-1
+
+- msg: "เรื่องทั่วๆไปน่ะไม่มีอะไรหรอก"
+  avatar: me
+
+- goto: ChatCh20-A3-Sk
+
+- label: ChatCh20-A3-3
+  msg: "หรอ"
+  avatar: Thames-Avatar-1
+  
+- msg: "ดูไม่เป็นแบบนั้นเลย"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่สบายใจเลยอ่า"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh20-A3-Sk
+
+- label: ChatCh20-A3-Sk
+  msg: "(เฮ้อ เอาจริงๆฉันก็คิดมากเรื่องที่มินนี่เล่าเหมือนกันนะ)"
+  avatar: me
+
+- msg: "(ฉันเริ่มกลัวว่าเขาอาจจะแค่อ่อนไหวเหมือนเลขาคนก่อนๆ)"
+  avatar: me
+  
+- msg: "(ฉันควรจะพูดออกไปตรงๆดีไหม)"
+  avatar: me
+  
+- msg: "วันนี้คุณก็ดูแปลกๆนะ "
+  avatar: me
+
+- msg: "ยังไงหรออ"
+  avatar: Thames-Avatar-1
+
+- msg: "ดูอ้อนๆแปลกๆ"
+  avatar: me
+
+- msg: "ก็อยากหวานกับคุณบ้าง ผมขี้เกียจเก๊กคราบบอสแล้วนี่"
+  avatar: Thames-Avatar-1
+
+- msg: "ฮ่าๆๆ ที่ผ่านๆมาคุณเก๊กหรอ"
+  avatar: me
+  
+- msg: "ก็ไม่ขนาดนั้นแค่เป็นตัวเองไม่สุด"
+  avatar: Thames-Avatar-1
+
+- msg: "เป็นแบบนี้กับทุกคนหรือเปล่า"
+  avatar: me
+  
+- msg: "หืมม หมายความว่ายังไงกับทุกคน"
+  avatar: Thames-Avatar-1
+
+- msg: "(กรี๊ดด ฉันเผลอประชดประชันไป1แมทช์)"
+  avatar: me
+
+- msg: "เปล่าๆ ฉันแค่ถามดู"
+  avatar: me
+  
+- msg: "แปลกจริงๆด้วย"
+  avatar: Thames-Avatar-1  
+
+- msg: "บอกผมมานะคุณมีอะไรในใจ {me}"
+  avatar: Thames-Avatar-1
+
+- choice:
+  - msg: "เรื่องคุณนั่นแหละ"
+    goto: ChatCh20-A4-1
+  - msg: "ไม่มีอะไรทั้งนั้นแหละ"
+    goto: ChatCh20-A4-2
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh20-A4-Sk
+  state: ChatState20-V4
+  avatar: me
+
+- label: ChatCh20-A4-1
+  msg: "ผมทำอะไรอ่า"
+  avatar: Thames-Avatar-1
+
+- msg: "ก็คุณชอบหวั่นไหวอะ"
+  avatar: me
+  
+- msg: "ฉันจำได้นะที่คุณพูดตอนอยู่ทะเล"
+  avatar: me
+  
+- msg: "ตอนนั้นฉันก็ไม่ได้คิดอะไร"
+  avatar: me
+  
+- msg: "แต่ตอนนี้เริ่มคิดแล้ว"
+  avatar: me
+  
+- msg: "อยู่ภายในใจเป็นหมื่นล้านคำจริงๆด้วย"
+  avatar: Thames-Avatar-1
+  
+- msg: "(ตานี่ คนกำลังของขึ้นยังมาเล่นมุก)"
+  avatar: me
+  
+- msg: "ว่ายังไงล่ะ"
+  avatar: me
+
+- goto: ChatCh20-A4-Sk
+
+- label: ChatCh20-A4-2
+  msg: "โกหกผมไม่ได้หรอกคุณเลขา"
+  avatar: Thames-Avatar-1
+  
+- msg: "กลัวผมไปอ่อยแบบนี้กับคนอื่นๆหรอ"
+  avatar: Thames-Avatar-1
+
+- msg: "คิกคิก"
+  avatar: Thames-Avatar-1
+  
+- msg: "แล้วใช่ไหมล่ะ!"
+  avatar: me
+
+- goto: ChatCh20-A4-Sk
+
+- label: ChatCh20-A4-Sk
+  msg: "เมื่อก่อนผมน่ะอ่อนไหวกับคนที่ทำดี"
+  avatar: Thames-Avatar-1
+  
+- msg: "แต่คุณก็ไม่เห็นดีกับผมเท่าไรเลย"
+  avatar: Thames-Avatar-1
+
+- msg: "ผมก็ชอบคุณอยู่ดีน้า"
+  avatar: Thames-Avatar-1
+  
+- msg: "นี่ฉันไม่ดีกับคุณตรงไหน"
+  avatar: me
+    
+- msg: "คุณอยากไปไหนฉันก็พาไป"
+  avatar: me
+    
+- msg: "อยากทำอะไรฉันก็ทำด้วย"
+  avatar: me
+
+- msg: "ฮ่าๆ แปลว่าคุณเต็มใจทำไม่ใช่เพราะงานเหมือนที่บอกสินะ"
+  avatar: Thames-Avatar-1
+  
+- msg: "(โอ้ยยย ฉันโดนเขาจับได้ทุกทางเลยสินะ)"
+  avatar: me
+  
+- msg: "โอเคผมสบายใจละ"
+  avatar: Thames-Avatar-1
+
+- msg: "คุุณล่ะสบายใจยัง"
+  avatar: Thames-Avatar-1
+  
+- msg: "ไม่เห็นจะสบายใจตรงไหนเลย"
+  avatar: me
+  
+- msg: "ผมไม่เคยอยากดูแลใครเท่าคุณมาก่อนจริงๆนะ"
+  avatar: Thames-Avatar-1
+
+- msg: "ไม่รู้ด้วยซ้ำว่าคำว่าเทคแคร์ดูแลที่ดีเข้าทำกันยังไง"
+  avatar: Thames-Avatar-1
+  
+- msg: "ผมถึงได้ให้คุณเป็นSoul Matไงล่ะ"
+  avatar: Thames-Avatar-1
+
+- msg: "แล้วผมอยากรับฟังคุณเวลาคุณไม่สบายใจหรือมีปัญหานะ"
+  avatar: Thames-Avatar-1
+    
+- msg: "แบบนี้สบายใจขึ้นยังครับ"
+  avatar: Thames-Avatar-1
+
+- choice:
+  - msg: "ก็โอเคขึ้นแล้ว"
+    goto: ChatCh20-A5-Sk
+  - msg: "ขอบคุณนะเธมส์"
+    goto: ChatCh20-A5-Sk
+  - msg: "สบายใจแล้วค่ะ"
+    goto: ChatCh20-A5-Sk
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh20-A5-Sk
+  state: ChatState20-V5
+  avatar: me
+
+- label: ChatCh20-A5-Sk
+  msg: "งั้นผมขอไปหาอะไรกินก่อนนะ"
+  avatar: Thames-Avatar-1
+
+- msg: "หรือคุณอยากมาทำให้ก็ด้นะ บ้านไม่ได้ล็อค"
+  avatar: Thames-Avatar-1
+    
+- msg: "แฮ่"
+  avatar: Thames-Avatar-1
+  
+- msg: "ทีอย่างนี้ไม่ล็อค ระเบียงโรงแรมปิดไม่ได้จะเป็นจะตายนะคุณ"
+  avatar: me
+  
+- msg: "พันเล่มเกวียนไง เธอไม่เข้าใจหรอก"
+  avatar: Thames-Avatar-1
+  
+- msg: "ร้ายนักนะ"
+  avatar: me
+  
+- msg: "ฮ่าๆๆๆ"
+  avatar: Thames-Avatar-1
+    
+- msg: "พรุ่งนี้เลิกงานไปตึกเพชรด้วยกันหน่อยสิ"
+  avatar: Thames-Avatar-1
+  
+- msg: "ไปทำอะไรหรอ"
+  avatar: me
+  
+- msg: "ผมอยากไปสูดอากาศบริสุทธิ์ชั้นบนอะ"
+  avatar: Thames-Avatar-1
+    
+- msg: "ฝุ่นเยอะจะตายคุณ"
+  avatar: me
+  
+- msg: "โนๆ ที่นั่นมีระบบกรองอากาศขนาดใหญ่มากๆครอบอยู่"
+  avatar: Thames-Avatar-1
+
+- msg: "คือดีมากจนไม่ต้องพึ่งรัฐบาลเลยแหละ"
+  avatar: Thames-Avatar-1
+    
+- msg: "ดีจังง แต่เขาได้เงินจากพวกคุณปีละเท่าไรล่ะ"
+  avatar: me
+  
+- msg: "ลืมมันไปแล้วกัน ไม่อยากพูดถึงบ่อยๆ "
+  avatar: Thames-Avatar-1
+
+- msg: "รวยๆแบบผมจ่ายทีขายังสั่น"
+  avatar: Thames-Avatar-1
+    
+- msg: "ขนาดนั้นเลยหรอ ฮ่าๆๆๆ"
+  avatar: me
+  
+- msg: "ช่ายยย"
+  avatar: Thames-Avatar-1
+  
+- msg: "เอาเป็นว่าไปด้วยกันนะ"
+  avatar: Thames-Avatar-1
+
+- msg: "ผมไปละ"
+  avatar: Thames-Avatar-1
+

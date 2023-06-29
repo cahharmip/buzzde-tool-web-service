@@ -1,0 +1,394 @@
+﻿#BeU-3
+
+######################################
+- background: SeaRoom
+- music: main-03
+- delay: 1
+
+- msg: "(เย่ ในที่สุดก็ถึงโรงแรมสักที)"
+  character: me
+  
+- msg: "(โรงแรมนี้สวยดีนะ ห้องฉันก็วิวดีสุดๆ)"
+  character: me
+  
+- msg: "(ฉันต้องพักผ่อนก่อนที่จะไปดินเนอร์กับแขกคนสำคัญของเธมส์)"
+  character: me
+
+- msg: "ก๊อก ก๊อก ก๊อก"
+  character: me
+
+- character: Thames
+  position: center
+  act: Idle-Half
+
+- msg: "คุณ 6โมงเย็นเจอกันหน้าห้องนะ"
+  character: Thames
+  
+- msg: "(เธมส์มาเคาะบอกฉันหน้าประตู)"
+  character: me
+
+- msg: "ได้ค่ะ"
+  character: me
+  
+- msg: "งั้นก็พักผ่อนซะ แล้วใส่ชุดดูดีที่สุดนะ"
+  character: Thames
+  
+- msg: "ได้เลย คุณบอกแบบนี้แปลว่าแขกสำคัญมากแน่ๆ"
+  character: me
+  
+- msg: "เดี๋ยวคุณก็รู้ ผมไปนอนล่ะ"
+  character: Thames
+
+- character: empty
+  position: center
+  
+- msg: "(ใครกันนะแขกเขา ขนาดฉันเป็นเลขาเขายังไม่ยอมสักที)"
+  character: me
+
+- msg: "ก๊๊อก ก๊อก ก๊อก"
+  character: Thames
+
+- character: Thames
+  position: center
+  act: Idle-Half
+  
+- msg: "คุณ เสร็จหรือยัง"
+  character: Thames
+  
+- msg: "เสร็จแล้วๆ"
+  character: me
+  
+- msg: "(มัวแต่แต่งตัว ฉันลืมดูเวลาเลยแฮะ)"
+  character: me
+
+- msg: "(ฉันเปิดประตูออกไปหาเธมส์ที่รออยู่หน้าห้อง)"
+  character: me
+
+- character: Thames
+  position: center
+  act: Shy-Half
+
+- msg: "..."
+  character: Thames
+  
+- msg: "ไปกันเลยมั้ยคุณ"
+  character: me
+  
+- msg: "ไม่คิดว่าคุณในชุดนี้จะดูดีขนาดนี้"
+  character: Thames
+  
+- msg: "(อยู่ๆตานี่ก็มาชมกันตรงๆเนี้ยนะ)"
+  character: me
+  
+- msg: "ขอบคุณนะ"
+  character: me
+  
+- msg: "แต่จริงๆนะ"
+  character: me
+
+- choice:
+  - msg: "หูย ชมแบบนี้ฝนจะตกหรือเปล่า"
+    goto: ChoiceCh8-A1-1
+  - msg: "ก็ฉันเลือกชุดที่ดีที่สุดนี่หน่า"
+    goto: ChoiceCh8-A1-2
+  - msg: "ฉันก็เขินเป็นนะ"
+    goto: ChoiceCh8-A1-3
+  skip:
+    goto: ChoiceCh8-A1-Sk
+  state: ChoiceState8-V1
+  character: me
+
+- label: ChoiceCh8-A1-1
+  msg: "ทำไม แปลกมากเลยหรือยังไง"
+  character: Thames
+
+- msg: "ใช่สิคุณ"
+  character: me
+
+- msg: "ก็แค่พูดอะไรตามตรง"
+  character: Thames
+
+- msg: "(อ๋า นี่เขาชมอีกแล้วหรอ)"
+  character: me
+
+- goto: ChoiceCh8-A1-Sk
+
+- label: ChoiceCh8-A1-2
+  msg: "ฉันเครียดมากเลยกว่าจะแต่งตัวเสร็จ"
+  character: me
+
+- msg: "ก็เลยช้านิดหน่อยแบบนี้แหละ แฮะๆ"
+  character: me
+
+- msg: "ไม่ผิดหวังเลย"
+  character: Thames
+
+- msg: "(เอ๋ นี่เขาแปลกจริงๆแหละ)"
+  character: me
+
+- goto: ChoiceCh8-A1-Sk
+
+- label: ChoiceCh8-A1-3
+  msg: "เธอเขินก็น่ารักดีออก"
+  character: Thames
+
+- msg: "(ตานี่ชมฉันเกินไปหรือเปล่าเนี้ย)"
+  character: me
+
+- goto: ChoiceCh8-A1-Sk
+
+- label: ChoiceCh8-A1-Sk
+  msg: "(ง่า ฉันเริ่มรู้สึกร้อนๆที่หน้าแล้วนะ)"
+  character: me
+
+- msg: " {me} หน้าเธอแดงน่ะ"
+  character: Thames
+  
+- msg: "ก็ปกติไหมล่ะ ฉันปัดบลัชออนมานะ"
+  character: me
+  
+- msg: "ปัดไปก่อนเดี๋ยวอ่อนเอง นายเข้าใจไหม"
+  character: me
+
+- msg: " ผมก็ไม่ได้ว่าอะไรนะ ฮ่าๆ"
+  character: Thames
+
+- msg: " ไปกันเถอะ จะเลทแล้ว"
+  character: Thames
+  
+- msg: "(ฉันตามเขาไปที่ดาดฟ้าของโรงแรม)"
+  character: me
+  
+- msg: "(บรรยากาศดีมากๆ ลมเย็นๆ ฉันชอบจัง)"
+  character: me
+    
+- msg: "(แต่ไม่มีคนเลย นี่เขาถึงขั้นปิดชั้นบนเลยหรอ)"
+  character: me
+  
+- msg: "(เจอโต๊ะของแขกแล้ว)"
+  character: me
+
+- msg: " คุณลุง สวัสดีครับ"
+  character: Thames
+
+- msg: "อ้าว ไงเธมส์"
+  character: Uncle
+  
+- character: Uncle
+  position: left
+  act: Idle-Half
+
+- msg: "มาๆ นั่งก่อน"
+  character: Uncle
+
+- msg: "หนูแฟนเธมส์ก็นั่งเลยลูก"
+  character: Uncle
+    
+- msg: "(แขกที่เขาว่าสำคัญคือลุงเขาหรอเนี่ย)"
+  character: me
+  
+- msg: "สวัสดีค่ะ ตะ..แต่ว่า"
+  character: me
+- choice:
+  - msg: "หนูไม่ใช่แฟนคุณเธมส์ค่ะ"
+    goto: ChoiceCh8-A2-1
+  - msg: "หนูเป็นเลขาคุณเธมส์ค่ะ"
+    goto: ChoiceCh8-A2-2
+  - msg: "(นั่งลง)"
+    goto: ChoiceCh8-A2-3
+  skip:
+    goto: ChoiceCh8-A2-Sk
+  state: ChoiceState8-V2
+  character: me
+
+- label: ChoiceCh8-A2-1
+  msg: "อ้าวเหรอ ขอโทษทีนะ"
+  character: Uncle
+
+- msg: "เธอเป็นเลขาผมเองครับลุง"
+  character: Thames
+
+- msg: "เธอนั่งตรงนี้ก็ได้"
+  character: Thames
+
+- msg: "(เธมส์ให้ฉันนั่งลงข้างๆเขา)"
+  character: me
+
+- goto: ChoiceCh8-A2-Sk
+
+- label: ChoiceCh8-A2-2
+  msg: "อ้าวเหรอ ขอโทษทีนะ"
+  character: Uncle
+
+- msg: "เธอนั่งตรงนี้ก็ได้"
+  character: Thames
+
+- msg: "(เธมส์ให้ฉันนั่งลงข้างๆเขา)"
+  character: me
+
+- goto: ChoiceCh8-A2-Sk
+
+- label: ChoiceCh8-A2-3
+  msg: "เธอเป็นเลขาผมเองครับ"
+  character: Thames
+
+- msg: "อ้าว ขอโทษทีนะ"
+  character: Uncle
+
+- goto: ChoiceCh8-A2-Sk
+
+- label: ChoiceCh8-A2-Sk
+  msg: "ฉันนี่ก็จริงๆเลย ฮ่าๆ"
+  character: Uncle
+
+- msg: "เห็นหนูดูน่ารักดี คิดว่าเธมส์ตาถึงขนาดนี้เลยหรอ"
+  character: Uncle
+
+- msg: "ใช่ไหมล่ะลุง"
+  character: Thames
+
+- msg: "(นายนี่เจ้าชู้ใช่เล่นนะ)"
+  character: me
+
+- msg: "(แบบนี้สินะมินนี่ถึงได้พูดแบบนั้น)"
+  character: me
+
+- msg: "นี่!คุณ"
+  character: me
+
+- msg: "ล้อเล่นหน่า"
+  character: Thames
+
+- msg: "อย่าถือสาลุงกับเธมส์เลยนะ"
+  character: Uncle
+  
+- msg: "งั้นเรามาเข้าเรื่องเลยดีกว่า"
+  character: Uncle
+
+- msg: "..."
+  character: me
+
+- msg: "(ฉันพึ่งรู้ว่าบริษัทเธมส์เป็นบริษัทลูกของลุงอีกที)"
+  character: me
+
+- msg: "(พวกเขาดูเก่งกันมากจริงๆ ฉันคงทำไม่ได้แบบเขาแน่)"
+  character: me
+
+- msg: "ก็ประมาณนี้แหละเธมส์ ที่ลุงอยากจะคุยด้วย"
+  character: Uncle
+
+- msg: "ผมโอเคนะ"
+  character: Thames
+
+- msg: "บริษัทนั้นที่คุณพูดถึงเขากำลังลงทุนที่เวียดนามใช่ไหม"
+  character: me
+
+- msg: "ใช่แล้ว"
+  character: Thames
+
+- msg: "คุณรู้ได้ยังไงผมยังไม่เคยพูดถึงเลยนะ"
+  character: Thames
+
+- msg: "ฉันก็พอหาข้อมูลมาบ้าง"
+  character: me
+
+- msg: "มันเป็นเรื่องที่ฉันควรรู้นี่"
+  character: me
+
+- msg: "ก็ดี ค่อยง่ายขึ้นหน่อย"
+  character: Thames
+
+- msg: "หนูนี่ขยันและดูละเอียดดีนะ"
+  character: Uncle
+
+- msg: "มาทำงานกับลุงไหม เธมส์มันเรื่องมาก"
+  character: Uncle
+
+- msg: "สัญญาว่าจะให้มากกว่าเจ้าเธมส์แน่นอน ฮ่าๆ"
+  character: Uncle
+
+- msg: "ลุงสู้ผมไม่ได้หรอก"
+  character: Thames
+
+- msg: "ถามเจ้าตัวก่อนสิ ฮ่าๆ"
+  character: Uncle
+
+- msg: "เอ่อ.."
+  character: me
+- msg: "สวัสดีค่ะ ตะ..แต่ว่า"
+  character: me
+- choice:
+  - msg: "พอดีตอนนี้หนูยังไม่ได้มองหาตำแหน่งใหม่น่ะค่ะ"
+    goto: ChoiceCh8-A3-1
+  - msg: "หนููขอกลับไปคิดดูก่อนนะคะ"
+    goto: ChoiceCh8-A3-2
+  - msg: "คุณลุงคุยกับคุณเธมส์เองเลยดีกว่าค่ะ"
+    goto: ChoiceCh8-A3-3
+  skip:
+    goto: ChoiceCh8-A3-Sk
+  state: ChoiceState8-V3
+  character: me
+
+- label: ChoiceCh8-A3-1
+  msg: "ยังอยากทำกับคุณเธมส์ให้ดีที่สุดก่อน "
+  character: me
+
+- msg: "ขอบคุณสำหรับโอกาสนะคะ"
+  character: me
+
+- msg: "หึหึ"
+  character: Thames
+
+- goto: ChoiceCh8-A3-Sk
+
+- label: ChoiceCh8-A3-2
+  msg: "หนูยังไม่ค่อยมั่นใจในฝีมือเท่าไรค่ะ"
+  character: me
+
+- msg: "เธอจะหักหลังฉันหรอ"
+  character: Thames
+
+- msg: "ฉันก็ยังไม่ได้ตกลงนี่"
+  character: me
+  
+- msg: "ไม่ได้!"
+  character: Thames
+
+- goto: ChoiceCh8-A3-Sk
+
+- label: ChoiceCh8-A3-3
+  msg: "เธอคิดว่าฉันจะตอบว่าอะไร"
+  character: Thames
+
+- msg: "ไม่รู้คุณสิ"
+  character: me
+
+- msg: "ไม่!ไง"
+  character: Thames
+
+- goto: ChoiceCh8-A3-Sk
+
+- label: ChoiceCh8-A3-Sk
+  msg: "ฮ่าๆ เอาล่ะ ลุงก็พอรู้อยู่"
+  character: Uncle
+
+- msg: "ถึงยังไงเธมส์ก็ไม่ปล่อยคนเก่งๆแบบนี้ไปหรอก"
+  character: Uncle
+
+- msg: "งั้นวันนี้กลับไปพักกันเถอะ"
+  character: Uncle
+
+- msg: "ลุงจะไปตามทางของลุงเหมือนกัน ฮ่าๆ"
+  character: Uncle
+
+- msg: "ขอให้สนุกนะครับ งั้นผมลานะลุง"
+  character: Thames
+
+- msg: "ขอบคุณนะคะคุณลุง สวัสดีค่ะ"
+  character: me
+
+
+
+
+
+

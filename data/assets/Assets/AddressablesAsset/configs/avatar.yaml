@@ -1,0 +1,35 @@
+- avatar: default
+  image: default
+  name: default
+
+- avatar: me
+  image: me
+  name: me
+
+- avatar: character-1
+  image: character-1
+  name: ตัวละคร 1
+
+- avatar: character-2
+  image: character-2
+  name: ตัวละคร 1
+
+- avatar: Minnie-Avatar-1
+  image: Minnie-Avatar-1
+  name: มินนี่
+
+- avatar: Junji-Avatar-1
+  image: Junji-Avatar-1
+  name: จันจิ
+
+- avatar: Thames-Avatar-1
+  image: Thames-Avatar-1
+  name: เธมท์
+
+- avatar: Uncle-Avatar-1
+  image: Uncle-Avatar-1
+  name: ลุง
+
+- avatar: MM-Avatar-1
+  image: MM-Avatar-1
+  name: คุณหญิง

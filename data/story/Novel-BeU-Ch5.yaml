@@ -1,0 +1,361 @@
+﻿#BeU-3
+
+######################################
+- background: Bedroom
+- music: main-01
+- delay: 1
+
+- msg: "(ตุ๊ดตุ๊ดตุ๊ด ตุ๊ดตุ๊ดตุ๊ด )"
+  character: me
+  
+- msg: "(ครืดด ครืดด)"
+  character: me
+  
+- msg: "(อ๋าาา เช้าแล้วหรอเนี้ยยย)"
+  character: me
+
+- msg: "(นี่พึ่ง6โมงครึ่งเอง)"
+  character: me
+  
+- msg: "..."
+  character: me
+  
+- msg: "(ฉันเข้างาน7โมงนี่ แงง)"
+  character: me
+
+- msg: "..."
+  character: me
+  
+- msg: "กรี๊ด7โมงแล้ว"
+  character: me
+  
+- msg: "เสร็จแล้วๆๆ พร้อมออก"
+  character: me
+
+- msg: "แล้ว...ฉันต้องไปไหนอ่าา"
+  character: me
+  
+- msg: "ปี๊นนน ปี๊นนน"
+  character: me
+
+- msg: "คุณณณ ลงมาได้แล้ว"
+  character: Thames
+  
+- msg: "(ห๊ะ อย่าบอกนะว่า)"
+  character: me
+
+- msg: "คุุณ มาได้ไงอะ"
+  character: me
+  
+- msg: "(ฉันตะโกนหาเธมส์ที่รออยู่หน้าประตูบ้าน)"
+  character: me
+
+- msg: "ลงมาก่อนได้ไหมผมเจ็บคอ"
+  character: Thames
+  
+- msg: "(ฉันวิ่งลงไปหาเขาด้วยความตกใจ)"
+  character: me
+
+- background: ShowCar
+
+- character: Thames
+  position: center
+  act: Idle
+
+- msg: "คุณสายไป2นาที"
+  character: Thames
+
+- msg: "คุณไม่บอกฉันด้วยซ้ำว่าคุณจะมา"
+  character: me
+  
+- msg: "ยังจะมาว่าฉันอีก"
+  character: me
+
+- msg: "(เอาแต่ใจชะมัด)"
+  character: Thames
+
+- msg: "(เขาจะทำอะไรก็ได้จริงๆสินะ)"
+  character: me
+  
+- msg: "ยังจะมาว่าฉันอีก"
+  character: me
+
+- background: Workingroom
+
+- msg: "นี่ห้องทำงานผม"
+  character: Thames
+
+- msg: "เป็นไงบ้าง"
+  character: Thames
+
+- choice:
+  - msg: "โห วิวสวยมากเลย"
+    goto: ChoiceCh5-A1-1
+  - msg: "ฉันว่าก็ดีนะ สบายตาดี"
+    goto: ChoiceCh5-A1-2
+  - msg: "ก็ไม่ต่างจากที่ฉันคิดเท่าไรนะ"
+    goto: ChoiceCh5-A1-3
+  skip:
+    goto: ChoiceCh5-A1-Sk
+  state: ChoiceState5-V1
+  character: me
+
+- label: ChoiceCh5-A1-1
+  msg: "ใช่ไหมล่ะ ห้องนี้วิวดีที่สุดในตึกเลยนะ"
+  character: Thames
+
+- msg: "แถมมุมต่างๆผมก็เป็นคนจัดเอง"
+  character: Thames
+
+- msg: "สุดยอดเลย"
+  character: me
+  
+- msg: "นายนี่ทำได้ทุกอย่างเลยนะ"
+  character: me
+
+- goto: ChoiceCh5-A1-Sk
+
+- label: ChoiceCh5-A1-2
+  msg: "ผมออกแบบห้องนี้เองล่ะ"
+  character: Thames
+
+- msg: "นายนี่ทำได้ทุกอย่างเลยรึเปล่านะ"
+  character: me
+
+- goto: ChoiceCh5-A1-Sk
+
+- label: ChoiceCh5-A1-3
+  msg: "แต่ก็ดีกว่าทุกวิวที่เธอเคยเห็นแน่"
+  character: Thames
+
+- goto: ChoiceCh5-A1-Sk
+
+- label: ChoiceCh5-A1-Sk
+  msg: "เดี๋ยวผมจะพาไปดูโต๊ะทำงานคุณ"
+  character: Thames
+
+- msg: "แล้วเราจะเข้าประชุมกัน"
+  character: Thames
+  
+- msg: "(ฉันตามเธมส์ไปดูโต๊ะทำงานฉันที่อยู่หน้าห้องเขา)"
+  character: me
+  
+- msg: "(เรียกได้ว่าเจอกันจนเบื่อไปเลย)"
+  character: me
+  
+- msg: "..."
+  character: me
+
+- msg: "เมื่อกี้เธอจดรายงานทันรึเปล่า"
+  character: Thames
+  
+- msg: "ทันนะ"
+  character: me
+  
+- msg: "เดี๋๋ยวฉันส่งให้แล้วกัน"
+  character: me
+
+- msg: "สรุปมาให้เรียบร้อยนะ"
+  character: Thames
+
+- msg: "ผมเข้าไปทำงานก่อน"
+  character: Thames
+
+- character: empty
+  position: center
+
+- delay: 0.5
+
+- character: Minnie
+  position: center
+  act: Idle
+  
+- msg: "เธอ พี่เธมส์อยู่ในห้องไหม"
+  character: Minnie
+  
+- msg: "เอ๊ะ"
+  character: Minnie
+
+- character: Minnie
+  position: center
+  act: Curious
+    
+- msg: "นี่เธอพนักงานร้านจันจินี่"
+  character: Minnie
+  
+- msg: "ทำไมถึงมาอยู่ที่นี่ได้"
+  character: Minnie
+  
+- msg: "(นีมันยัยมินนี่นี่หน่า)"
+  character: me
+  
+- msg: "(ทำไมโลกมันกลมแบบนี้นะ)"
+  character: me
+  
+- msg: "คุณเธมส์อยู่ในห้องค่ะ คุณได้นัดมาไหมคะ"
+  character: me
+  
+- msg: "ก็ไม่จำเป็นต้องนัดนะ"
+  character: Minnie
+  
+- msg: "ตอบมาก่อนสิทำไมเธอถึงมาอยู่ที่นี่ได้"
+  character: Minnie
+
+- choice:
+  - msg: "เอ่อ ฉันพึ่งย้ายมาทำงานที่นี่น่ะค่ะ"
+    goto: ChoiceCh5-A2-1
+  - msg: "ฉันย้ายมาทำงานเป็นเลขาคุณเธมส์ค่ะ"
+    goto: ChoiceCh5-A2-2
+  - msg: "ฉันเปลี่ยนงานแล้วค่ะ"
+    goto: ChoiceCh5-A2-3
+  skip:
+    goto: ChoiceCh5-A2-Sk
+  state: ChoiceState5-V2
+  character: me
+
+- label: ChoiceCh5-A2-1
+  msg: "ย้ายมาเป็นเลขาเนี่ยนะ"
+  character: Minnie
+
+- msg: "ทำไมเธมส์ทำอะไรไม่ปรึกษาเลย"
+  character: Minnie
+
+- goto: ChoiceCh5-A2-Sk
+
+- label: ChoiceCh5-A2-2
+  msg: "ทำไมฉันไม่เห็นรู้เลย"
+  character: Minnie
+
+- msg: "เธมส์ทำอะไรตามใจตัวเองอีกแล้ว"
+  character: Minnie
+
+- goto: ChoiceCh5-A2-Sk
+
+- label: ChoiceCh5-A2-3
+  msg: "แล้วทำไมเธอถึงได้เปลี่ยนมาทำเลขาเธมส์"
+  character: Minnie
+
+- msg: "มันไม่ใช่ใครก็ได้นะ"
+  character: Minnie
+
+- msg: "ต้องคุยกับเธมส์หน่อยแล้ว"
+  character: Minnie
+
+- goto: ChoiceCh5-A2-Sk
+
+- label: ChoiceCh5-A2-Sk
+  msg: "(แล้วยัยนี่เป็นอะไรกับเธมส์อีกล่ะเนี้ย เฮ้อ)"
+  character: me
+
+- msg: "ฉันก็ไม่แน่ใจเหมือนกันเขาพึ่งรับฉันมาทำงานวันแรก"
+  character: me
+
+- msg: "สรุป เธมส์อยู่ใช่ไหม ฉันเข้าไปเลยนะ"
+  character: Minnie
+
+- msg: "เดี๋ยวคุณ.."
+  character: me
+
+- msg: "(ไม่ทันซะแล้ว ฉันจะโดนว่าไหมเนี้ยะ)"
+  character: me
+
+- msg: ".."
+  character: me
+
+- character: empty
+  position: center
+
+- msg: "(อ๊ะ ออกมากันแล้ว)"
+  character: me
+
+- character: Thames
+  position: center
+  act: Idle
+
+- character: Minnie
+  position: left
+  act: Idle
+
+- msg: "แต่พี่ก็ควรบอกฉันก่อนอยู่ดี ฉันก็มีหุ้นบริษัทนี้เหมือนกันกับพี่นะ"
+  character: Minnie
+
+- msg: "ชอบทำอะไรตามใจอยู่เรื่อย"
+  character: Minnie
+
+- msg: "พี่ก็เข้าใจเธอนะ "
+  character: Thames
+
+- msg: "แต่นี่มันก็เลขาส่วนตัวของพี่"
+  character: Thames
+
+- msg: "พี่ก็มีสิทธิ์เลือกไหมว่าใครจะมาทำตำแหน่งนี้"
+  character: Thames
+
+- msg: "ถ้าพี่มั่นใจว่าดีก็แล้วแต่พี่"
+  character: Minnie
+
+- msg: "หวังว่าจะไม่เหมือนเลขาคนก่อนๆที่ตั้งใจจะมาจับพี่อีกแล้วกัน"
+  character: Minnie
+
+- msg: "(มินนี่พูดพลางหันมามองฉัน)"
+  character: me
+
+- msg: "(นี่พวกเขาเป็นพี่น้องกันหรอ)"
+  character: me
+
+- msg: "(แต่เดี๋ยวนะ ทำไมยัยนี่ถึงมากล่าวหาฉันแบบนี้ล่ะ!)"
+  character: me
+
+- choice:
+  - msg: "ไม่ต้องห่วงหรอกค่ะ เพราะพี่ชายของคุณไม่ใช่สเป็กฉัน"
+    goto: ChoiceCh5-A3-1
+  - msg: "ฉันไม่ใช่พวกยุ่งกับคนมีเจ้าของหรอกนะคะ"
+    goto: ChoiceCh5-A3-2
+  - msg: "ฉันมาทำงานเพราะความสามารถ"
+    goto: ChoiceCh5-A3-3
+  skip:
+    goto: ChoiceCh5-A3-Sk
+  state: ChoiceState5-V3
+  character: me
+
+- label: ChoiceCh5-A3-1
+  msg: "หวังว่าจะเป็นอย่างที่พูดนะจ๊ะ"
+  character: Minnie
+
+- goto: ChoiceCh5-A3-Sk
+
+- label: ChoiceCh5-A3-2
+  msg: "คิดได้แบบนั้นก็ดีจ้ะ"
+  character: Minnie
+
+- goto: ChoiceCh5-A3-Sk
+
+- label: ChoiceCh5-A3-3
+  msg: "ไม่คิดอะไรแบบที่คุณพูดแน่ๆ"
+  character: me
+
+- msg: "ขอให้เป็นแบบนั้นนะจ๊ะ"
+  character: Minnie
+
+- goto: ChoiceCh5-A3-Sk
+
+- label: ChoiceCh5-A3-Sk
+  msg: "ก็อย่ารีบลาออกเพราะช้ำใจแล้วกัน"
+  character: Minnie
+
+- msg: "พอเถอะมินนี่"
+  character: Thames
+
+- msg: "ก็มินนี่พูดความจริง"
+  character: Minnie
+
+- msg: "กลับบ้านไป พี่มีอะไรต้องทำ"
+  character: Thames
+
+- msg: "มินนี่จะบอกแม่"
+  character: Minnie
+
+- msg: "เรื่องที่พี่ขัดคำสั่งแม่"
+  character: Minnie
+
+

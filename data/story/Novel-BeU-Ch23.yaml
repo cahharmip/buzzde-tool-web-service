@@ -1,0 +1,413 @@
+﻿#BeU-9
+
+######################################
+- background: Workingroom
+- music: main-01
+- delay: 1
+
+- msg: "(อีกแค่วันเดียวก็จะถึงวันหยุดที่ฉันรอคอยแล้ว เย่)"
+  character: me
+  
+- msg: "(อาทิตย์นี้เธมส์งานเยอะมากจริงๆ)"
+  character: me
+  
+- msg: "(ขนาดฉันแค่จัดการให้ยังเหนื่อยเลย)"
+  character: me
+  
+- msg: "(แต่เชื่อไหม ตั้งแต่ที่ไปตึกเพชรวันนั้น)"
+  character: me
+  
+- msg: "(ฉันยังคิดทบทวนสิ่งที่เธมส์ถามอยู่เลย)"
+  character: me
+ 
+- character: MM
+  position: center
+  act: Idle-Half
+  
+- msg: "เธอเองหรอเลขาคนใหม่"
+  character: MM
+
+- msg: "คะ? ค่ะ ฉันเองเลขาคุณเธมส์ค่ะ"
+  character: me
+
+- msg: "(ผู้หญิงคนนี้หน้าคุ้นจัง)"
+  character: me
+
+- msg: "รู้จักฉันหรือยังล่ะ"
+  character: MM
+
+- msg: "เอ่อ.."
+  character: me
+
+- choice:
+  - msg: "ขอโทษนะคะ"
+    goto: ChoiceCh23-A1-1
+  - msg: "คุณเป็นใครหรอคะ"
+    goto: ChoiceCh23-A1-2
+  - msg: "ไม่ทราบค่ะ"
+    goto: ChoiceCh23-A1-3
+  skip:
+    goto: ChoiceCh23-A1-Sk
+  state: ChoiceState23-V1
+  character: me
+
+- label: ChoiceCh23-A1-1
+  msg: "ฉันเป็นแม่ของเธมส์"
+  character: MM
+    
+- msg: "แล้วที่ฉันมา ฉันก็จะมาดูเลขาคนใหม่นี่แหละ"
+  character: MM
+    
+- msg: "เป็นยังไงบ้างล่ะ"
+  character: MM
+
+- goto: ChoiceCh23-A1-Sk
+
+- label: ChoiceCh23-A1-2
+  msg: "ฉันเป็นแม่ของเธมส์"
+  character: MM
+    
+- msg: "แล้วที่ฉันมา ฉันก็จะมาดูเลขาคนใหม่นี่แหละ"
+  character: MM
+    
+- msg: "เป็นยังไงบ้างล่ะ"
+  character: MM
+
+- goto: ChoiceCh23-A1-Sk
+
+- label: ChoiceCh23-A1-3
+  msg: "ฉันเป็นแม่ของเธมส์"
+  character: MM
+    
+- msg: "แล้วที่ฉันมา ฉันก็จะมาดูเลขาคนใหม่นี่แหละ"
+  character: MM
+    
+- msg: "เป็นยังไงบ้างล่ะ"
+  character: MM
+  
+- goto: ChoiceCh23-A1-Sk
+
+- label: ChoiceCh23-A1-Sk
+  msg: "สวัสดีค่ะคุณหญิง"
+  character: me
+
+- choice:
+  - msg: "เอ่อ.. หมายถึงอะไรหรอคะ"
+    goto: ChoiceCh23-A2-1
+  - msg: "ฉันสบายดีค่ะ "
+    goto: ChoiceCh23-A2-2
+  - msg: "ถ้าเรื่องงานก็เรียบร้อยดีค่ะ"
+    goto: ChoiceCh23-A2-3
+  skip:
+    goto: ChoiceCh23-A2-Sk
+  state: ChoiceState23-V2
+  character: me
+
+- label: ChoiceCh23-A2-1
+  msg: "ก็ทั่วๆไป เรื่องงานหรือกับเธมส์"
+  character: MM
+ 
+- goto: ChoiceCh23-A2-Sk
+
+- label: ChoiceCh23-A2-2
+  msg: "ก็น่าจะสบายนะ มีคนคอยเทคแคร์ดีนิ"
+  character: MM
+
+- goto: ChoiceCh23-A2-Sk
+
+- label: ChoiceCh23-A2-3
+  msg: "แบบนั้นก็ดี แล้วเรื่องอื่นเรียบร้อยไหมล่ะ"
+  character: MM
+
+- goto: ChoiceCh23-A2-Sk
+
+- label: ChoiceCh23-A2-Sk
+  msg: "คุณหญิงหมายความว่ายังไงคะ"
+  character: me
+
+- msg: "ฉันไม่แน่ใจว่าฉันทำอะไรให้คุณไม่พอใจหรือเปล่า"
+  character: me
+    
+- msg: "หน้าตาเธอก็ดูน่ารักดีนะ"
+  character: MM
+    
+- msg: "ไม่น่า ถึงได้เข้าตาเธมส์"
+  character: MM
+    
+- msg: "ไม่คิดจะทำงานอย่างอื่นหรอ"
+  character: MM
+
+- choice:
+  - msg: "คุณมีอะไรก็พูดมาเลยดีกว่าค่ะ"
+    goto: ChoiceCh23-A3-1
+  - msg: "เข้าประเด็นเถอะคุณหญิง"
+    goto: ChoiceCh23-A3-2
+  - msg: "แล้วเกี่ยวอะไรกับคุณหรอคะ"
+    goto: ChoiceCh23-A3-3
+  skip:
+    goto: ChoiceCh23-A3-Sk
+  state: ChoiceState23-V3
+  character: me
+
+- label: ChoiceCh23-A3-1
+  msg: "ฉันก็แค่หวังดี ไม่อยากให้เธอเป็นแค่เลขา"
+  character: MM
+ 
+- goto: ChoiceCh23-A3-Sk
+
+- label: ChoiceCh23-A3-2
+  msg: "ฉันก็แค่หวังดี ไม่อยากให้เธอเป็นแค่เลขา"
+  character: MM
+
+- goto: ChoiceCh23-A3-Sk
+
+- label: ChoiceCh23-A3-3
+  msg: "ฉันก็แค่หวังดี ไม่อยากให้เธอเป็นแค่เลขา"
+  character: MM
+
+- goto: ChoiceCh23-A3-Sk
+
+- label: ChoiceCh23-A3-Sk
+  msg: "ต้องมาตามแจอยู่กับผู้ชาย"
+  character: MM
+
+- msg: "ที่บ้านรู้หรือเปล่าว่าเลือกงานแบบนี้"
+  character: MM
+
+- character: Thames
+  position: left
+  act: Idle-Half
+
+- msg: "เป็นเลขาแล้วมันทำไมหรอครับแม่"
+  character: Thames
+
+- msg: "เท่าที่ผมเห็น {me} ก็ทำงานได้ดีมาตลอด"
+  character: Thames
+
+- msg: "งานเลขาไม่ได้มีแค่เอาใจเจ้านายนะครับ"
+  character: Thames
+
+- msg: "(เธมส์ ขอบคุณจริงๆที่เขามาตอนนี้)"
+  character: me
+
+- msg: "(ฉันทำอะไรไม่ถูกไปหมด ฉันไมเข้าใจอะไรเลย)"
+  character: me
+    
+- msg: "แต่เท่าที่แม่รู้ แกกับเลขานี่ไปถึงไหนต่อไหนกันแล้วนะ"
+  character: MM
+    
+- msg: "แม่คิดมาตลอดว่าคนที่จะมาเป็นSoul Mateต้องเป็นสะใภ้แม่แน่ๆ"
+  character: MM    
+
+- msg: "แล้วดูสิ นี่ใครก็ไม่รู้ เธมส์แกเคยคิดจะบอกอะไรแม่บ้างมั้ย"
+  character: MM
+    
+- msg: "Soul Mateมูลค่ามันมากมายขนาดไหน "
+  character: MM
+    
+- msg: "กว่าแกจะได้เป็นVIPใช้เวลากี่ปี เสียเงินไปเท่าไร เห็นค่าบ้างไหม"
+  character: MM
+
+- msg: "เพราะผมเห็นค่าของมันไงแม่ผมถึงยกมันให้ {me}"
+  character: Thames
+
+- msg: "กะอีแค่Soul Mateผมไม่เข้าใจว่ามันจะทำไมนักหนา"
+  character: Thames
+      
+- msg: "เพราะมันจะอยู่กับแกตลอดชีวิตไง"
+  character: MM    
+
+- msg: "แม่ไม่ได้อะไรหรอกนะกับการเป็นVIP แต่แค่แกทำอะไรข้ามหัวแม่ไปไหม"
+  character: MM
+    
+- msg: "แกเคยบอกอะไรฉันไหม"
+  character: MM
+    
+- msg: "อยู่ๆก็เอาใครมาไม่รู้รับสิทธิ์ที่มันควรจะเป็นคู่สมรสของแก"
+  character: MM
+  
+- msg: "เพราะผมรู้ไงว่าถ้าบอกไปแล้วแม่จะเป็นแบบนี้"
+  character: Thames
+
+- msg: "ผมคิดว่าไม่จำเป็น เพราะ {me} ก็ทำให้ผมรู้สึกว่าผมอยากให้เป็นเขา"
+  character: Thames
+    
+- msg: "(ฉันไม่เคยคิดเลยว่าการที่ฉันเป็นSoul Mateกับเขามันจะทำให้เรื่องบานปลายขนาดนี้)"
+  character: me
+    
+- msg: "(ถ้าย้อนกลับไปได้ฉันก็คงไม่รับมันไว้)"
+  character: me
+
+- choice:
+  - msg: "คุณหญิงลองรู้จักฉันดูก่อนไหมคะ"
+    goto: ChoiceCh23-A4-1
+  - msg: "ฉันจะไม่ไปที่นั่นอีกค่ะ"
+    goto: ChoiceCh23-A4-2
+  - msg: "......"
+    goto: ChoiceCh23-A4-Sk
+  skip:
+    goto: ChoiceCh23-A4-Sk
+  state: ChoiceState23-V4
+  character: me
+
+- label: ChoiceCh23-A4-1
+  msg: "ฉันชอบนะที่เธอมั่นใจดี แต่ฉันว่าฉันก็พอรู้จักเธอมาบ้าง"
+  character: MM
+      
+- msg: "คุณหนูตกอับอย่างเธอทำอะไรก็ไม่เป็น เรียนก็ไม่ได้เรื่อง"
+  character: MM
+    
+- msg: "เพื่อนก็ไม่ค่อยคบ ฉันว่ามันก็พอจะบอกอะไรได้"
+  character: MM
+     
+- msg: "นั่นมันฉันเมื่อก่อน ฉันยอมรับว่าฉันอาจจะนิสัยไม่ดี แต่ตอนนี้ฉันเปลี่ยนแล้วค่ะ)"
+  character: me
+    
+- msg: "ฉันมั่นใจว่าฉันก็ขยันทำงานและก็ทำมันได้ดี"
+  character: me
+      
+- msg: "ก่อนที่คุณจะว่าฉัน คุณลองรู้จักฉันจริงๆก่อนก็ได้นะคะ"
+  character: me
+
+- goto: ChoiceCh23-A4-Sk
+
+- label: ChoiceCh23-A4-2
+  msg: "มันก็ไม่ได้ช่วยให้อะไรดีขึ้นหรอกนะ"
+  character: MM
+    
+- msg: "การที่เธอไม่ไปที่นั่นมีแต่จะทำให้เธมส์โดนนินทา"
+  character: MM
+
+- goto: ChoiceCh23-A4-Sk
+
+- label: ChoiceCh23-A4-Sk
+  msg: "แม่ใจเย็นๆก่อนนะ"
+  character: Thames
+  
+- msg: "เปิดใจได้ไหมครับ {me} เป็นคนดี แม่เชื่อใจผมสักครั้งได้ไหม"
+  character: Thames
+
+- msg: "ที่ผ่านมาผมไม่เคยขออะไรเลยนะ"
+  character: Thames
+  
+- msg: "แต่ครั้งนี้ผมอยากให้แม่เชื่อในตัวผมหน่อย"
+  character: Thames
+        
+- msg: "เธมส์ แม่ขอพูดตรงๆนะ สิ่งที่แม่รู้มาเลขานี่ไม่มีดีเลยสักนิด"
+  character: MM
+    
+- msg: "อย่างเรื่องSoul Mateแกก็ไม่ทันแม่เลขานี่หรอก "
+  character: MM
+
+- msg: "ผมไม่เข้าใจ แม่ไปฟังใครมา"
+  character: Thames
+  
+- choice:
+  - msg: "ฉันไม่ได้ทำอะไรเลยนะคะ"
+    goto: ChoiceCh23-A5-1
+  - msg: "คุณไปรู้มาจากที่ไหนคะ"
+    goto: ChoiceCh23-A5-Sk
+  - msg: "......"
+    goto: ChoiceCh23-A5-Sk
+  skip:
+    goto: ChoiceCh23-A5-Sk
+  state: ChoiceState23-V5
+  character: me
+
+- label: ChoiceCh23-A5-1
+  msg: "ฉันไม่รู้ด้วยซ้ำว่าSoul Mateนี่คืออะไร"
+  character: me
+      
+- msg: "คุณหนูตกอับอย่างเธอทำไมจะไม่รู้"
+  character: MM
+
+- msg: "{me} ไม่รู้เรื่องจริงๆนะแม่ ผมเองที่จัดการทุกอย่าง {me}ไม่ได้ขออะไรเลย"
+  character: Thames
+
+- goto: ChoiceCh23-A5-Sk
+
+- label: ChoiceCh23-A5-Sk
+  msg: "โลกนี้มันกลมนะ เธอไปพูดกับใครมาล่ะก่อนที่เธมส์จะจัดการเรื่องSoul Mate"
+  character: MM
+
+- msg: "เธอมีสิทธิ์ปฏิเสธตั้งแต่ตอนพนักงานมาชี้แจงแล้วด้วยซ้ำ"
+  character: MM
+      
+- msg: "ฉันไม่เคยพูดนะคะ"
+  character: me
+
+- msg: "(ฉันไม่เข้าใจสิ่งที่คุณหญิงพูดสักนิด)"
+  character: me
+        
+- msg: "(ถ้ามองในแง่ร้าย คงไม่ได้มีใครใส่ร้ายฉันใช่ไหม)"
+  character: me
+          
+- msg: "ฉันไม่รู้ว่าฉันจะเชื่อเธอได้ยังไง"
+  character: MM
+    
+- msg: "ในเมื่อมีคนมาเล่าให้ฉันฟังแบบนี้"
+  character: MM
+
+- msg: "บางทีแม่เองอาจจะโดนหลอกมาก็ได้"
+  character: Thames
+        
+- msg: "เป็นไปไม่ได้จันจิจะหลอกแม่ทำไม"
+  character: MM
+
+- msg: "จันจิ?!?"
+  character: Thames
+
+- msg: "จันจิ?"
+  character: me
+  
+- msg: "จันจิเกี่ยวอะไรครับแม่"
+  character: Thames
+  
+- msg: "จันจิเป็นคนบอกเรื่องนี้กับแม่งั้นหรอ"
+  character: Thames
+        
+- msg: "มันก็ไม่เกี่ยวไหมว่าจันจิเป็นคนบอก"
+  character: MM
+            
+- msg: "แต่จันจิจะโกหกทำไม"
+  character: MM
+    
+- msg: "เธมส์ลองมองที่มุมแม่สิ จันจิที่แม่รู้จักมาพอ ๆ กับรู้จักลูก"
+  character: MM
+
+- msg: "กับเลขาที่แม่พึ่งเจอหน้าวันนี้ แม่จะให้แม่เชื่อใคร"
+  character: MM
+ 
+- msg: "ถ้าแม่พูดแบบนี้ผมเรียกจันจิมาเลยดีกว่า"
+  character: Thames
+
+- msg: "พอเถอะค่ะ"
+  character: me
+
+- msg: "ฉันไม่อยากเป็นตัวการที่ทำให้พวกคุณทะเลาะกันแล้ว"
+  character: me
+
+- msg: "ฉันขอรับผิดชอบคนเดียวค่ะ"
+  character: me    
+ 
+- msg: "คุณ..."
+  character: Thames
+
+- msg: "(ฉันรู้สึกสับสนไปหมด)"
+  character: me
+
+- msg: "(เรื่องนี้จะต้องมีการเข้าใจผิดแน่ๆ)"
+  character: me
+
+- msg: "(ฉันลุกออกมาจากตรงนั้นทันที)"
+  character: me     
+  
+- msg: "(เพราะฉันรู้สึกฉันจะกลั้นน้ำตาไม่ได้อีกต่อไป)"
+  character: me
+
+- msg: "(เธมส์เรียกชื่อฉันตามมาไม่รู้นานแค่ไหน)"
+  character: me
+
+- msg: "(แต่ฉันรู้สึกทนมองเขาตอนนี้ไม่ได้จริงๆ)"
+  character: me               
+

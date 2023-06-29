@@ -1,0 +1,304 @@
+﻿#BeU-3
+
+######################################
+- background: bg_101
+- music: main-01
+- delay: 1
+
+- character: Employees
+  position: center
+  act: Idle-Half
+
+- msg: "ร้านพาริเย่สวัสดีครับ"
+  character: Employees
+  
+- msg: "รับอะไรดีครับ"
+  character: Employees
+
+- msg: "โกโก้เย็นค่ะ"
+  character: me
+  
+- msg: "ครับผม รอที่โต๊ะได้เลยนะครับ"
+  character: Employees
+  
+- msg: "เสร็จแล้วจะไปเสิร์ฟให้ครับ"
+  character: Employees
+
+- msg: "(ฉันเดินมาหามินนี่ที่นั่งรออยู่ก่อนแล้ว)"
+  character: me
+
+- character: empty
+  position: center
+
+- character: Minnie
+  position: center
+  act: Idle-Half
+
+- msg: "นั่งก่อนสิ"
+  character: Minnie
+
+- msg: "ค่ะ..."
+  character: me
+
+- msg: "ฉันขอเข้าเรื่องเลยนะ"
+  character: Minnie
+  
+- msg: "พี่เธมส์เคยเล่าอะไรเกี่ยวกับเขาให้เธอฟังบ้าง"
+  character: Minnie
+
+- choice:
+  - msg: "ไม่ได้เล่าอะไรมากหรอก"
+    goto: ChoiceCh19-A1-1
+  - msg: "ก็มีเรื่องที่เขาผิดหวัง"
+    goto: ChoiceCh19-A1-2
+  - msg: "มีเรื่องจันจิเป็นเพื่อนที่ไว้ใจ"
+    goto: ChoiceCh19-A1-3
+  skip:
+    goto: ChoiceCh19-A1-Sk
+  state: ChoiceState19-V1
+  character: me
+
+- label: ChoiceCh19-A1-1
+  msg: "แค่เผินๆไม่ได้ลึกซึ้งอะไรมากน่ะ"
+  character: me
+
+- msg: "ชีวิตรักของพี่เธมส์ ไม่เคยเล่าเลยหรอ?"
+  character: Minnie
+
+- msg: "ก็เล่านะ บอกแค่ว่าเขาผิดหวังมาหลายรอบ"
+  character: me
+
+- msg: "แต่เธอก็ยังยืนยันจะอยู่ในชีวิตเขาใช่ไหม"
+  character: Minnie
+
+- goto: ChoiceCh19-A1-Sk
+
+- label: ChoiceCh19-A1-2
+  msg: "แต่เธอก็ยังยืนยันจะอยู่ในชีวิตเขาใช่ไหม"
+  character: Minnie
+
+- goto: ChoiceCh19-A1-Sk
+
+- label: ChoiceCh19-A1-3
+  msg: "เล่าทั้งหมดหรือเปล่า"
+  character: Minnie
+
+- msg: "ก็บอกแค่นั้นนะ คิดว่าน่าจะยัง..?"
+  character: me
+
+- msg: "ไว้ก่อนแล้วกัน"
+  character: Minnie
+
+- msg: "ถ้าเล่าถึงจันจิ แปลว่าก็ต้องเล่าเรื่องที่เขาผิดหวัง"
+  character: Minnie
+
+- msg: "แต่เธอก็ยังยืนยันจะอยู่ในชีวิตเขาใช่ไหม"
+  character: Minnie
+
+- goto: ChoiceCh19-A1-Sk
+
+- label: ChoiceCh19-A1-Sk
+  msg: "พูดตรงๆนะมินนี่"
+  character: me
+
+- msg: "ฉันไม่รู้จะทำตัวยังไง"
+  character: me
+  
+- msg: "อยู่ๆเขาบอกว่าอยากชัดเจนกับฉัน แล้วก็มาทำดีกับฉัน"
+  character: me
+  
+- msg: "ฉันยังต้องใกล้ชิดกับเขา มันก็เลี่ยงไม่ได้"
+  character: me
+  
+- msg: "แต่ฉันก็มั่นใจว่าฉันไม่ได้จะมาหลอกอะไรเขาทั้งนั้น"
+  character: me
+
+- msg: "แต่เธอก็มีใจไปแล้ว ใช่ไหมล่ะ"
+  character: Minnie
+
+- choice:
+  - msg: "ยังหรอก"
+    goto: ChoiceCh19-A2-1
+  - msg: "ไม่นะ ฉันยังคิดๆอยู่"
+    goto: ChoiceCh19-A2-2
+  - msg: "..."
+    goto: ChoiceCh19-A2-3
+  skip:
+    goto: ChoiceCh19-A2-Sk
+  state: ChoiceState19-V2
+  character: me
+
+- label: ChoiceCh19-A2-1
+  msg: "เธอดูเศร้านะ"
+  character: Minnie
+
+- msg: "ฉันว่าเธอคงสับสนจริงๆ"
+  character: Minnie
+
+- goto: ChoiceCh19-A2-Sk
+
+- label: ChoiceCh19-A2-2
+  msg: "ถ้าเป็นแบบนั้นเธอควรรีบบอกเธมส์ไปนะว่าเธอไม่ได้มีใจ"
+  character: Minnie
+
+- msg: "ทำแบบนี้ก็เหมือนยิ่งให้ความหวังเขา"
+  character: Minnie
+
+- goto: ChoiceCh19-A2-Sk
+
+- label: ChoiceCh19-A2-3
+  msg: "เอาล่ะ ฉันเข้าใจแล้ว"
+  character: Minnie
+
+- msg: "(มินนี่พูดพร้อมกับมองออกไปข้างนอกหน้าต่าง)"
+  character: me
+
+- goto: ChoiceCh19-A2-Sk
+
+- label: ChoiceCh19-A2-Sk
+  msg: "แล้วที่เธอนัดฉันมาเพราะอยากจะมาถามแค่นี้หรอ"
+  character: me
+
+- msg: "ฉันแค่อยากรู้ว่าเธอคิดยังไง"
+  character: Minnie
+
+- msg: "แล้วก็อยากจะมาเล่าอะไรให้ฟัง"
+  character: Minnie
+
+- msg: "เล่าอะไร?"
+  character: me
+
+- msg: "ฉันไม่เคยเห็นพี่ฉันเป็นแบบนี้"
+  character: Minnie
+
+- msg: "ปกติเธมส์ไม่ได้ทุ่มเทกับงานมากทุกวันขนาดนี้"
+  character: Minnie
+
+- msg: "ตั้งแต่มีเธอ เธมส์ก็ดูมีชีวิตชีวา ดูอารมณ์ดี"
+  character: Minnie
+
+- msg: "ไหนจะให้เธอเป็นSoul Mate มูลค่ามันแทบจะประเมินไม่ได้"
+  character: Minnie
+
+- msg: "ตอนที่อยู่กับจันจิเขายังไม่เป็นแบบนี้เลย"
+  character: Minnie
+
+- msg: "จันจิเกี่ยวอะไร?"
+  character: me
+
+- msg: "เธมส์ไม่ได้เล่าจริงๆด้วย"
+  character: Minnie
+
+- msg: "ฉันไม่แน่ใจว่าเธออยากจะรู้ไหม เพราะเธอเองก็รู้จักจันจินี่"
+  character: Minnie
+
+- choice:
+  - msg: "เล่ามาเถอะ ฉันอยากรู้ให้มด"
+    goto: ChoiceCh19-A3-1
+  - msg: "งั้นฉันขอไม่รับรู้ต่อไปดีกว่า"
+    goto: ChoiceCh19-A3-2
+  skip:
+    goto: ChoiceCh19-A3-Sk
+  state: ChoiceState19-V3
+  character: me
+
+- label: ChoiceCh19-A3-1
+  msg: "ตอนที่เรียนเมืองนอกเธมส์กับจันจิสนิทกันมาก"
+  character: Minnie
+
+- msg: "มากจนเธมส์มีใจให้กับจันจิ"
+  character: Minnie
+
+- msg: "แต่จันจิไม่ได้คิดแบบเดียวกัน เธอจึงปฏิเสธเธมส์ไป"
+  character: Minnie
+
+- msg: "ตอนนั้นเธมส์เคว้งไปหลายปี"
+  character: Minnie
+
+- msg: "เขาไม่รู้ว่าเพราะอะไร ทั้งๆที่ผ่านมามันก็เหมือนจะดี"
+  character: Minnie
+
+- msg: "เขาเก็บตัว ไม่พบเจอใครแม้กระทั่งคนในครอบครัว"
+  character: Minnie
+
+- msg: "จนวันหนึ่งเขาได้กลับมาเจอจันจิอีก"
+  character: Minnie
+
+- msg: "เขาก็เลยถามถึงเหตุผล ขอให้จันจิบอกตรงๆเพราะเขารู้สึกไปต่อไม่ได้เลย"
+  character: Minnie
+
+- msg: "แล้ว.. จันจิว่ายังไง?"
+  character: me
+
+- msg: "เธอบอกว่าเธมส์แค่อ่อนไหวกับความใกล้ชิด"
+  character: Minnie
+
+- msg: "เพราะที่ผ่านมาเธมส์ไม่ได้ทำให้จันจิสบายใจเลย"
+  character: Minnie
+
+- msg: "หมายถึงว่าถ้าจันจิมีเรื่องไม่สบายใจเล็กๆน้อยๆ เขาก็ไม่ได้ใส่ใจจะฟังมัน"
+  character: Minnie
+
+- msg: "ไม่ได้คิดถึงจันจิคนแรกถ้าจะอยากทำอะไรหรือไปไหน"
+  character: Minnie
+
+- msg: "แล้วเรื่องนี้จบยังไงหรอ"
+  character: me
+
+- msg: "เธมส์ก็ช็อคไปเลย แต่สุดท้ายเขาก็ยอมรับตัวเองได้ "
+  character: Minnie
+
+- msg: "หลังจากนั้นก็มีพวกเลขาแบบเธอนี่แหละมาเข้าหาเธมส์"
+  character: Minnie
+
+- msg: "เขาก็กลับโดนหลอก จนไม่กล้าผูกพันธ์กับใครอีกเลย"
+  character: Minnie
+
+- msg: "เธอพอจะเข้าใจฉันหรือยังล่ะ ว่าทำไมฉันถึงต้องหวงขนาดนี้"
+  character: Minnie
+
+- msg: "อื้ม.."
+  character: me
+
+- msg: "แต่ตอนนี้เธมส์ก็เปลี่ยนไปอีกครั้ง ต่างที่แค่ไปในทางที่ดีขึ้น"
+  character: Minnie
+
+- msg: "นี่น่าจะเป็นครั้งแรกเลยที่เธมส์อยากจะจริงจังหลังจากเรื่องจันจิ"
+  character: Minnie
+
+- goto: ChoiceCh19-A3-Sk
+
+- label: ChoiceCh19-A3-2
+  msg: "เพื่อความสบายใจของเธอฉันจะไม่เล่าแล้วกันนะ"
+  character: Minnie
+
+- msg: "แต่อยากให้เธอรู้ไว้ว่า ตอนนี้เธมส์ดูเป็นผู้เป็นคนขึ้น"
+  character: Minnie
+
+- msg: "ถ้าเธอไม่ได้จะมาหลอกพี่ฉันจริงๆฉันก็ดีใจ"
+  character: Minnie
+
+- goto: ChoiceCh19-A3-Sk
+
+- label: ChoiceCh19-A3-Sk
+  msg: "แต่ฉันอยากให้เธอจริงใจกับเขาให้มากๆนะ"
+  character: Minnie
+
+- msg: "อย่าลืมนะว่าถ้าเธอไม่โอเคกับเขาก็ให้รีบบอกเขาไปซะ"
+  character: Minnie
+
+- msg: "มีอะไรให้ฉันช่วยก็บอกได้"
+  character: Minnie
+
+- msg: "ขอบคุณนะมินนี่"
+  character: me
+
+- msg: "ฉันไปก่อนนะ"
+  character: Minnie
+
+- msg: "เธอเองก็รีบเข้าไปทำงานได้แล้ว"
+  character: Minnie
+
+- msg: "เดี๋ยวเธมส์จะสงสัยเอา"
+  character: Minnie
+

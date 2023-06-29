@@ -1,0 +1,339 @@
+- sys: "เธมส์ ออนไลน์"
+  delay: 1
+
+- msg: "นี่คุณ"
+  avatar: Thames-Avatar-1
+
+- msg: "(เธมส์อีกแล้วหรอ)"
+  avatar: me
+
+- msg: "(สมองฉันยังไม่ได้พักเรื่องที่เขาพูดเลยนะ)"
+  avatar: me
+
+- msg: "(เขาจะรู้สึกกับฉันจริงๆหรือแค่ปั่นประสาทฉันเล่นเนี้ย)"
+  avatar: me
+
+- msg: "คุณอ่านไม่ตอบผมหรอ"
+  avatar: Thames-Avatar-1
+
+- msg: "คิดว่าผมชอบคุณแล้วคุณจะทำอะไรก็ได้หรือไง"
+  avatar: Thames-Avatar-1
+
+- choice:
+  - msg: "..."
+    goto: ChatCh13-A1-1
+  - msg: "ตอบแล้วๆ"
+    goto: ChatCh13-A1-2
+  - msg: "ไปกันใหญ่แล้ว"
+    goto: ChatCh13-A1-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh13-A1-Sk
+  state: ChatState13-V1
+  avatar: me
+
+- label: ChatCh13-A1-1
+  msg: "นี่! ตอบเดี๋ยวนี้นะ "
+  avatar: Thames-Avatar-1
+
+- sticker: Thames-Mad
+  avatar: Thames-Avatar-1
+
+- msg: "ฮ่าๆ ตอบแล้วๆ"
+  avatar: me
+
+- msg: "อะไรขนาดนั้นอะคุณ"
+  avatar: me
+
+- goto: ChatCh13-A1-Sk
+
+- label: ChatCh13-A1-2
+  msg: "อย่าพึ่งโวยวายสิ"
+  avatar: me
+
+- goto: ChatCh13-A1-Sk
+
+- label: ChatCh13-A1-3
+  msg: "เล่นใหญ่จริงๆเลยคุณนี่"
+  avatar: me
+
+- goto: ChatCh13-A1-Sk
+
+- label: ChatCh13-A1-Sk
+  msg: "ก็เธอตอบช้าอะ"
+  avatar: Thames-Avatar-1
+
+- msg: "คิดคำตอบก่อนไม่ได้หรอ"
+  avatar: me
+
+- msg: "คิดนานขนาดนี้ "
+  avatar: Thames-Avatar-1
+
+- msg: "คิดถึงผมดีกว่ามั้ง"
+  avatar: Thames-Avatar-1
+
+- msg: "ฮิฮิ"
+  avatar: Thames-Avatar-1
+
+- msg: "ปั่นประสาทฉันอีกแล้ว"
+  avatar: me
+
+- msg: "เฮ้ย"
+  avatar: Thames-Avatar-1
+
+- msg: "เธอคงไม่คิดว่าฉันพูดออกไปเล่นๆหรอกนะ"
+  avatar: Thames-Avatar-1
+
+- msg: "ก็ดูพูดเข้า แล้วไหนจะอยู่ๆคุณก็มาสารภาพอีก"
+  avatar: me
+
+- msg: "อย่ามาแกล้งฉันเล่นนะ"
+  avatar: me
+
+- msg: "(ฉันอ่อนไหวไปใครรับผิดชอบกันยะ)"
+  avatar: me
+  
+- msg: "คุณเห็นผมเป็นคนแบบไหนกันเนี่ย"
+  avatar: Thames-Avatar-1
+  
+- msg: "เสียแรงที่ทำงานด้วยกันมา"
+  avatar: Thames-Avatar-1
+
+- msg: "ก็ไม่นานขนาดนั้นมั้ยล่ะ"
+  avatar: me
+
+- msg: "ฉันถึงไม่มั่นใจนี่ไง"
+  avatar: me
+  
+- msg: "ความรักไม่เลือกเวลาเกิดหรอกคุณ"
+  avatar: Thames-Avatar-1
+  
+- msg: "ฮ่าๆๆ"
+  avatar: Thames-Avatar-1
+
+- msg: "(แหวะ)"
+  avatar: me
+  
+- msg: "งั้นไหนคุณลองบอก"
+  avatar: Thames-Avatar-1
+  
+- msg: "ว่าผมเป็นคนยังไงในสายตาคุณ"
+  avatar: Thames-Avatar-1
+  
+- choice:
+  - msg: "ใจดี อ่อนโยน เป็นคนอ่อนไหว"
+    goto: ChatCh13-A2-1
+  - msg: "เข้มแข็ง เอาใจยาก ไบโพลา"
+    goto: ChatCh13-A2-2
+  - msg: "ฉันไม่รู้หรอก"
+    goto: ChatCh13-A2-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh13-A2-Sk
+  state: ChatState13-V2
+  avatar: me
+
+- label: ChatCh13-A2-1
+  msg: "อืม.."
+  avatar: Thames-Avatar-1
+  
+- msg: "แปลว่าที่ผ่านมาฉันก็ทำตัวดีเหมือนกันนะ"
+  avatar: Thames-Avatar-1
+  
+- msg: "ถือว่ามองขาด"
+  avatar: Thames-Avatar-1
+    
+- msg: "เก่งมาก "
+  avatar: Thames-Avatar-1
+
+- sticker: Thames-Idle #อันนี้เพื่มเอง
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh13-A2-Sk
+
+- label: ChatCh13-A2-2
+  msg: "ไบโพลา?"
+  avatar: Thames-Avatar-1
+    
+- msg: "คือยังไงคุณ "
+  avatar: Thames-Avatar-1
+
+- msg: "ก็อยู่ๆคุณก็ดี อยู่ๆคุณก็โวยวาย ฉันงง"
+  avatar: me
+  
+- msg: "ฮ่าๆ ฮ่าๆ "
+  avatar: Thames-Avatar-1
+  
+- msg: "คนเรามีหลายอารมร์ก็ต้องใช้ให้คุ้มหน่อย"
+  avatar: Thames-Avatar-1
+    
+- goto: ChatCh13-A2-Sk
+
+- label: ChatCh13-A2-3
+  msg: "บอกหน่อยน่าา"
+  avatar: Thames-Avatar-1
+
+- msg: "ฉันไม่รู้จริงๆ รวมๆคุณก็เป็นคนดีนะ"
+  avatar: me
+  
+- msg: "เรื่องนั้นมันก็แหงอยู่แล้วล่ะ"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh13-A2-Sk
+
+- label: ChatCh13-A2-Sk
+  msg: "แต่มีเรื่องนึงที่คุณไม่รู้นะ"
+  avatar: Thames-Avatar-1
+
+- msg: "...??"
+  avatar: me
+  
+- msg: "คือผมชอบคุณจริงๆ"
+  avatar: Thames-Avatar-1
+
+- msg: "โอ้ยยย "
+  avatar: me
+  
+- msg: "ฮ่าๆ ฮ่าๆ"
+  avatar: Thames-Avatar-1
+
+- msg: "ก็ผมไม่รู้จะทำยังไงให้คุณเชื่ออะ"
+  avatar: Thames-Avatar-1
+  
+- msg: "คุณลองบอกผมมาสิ"
+  avatar: Thames-Avatar-1
+
+- msg: "คุณก็แสดงความจริงใจสิ"
+  avatar: me
+
+- msg: "แต่บอกก่อนนะ"
+  avatar: me
+
+- msg: "ถ้าคุณเข้ามาทำแบบนี้เพื่อความสนุก"
+  avatar: me
+
+- msg: "ฉันบอกไว้ตรงนี้เลยว่าฉันจะลาออก"
+  avatar: me
+  
+- msg: "แล้วถ้าผมจริงใจจริงๆผมจะได้อะไร"
+  avatar: Thames-Avatar-1
+  
+- choice:
+  - msg: "ได้ใจฉัน"
+    goto: ChatCh13-A3-1
+  - msg: "ได้โอกาสจากฉัน"
+    goto: ChatCh13-A3-2
+  - msg: "ไม่ได้อะไรทั้งนั้นแหละ"
+    goto: ChatCh13-A3-3
+  skip:
+    msg: "<color=#FF0000>(ตัวเลือกถูกข้ามเนื่องจากหมดเวลา)</color>"
+    goto: ChatCh13-A3-Sk
+  state: ChatState13-V3
+  avatar: me
+
+- label: ChatCh13-A3-1
+  msg: "พูดแล้วนะ"
+  avatar: Thames-Avatar-1
+  
+- msg: "ใช่"
+  avatar: me
+  
+- msg: "ได้ ผมจะทำให้คุณเห็น"
+  avatar: Thames-Avatar-1
+    
+- goto: ChatCh13-A3-Sk
+
+- label: ChatCh13-A3-2
+  msg: "โอเค อย่างน้อยก็ดีกว่าไม่ได้อะไรเลย"
+  avatar: Thames-Avatar-1
+    
+- msg: "รีบๆให้โอกาสให้ผมนะ "
+  avatar: Thames-Avatar-1
+    
+- goto: ChatCh13-A3-Sk
+
+- label: ChatCh13-A3-3
+  msg: "เธอไม่ยุติธรรมเลย"
+  avatar: Thames-Avatar-1
+
+- msg: "คุณก็ต้องพยายามก่อนสิ"
+  avatar: me
+  
+- msg: "ฉันแค่ไม่อยากพูดอะไรที่ให้ความหวังคุณฟรีๆ"
+  avatar: me
+  
+- msg: "ก็ได้ เดี๋ยวคุณก็จะได้เห็น"
+  avatar: Thames-Avatar-1
+
+- goto: ChatCh13-A3-Sk
+
+- label: ChatCh13-A3-Sk
+  msg: "เริ่มจากพรุ่งนี้ไม่เข้าบริษัทกัน"
+  avatar: Thames-Avatar-1
+  
+- msg: "ไปหาอะไรสานสัมพันธ์กันดีกว่า"
+  avatar: Thames-Avatar-1
+
+- msg: "เนี่ย คุณกำลังจะทำให้ฉันดูแย่นะ"
+  avatar: me
+  
+- msg: "เลขาหายไปกับCEOไม่รู้ตั้งกี่วัน "
+  avatar: me
+  
+- msg: "กลับมาแล้วก็ยังไม่ยอมไปทำงาน"
+  avatar: me
+  
+- msg: "โอเคๆ คุณใจเย็นๆนะ"
+  avatar: Thames-Avatar-1
+    
+- msg: "นี่ฉันต้องเลิกคิดถึงแต่ตัวเองแล้วคิดถึงเธอเยอะขึ้นซะแล้ว"
+  avatar: Thames-Avatar-1
+    
+- msg: "งั้นพรุ่งนี้เราเข้าบริษัทปกติ"
+  avatar: Thames-Avatar-1
+    
+- msg: "ทำงานปกติ"
+  avatar: me
+  
+- msg: "ไม่!"
+  avatar: Thames-Avatar-1
+    
+- msg: "อ้าว ฉันก็ดูไม่ดีอยู่ดี"
+  avatar: me
+  
+- msg: "แล้วแบบนี้เราจะเอาเวลาไหนสานสัมพันธ์กันล่ะ"
+  avatar: Thames-Avatar-1
+    
+- msg: "วันหยุดไง"
+  avatar: me
+  
+- msg: "ไม่เอาอะนาน"
+  avatar: Thames-Avatar-1
+  
+- msg: "เอาเป็นพรุ่งนี้แหละ"
+  avatar: Thames-Avatar-1  
+
+- msg: "ผมจะบอกทุกคนว่าผมมีนัด แล้วตอนบ่ายเราออกไปข้างนอกกัน"
+  avatar: Thames-Avatar-1
+    
+- msg: "ทำตามใจอีกแล้วนะ"
+  avatar: me
+  
+- msg: "ไม่มีทางเลือกนี่หน่า"
+  avatar: Thames-Avatar-1
+
+- msg: "เอาเป็นว่าพรุ่งนี้บ่ายเตรียมตัวไว้นะ"
+  avatar: Thames-Avatar-1
+    
+- msg: "แล้วคุณจะพาฉันไปไหน"
+  avatar: me
+  
+- msg: "ไม่บอก เดี๋ยวไม่เซอร์ไพรส์"
+  avatar: Thames-Avatar-1
+  
+- sys: "เธมส์ ออฟไลน์"
+  delay: 1
+
+- msg: "(ฉันน่าจะบอกเขาไปว่านิสัยอีกอย่างคือเอาแต่ใจ)"
+  avatar: me
+  

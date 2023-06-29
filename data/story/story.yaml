@@ -1,0 +1,236 @@
+ 
+- novel: Novel-BeU-Ch0-Intro
+  label: BeU-Intro
+  title: "แนะนำตัว"
+  day: 1
+  avatars:
+  - Minnie-Avatar-1
+  - Junji-Avatar-1
+  models:
+  - Minnie
+  - Minnie-Before
+  - Junji
+
+- novel: Novel-BeU-Ch1
+  label: BeU-CH1
+  title: "นายฟองนม"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  models:
+  - Thames-Before
+
+- novel: Novel-BeU-Ch2
+  label: BeU-CH2
+  title: "ความในใจ"
+  day: 1
+  avatars:
+  - Junji-Avatar-1
+  models:
+  - Junji
+
+- novel: Novel-BeU-Ch3
+  label: BeU-CH3
+  title: "โอกาสมาถึงแล้ว"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  - Junji-Avatar-1
+  models:
+  - Thames-Before
+  - Thames
+  - Junji
+
+- chat: Novel-BeU-Ch4-Chat
+  label: BeU-Ch4-Chat
+  title: "เตรียมตัวเตรียมใจ"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+
+- novel: Novel-BeU-Ch5
+  label: BeU-CH5
+  title: "โลกกลม(อีกแล้วหรอเนีย)"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  - Minnie-Avatar-1
+  models:
+  - Thames
+  - Minnie
+
+- chat: Novel-BeU-Ch6-Chat
+  label: ChatBeU-Ch6
+  title: "ทะเลเทรัก"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  
+
+- novel: Novel-BeU-Ch7
+  label: BeU-CH7
+  title: "แบ่งกันนะ"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  models:
+  - Thames
+
+- novel: Novel-BeU-Ch8
+  label: BeU-CH8
+  title: "แซวเก่ง"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  - Uncle-Avatar-1
+  models:
+  - Thames
+  - Uncle
+
+- novel: Novel-BeU-Ch9
+  label: BeU-CH9
+  title: "ข้ออ้าง"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  models:
+  - Thames
+
+- novel: Novel-BeU-Ch10
+  label: BeU-CH10
+  title: "จุ้ง"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  models:
+  - Thames
+  - Employees
+
+- novel: Novel-BeU-Ch11
+  label: BeU-CH11
+  title: "เปิดใจ"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  models:
+  - Thames
+
+- novel: Novel-BeU-Ch12
+  label: BeU-CH12
+  title: "นึกถึงผม"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  models:
+  - Thames
+
+- chat: Novel-BeU-Ch13-Chat
+  label: ChatBeU-Ch13
+  title: "อ่อย?"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+ 
+
+- novel: Novel-BeU-Ch14
+  label: BeU-CH14
+  title: "เอาแต่ใจ"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  - Junji-Avatar-1
+  models:
+  - Thames
+  - Junji
+
+- chat: Novel-BeU-Ch15-Chat
+  label: BeU-Ch15-Chat
+  title: "จับได้ซะแล้ว"
+  day: 1
+  avatars:
+  - Junji-Avatar-1
+ 
+
+- chat: Novel-BeU-Ch16-Chat
+  label: ChatBeU-Ch16
+  title: "VIP"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+
+
+- novel: Novel-BeU-Ch17
+  label: BeU-CH17
+  title: "ไม่ใช่แค่VIP"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  models:
+  - Thames
+  - Employees
+  
+- novel: Novel-BeU-Ch18
+  label: BeU-CH18
+  title: "วีนเก่ง"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  - Minnie-Avatar-1
+  models:
+  - Thames
+  - Minnie
+
+- novel: Novel-BeU-Ch19
+  label: BeU-CH19
+  title: "ปรับความเข้าใจ"
+  day: 1
+  avatars:
+  - Minnie-Avatar-1
+  models:
+  - Minnie
+  - Employees
+
+
+- chat: Novel-BeU-Ch20-Chat
+  label: ChatBeU-Ch20
+  title: "มาไม้ไหน"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+
+- chat: Novel-BeU-Ch21-Chat
+  label: BeU-Ch21-Chat
+  title: "หวังดีเสมอ"
+  day: 1
+  avatars:
+  - Junji-Avatar-1
+  
+- novel: Novel-BeU-Ch22
+  label: BeU-CH22
+  title: "จันจิ?"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  models:
+  - Thames
+    
+- novel: Novel-BeU-Ch23
+  label: BeU-CH23
+  title: "ข้องใจ"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  - MM-Avatar-1
+  models:
+  - Thames
+  - MM
+
+- novel: Novel-BeU-Ch24
+  label: BeU-CH24
+  title: "สักทางสักที"
+  day: 1
+  avatars:
+  - Thames-Avatar-1
+  models:
+  - Thames
+ 

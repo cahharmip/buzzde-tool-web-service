@@ -1,0 +1,341 @@
+﻿#BeU-9
+
+######################################
+- background: InCar
+- music: main-03
+- delay: 1
+
+- character: Thames
+  position: center
+  act: Idle-Half
+
+- msg: "เสร็จจากสัมนาตอนบ่าย ตอนเย็นเราไปกินอาหารทะเลกัน"
+  character: Thames
+  
+- msg: "ผมเบื่ออาหารอิตาเลียนจะแย่"
+  character: Thames
+  
+- msg: "ฉันก็คิดว่าคุณชอบ"
+  character: me
+
+- msg: "ก็แค่ต้องเอาใจลูกค้าต่างประเทศเท่านั้นแหละ"
+  character: Thames
+  
+- msg: "น้ำจิ้มซีฟู๊ดต่างหากของจริง"
+  character: Thames
+  
+- msg: "ไปกินร้านริมทะเลดีกว่า คุณว่าไง"
+  character: me
+
+- choice:
+  - msg: "อาหารทะเลหรอ.."
+    goto: ChoiceCh10-A1-1
+  - msg: "เอาสิ"
+    goto: ChoiceCh10-A1-2
+  - msg: "อยากกินอย่างอื่นอีกไหม"
+    goto: ChoiceCh10-A1-3
+  skip:
+    goto: ChoiceCh10-A1-Sk
+  state: ChoiceState10-V1
+  character: me
+
+- label: ChoiceCh10-A1-1
+  msg: "คุณไม่อยากกินหรอ"
+  character: Thames
+  
+- msg: "กินอย่างอื่นไหมล่ะ"
+  character: Thames
+  
+- msg: "เปล่าๆ ไม่เป็นไรค่ะ"
+  character: me
+  
+- msg: "ตามใจคุณแหละ"
+  character: me
+
+- msg: "งั้นเดี๋ยวค่อยหาอย่างอื่นกินเพิ่มด้วย"
+  character: Thames
+  
+- goto: ChoiceCh10-A1-Sk
+
+- label: ChoiceCh10-A1-2
+  msg: "เยี่ยมเลย"
+  character: Thames
+
+- msg: "แล้วเดียวหาอย่างอื่นกินด้วย"
+  character: Thames
+
+- goto: ChoiceCh10-A1-Sk
+
+- label: ChoiceCh10-A1-3
+  msg: "อยากนะ แต่ค่อยคิดแล้วกัน "
+  character: Thames
+
+- goto: ChoiceCh10-A1-Sk
+
+- label: ChoiceCh10-A1-Sk
+  msg: "ฮ่าๆ คุณเก็บกดหรอ"
+  character: me
+
+- msg: " แค่เบื่อชีสน่ะ"
+  character: Thames
+  
+##ฉากมืด
+- background: SeaSide
+
+- msg: "ถึงสักที"
+  character: Thames
+
+- msg: "อากาศดีจัง"
+  character: me
+
+- msg: "จริง ผมไม่ได้มาทะเลนานมากเลย"
+  character: Thames
+  
+- msg: "ถ้าไม่มีคุณก็คงไม่ได้มา"
+  character: Thames
+  
+- msg: "มันหน้าที่ฉันอยู่แล้วนี่"
+  character: me
+    
+- msg: "อย่างน้อยฉันก็ได้ทำตามใจ"
+  character: Thames
+  
+- msg: "สั่งอาหารดีกว่า"
+  character: Thames
+
+- character: Employees
+  position: left
+  act: Idle-Half
+
+- msg: "รับอะไรดีครับ"
+  character: Employees
+    
+- msg: "เอา กุ้งเผา2โล.. ต้มยำกุ้งน้ำข้น"
+  character: Thames
+  
+- msg: "กุ้งชุบแป้งทอด กุ้งผัดผงกะหรี่"
+  character: Thames
+    
+- msg: "คุณ เอาอะไรอีกดี"
+  character: Thames
+
+- choice:
+  - msg: "กุุ้้งผัดพริกเกลือ"
+    goto: ChoiceCh10-A2-1
+  - msg: "ปลากระพงทอดน้ำปลา"
+    goto: ChoiceCh10-A2-2
+  - msg: "พอแล้วมั้งคุณ"
+    goto: ChoiceCh10-A2-3
+  skip:
+    goto: ChoiceCh10-A2-Sk
+  state: ChoiceState10-V2
+  character: me
+
+- label: ChoiceCh10-A2-1
+  msg: "ใช่เลย นึกตั้งนานอยากกินอะไรอีก"
+  character: Thames
+  
+- msg: "ของโปรดผมเลย ^^"
+  character: Thames
+
+- goto: ChoiceCh10-A2-Sk
+
+- label: ChoiceCh10-A2-2
+  msg: "เอาปลากระพงอีกที่ครับ"
+  character: Thames
+
+- goto: ChoiceCh10-A2-Sk
+
+- label: ChoiceCh10-A2-3
+  msg: "ยังไม่อิ่มเลย เอาอีกสักอย่างสิ"
+  character: Thames
+  
+- msg: "งั้นเอาเป็นกุ้งผัดพริกเกลืออีกที่ครับ"
+  character: Thames
+
+- goto: ChoiceCh10-A2-Sk
+
+- label: ChoiceCh10-A2-Sk
+  msg: "รออาหารสักครู่นะครับ"
+  character: Employees
+
+- character: empty
+  position: left
+
+- msg: "คุณดูชอบกุ้งมากเลยนะ"
+  character: me
+
+- msg: "คุุณรู้ได้ยังไง"
+  character: Thames
+
+- msg: "ก็คุณสั่งแต่เมนูกุ้ง "
+  character: me
+
+- msg: "รู้ไหมผมไม่ได้กินกุ้งมาเป็นปีแล้ว"
+  character: Thames
+  
+- msg: "(งานเขายุ่งขนาดนั้นเลยหรอเนี่ย ลำบากจังแฮะ)"
+  character: me
+
+- msg: "แล้วรู้ไหมว่าทำไมผมคงไม่มาถ้าคุณไม่มาด้วย"
+  character: Thames
+  
+- msg: "คุณขี้เกียจขับรถมั้ง"
+  character: me
+
+- msg: "เปล่าหรอก"
+  character: Thames
+
+- msg: "รู้ไหมว่าคุณน่ะสำคัญ"
+  character: Thames
+  
+- msg: "(ง่า เขาพูดอะไรของเขาน่ะ)"
+  character: me 
+  
+- msg: "ถ้าไม่มีคุณ"
+  character: Thames
+
+- msg: "ผมก็กินกุ้งไม่ได้"
+  character: Thames
+  
+- msg: "ห๊ะ"
+  character: me 
+  
+- msg: "ผมแกะกุ้งไม่เป็น"
+  character: Thames
+  
+- msg: "..."
+  character: me  
+  
+- msg: "แล้วยังไง ฉันคือคนแกะกุ้งให้งั้นหรอ"
+  character: me
+  
+- msg: "ถูก"
+  character: Thames
+  
+- msg: "โถ่ ฉันก็คิดว่าคุณงานยุ่งจนไม่มีเวลามา"
+  character: me  
+  
+- msg: "คิดว่าฉันเป็นเลขาคนเก่งคนสำคัญ คุณนี่นะ"
+  character: me 
+  
+- msg: "ผมมาไม่ได้ เพราะไม่มีโอกาส"
+  character: Thames
+
+- msg: "ถึงมีโอกาส แต่ผมเป็นCEOให้คนอื่นแกะกุ้งให้ต่อหน้านักธุรกิจคนอื่นๆก็คงจะไม่ได้"
+  character: Thames
+
+- msg: "ถึงยังไงคุณก็สำคัญอยู่ดีแหละน่า"
+  character: Thames
+    
+- msg: "จ้ะ ฉันสบายใจขึ้นมาหน่อยมั้ง"
+  character: me
+      
+- msg: "อ๊ะ อาหารมาแล้ว"
+  character: me 
+
+- character: Employees
+  position: left
+  act: Idle-Half
+      
+- msg: "ขอโทษทีให้รอนานครับ"
+  character: Employees
+  
+- character: empty
+  position: left
+
+- msg: "น่ากินจังเลย"
+  character: me  
+  
+- msg: "แล้วคุณไม่กินหรอ"
+  character: me 
+  
+- msg: "ผมยังกินไม่ได้อะ"
+  character: Thames
+  
+- msg: "ทำไมล่ะ มันอร่อยมากเลยนะ"
+  character: me
+  
+- msg: "คุณ.. ยังไม่ได้แกะให้ผม"
+  character: Thames
+  
+- msg: "อ้าวว ขอโทษที "
+  character: me 
+    
+- msg: "อร่อยจนฉันลืมไปเลย"
+  character: me  
+  
+- msg: "มาๆฉันแกะทุกเมนูเลยนะ"
+  character: me 
+  
+- msg: "อื้ม"
+  character: Thames
+
+- msg: "ขอบคุณนะ"
+  character: Thames
+    
+- msg: "เรื่องแค่นี้เองคุณ"
+  character: me
+
+- msg: "ผมอยากกินกุ้งชุบแป้งทอดอะ แต่หยิบไม่ถึง"
+  character: Thames
+    
+- msg: "อ๋อ"
+  character: me
+
+- choice:
+  - msg: "อะ.. (ยกจานมาให้)"
+    goto: ChoiceCh10-A3-1
+  - msg: "มานี่ ฉันตักให้"
+    goto: ChoiceCh10-A3-2
+  - msg: "ตักเลยคุณ"
+    goto: ChoiceCh10-A3-3
+  skip:
+    goto: ChoiceCh10-A3-Sk
+  state: ChoiceState10-V3
+  character: me
+
+- label: ChoiceCh10-A3-1
+  msg: "แค่ตักมาก็ได้"
+  character: Thames
+  
+- msg: "ลำบากยกมาเลย"
+  character: Thames
+    
+- msg: "ไม่หรอกคุณแค่นี้เอง"
+  character: me
+
+- goto: ChoiceCh10-A3-Sk
+
+- label: ChoiceCh10-A3-2
+  msg: "ขอบคุณครับ ^^"
+  character: Thames
+
+- goto: ChoiceCh10-A3-Sk
+
+- label: ChoiceCh10-A3-3
+  msg: "มันไกลอะ"
+  character: Thames
+  
+- msg: "เอ้านี่ (ฉันยกทั้งจานมาวางให้เขา)"
+  character: me
+
+- goto: ChoiceCh10-A3-Sk
+
+- label: ChoiceCh10-A3-Sk
+  msg: "แล้วเสร็จจากนี่เราจะไปไหนกันต่อรึเปล่า"
+  character: me
+
+- msg: "เห็นคุณบอกอยากกินอะไรสักอย่าง"
+  character: me
+  
+- msg: "อืม..."
+  character: Thames
+      
+- msg: "เดี๋ยวผมขับพาไปเอง"
+  character: Thames
+    
+
+
+  
+

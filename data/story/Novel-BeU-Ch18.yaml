@@ -1,0 +1,245 @@
+﻿#BeU-3
+
+######################################
+- background: Workingroom
+- music: main-01
+- delay: 1
+
+- character: Thames
+  position: center
+  act: Idle-Half
+
+- msg: "วันนี้เอกสารมีเท่านี้ใช่ไหม {me} "
+  character: Thames
+  
+- msg: "ใช่ค่ะ ที่เหลือฉันส่งเข้าE-mailคุณเรียบร้อยแล้วค่ะ"
+  character: me
+  
+- msg: "โอเคครับ"
+  character: Thames
+
+- msg: "สู้ๆนะ ผมไปอ่านเอกสารก่อน"
+  character: Thames
+
+- character: empty
+  position: center
+
+- character: Minnie
+  position: center
+  act: Idle-Half
+
+- msg: "สวัสดีจ้ะเลขาพี่เธมส์"
+  character: Minnie
+  
+- msg: "เอ่อ สวัสดีค่ะคุณมินนี่"
+  character: me
+
+- msg: "คุณเธมส์พึ่งเข้าห้องไป อยู่ด้านในค่ะ"
+  character: me
+  
+- msg: "ฉันไม่ได้มาหาพี่เธมส์หรอก"
+  character: Minnie
+  
+- msg: "ฉันมาหาเธอ"
+  character: Minnie
+
+- msg: "คุณมีอะไรหรือเปล่าคะ"
+  character: me
+  
+- msg: "ขอไม่อ้อมค้อมนะ"
+  character: Minnie
+
+- msg: "เพื่อนฉันมาบอกว่าวันก่อนเห็นเธออยู่กับเธมส์ที่โซนVIP"
+  character: Minnie
+  
+- msg: "ทำไมเธอถึงไปอยู่ที่นั่นได้"
+  character: Minnie
+
+- choice:
+  - msg: "ฉันตามไปส่งเขาเฉยๆน่ะค่ะ"
+    goto: ChoiceCh18-A1-1
+  - msg: "เธมส์ให้ฉันเป็นSoul Mateค่ะ"
+    goto: ChoiceCh18-A1-Sk
+  - msg: "ฉันเป็นสมาชิกที่นั่นค่ะ"
+    goto: ChoiceCh18-A1-2
+  skip:
+    goto: ChoiceCh18-A1-Sk
+  state: ChoiceState18-V1
+  character: me
+
+- label: ChoiceCh18-A1-1
+  msg: "เป็นไปไม่ได้ คนนอกไม่มีทางเข้าไปด้านในได้"
+  character: Minnie
+
+- msg: "เธออย่าโกหกฉันเลย"
+  character: Minnie
+
+- goto: ChoiceCh18-A1-Sk
+
+- label: ChoiceCh18-A1-2
+  msg: "ไม่มีทาง สมาชิกVIPมีแค่10คน ฉันรู้ว่าคือใครบ้าง"
+  character: Minnie
+
+- msg: "เธออย่าโกหกฉันเลย"
+  character: Minnie
+
+- goto: ChoiceCh18-A1-Sk
+
+- label: ChoiceCh18-A1-Sk
+  msg: "ขอบอกก่อนนะ ที่ฉันมาฉันไม่ได้จะหาเรื่องอะไรเธอ"
+  character: Minnie
+
+- msg: "แต่การที่เธอยอมเป็นSoul Mate"
+  character: Minnie
+  
+- msg: "นั่นแปลว่าเธอกับพี่เธมส์มีอะไรมากกว่าเลขาเจ้านาย"
+  character: Minnie
+  
+- msg: "ฉันคงเดาไม่ผิดหรอกนะ"
+  character: Minnie
+
+- msg: "..."
+  character: me
+  
+- msg: "ซึ่งมันผิดกับที่เธอบอกฉันตั้งแต่แรกว่าจะไม่มีอะไร"
+  character: Minnie
+
+- msg: "(ฉันรู้สึกพูดอะไรไม่ออก)"
+  character: me
+  
+- msg: "(มันก็จริงอย่างที่มินนี่ว่า ฉันผิดคำพูดจริงๆ)"
+  character: me
+
+- msg: "ฉันไม่รู้ว่าเธอทำยังไงพี่เธมส์ถึงให้เธอเป็นSoul Mateนะ"
+  character: Minnie
+  
+- msg: "แต่ถ้าเธอเข้ามาแค่เล่น ๆ แบบนี้มันไม่มากไปหน่อยหรอ"
+  character: Minnie
+  
+- msg: "ทั้งชีวิตVIPพี่เธมส์จะพาใครเข้าไปด้วยไม่ได้อีกนอกจากเธอ"
+  character: Minnie
+  
+- msg: "แบบนี้มันเกินไปจริงๆ เธอได้สิ่งที่เธอต้องการแล้วจบไม่ได้หรอ"
+  character: Minnie
+  
+- msg: "ทำไมต้องผูกชีวิตพี่เธมส์ขนาดนี้"
+  character: Minnie
+
+- choice:
+  - msg: "ฉันบอกเขาไปแล้วค่ะ"
+    goto: ChoiceCh18-A2-1
+  - msg: "ฉันไม่รู้เรื่องSoul Mateมาก่อน"
+    goto: ChoiceCh18-A2-2
+  - msg: "ฉันไม่ได้ตั้งใจให้เป็นแบบนี้"
+    goto: ChoiceCh18-A2-3
+  skip:
+    goto: ChoiceCh18-A2-Sk
+  state: ChoiceState18-V2
+  character: me
+
+- label: ChoiceCh18-A2-1
+  msg: "ว่าทำแบบนี้มันมากเกินไปหรือเปล่า"
+  character: me
+
+- goto: ChoiceCh18-A2-Sk
+
+- label: ChoiceCh18-A2-2
+  msg: "อยู่ๆเขาก็พาฉันไปแล้วพนักงานก็บอกว่าฉันเป็นSoul Mate"
+  character: me
+
+- msg: "ฉันไม่รู้ด้วยซ้ำว่าในตึกนั้นมีVIPแบบนี้"
+  character: me
+
+- goto: ChoiceCh18-A2-Sk
+
+- label: ChoiceCh18-A2-3
+  msg: "ฉันไม่ได้อยากรับไว้แต่แรกอยู่แล้วค่ะ"
+  character: me
+
+- goto: ChoiceCh18-A2-Sk
+
+- label: ChoiceCh18-A2-Sk
+  msg: "เธอจะบอกว่าพี่เธมส์หลงเธอมากขนาดนั้นสินะ"
+  character: Minnie
+
+- msg: "ฉันแค่อธิบายให้คุณฟังเท่านั้นเอง"
+  character: me
+  
+- msg: "ฉันอาจจะดูงี่เง่านะที่เข้ามาแล้วดูวีนเธอแบบนี้"
+  character: Minnie
+  
+- msg: "ถ้าเธอไม่ได้จริงใจกับพี่ฉันจริงๆ ฉันขอให้เธอเลิกเถอะ"
+  character: Minnie
+  
+- msg: "ฉันไม่อยากเห็นเธมส์เสียใจอีกแล้ว"
+  character: Minnie
+
+- msg: "(ฉันนึกถึงเรื่องที่เธมส์เคยเล่าให้ฟังตอนอยู่ที่ทะเล)"
+  character: me
+  
+- msg: "(แต่ฉันเองก็ไม่ใช่แบบนั้นนะ)"
+  character: me
+
+- choice:
+  - msg: "ฉันจริงใจกับเธมส์นะ"
+    goto: ChoiceCh18-A3-1
+  - msg: "ฉันยังไม่ได้ตกลงคบกันเขา"
+    goto: ChoiceCh18-A3-2
+  - msg: "ฉันมั่นใจว่าฉันไม่เหมือนคนอื่นที่เธมส์เคยเจอ"
+    goto: ChoiceCh18-A3-3
+  skip:
+    goto: ChoiceCh18-A3-Sk
+  state: ChoiceState18-V3
+  character: me
+
+- label: ChoiceCh18-A3-1
+  msg: "ฉันไม่เคยคิดจะหลอกอะไรเธมส์เลยนะมินนี่"
+  character: me
+
+- goto: ChoiceCh18-A3-Sk
+
+- label: ChoiceCh18-A3-2
+  msg: "เราแค่คุยกันว่าเขาจะทำให้ฉันเปิดใจ"
+  character: me
+
+- msg: "แล้วเธอก็เปิดใจแล้วใช่ไหมล่ะ"
+  character: Minnie
+
+- msg: "..."
+  character: me
+
+- goto: ChoiceCh18-A3-Sk
+
+- label: ChoiceCh18-A3-3
+  msg: "ฉันไม่คิดที่จะอยากได้อะไรจากเขาเลย"
+  character: me
+
+- goto: ChoiceCh18-A3-Sk
+
+- label: ChoiceCh18-A3-Sk
+  msg: "เอาล่ะ ฉันพอเข้าใจแล้ว"
+  character: Minnie
+
+- msg: "พรุ่งนี้เรานัดเจอกันหน่อยไหม"
+  character: Minnie
+  
+- msg: "ฉันอยากมีเวลาคุยกับเธอมากกว่านี้"
+  character: Minnie
+  
+- msg: "ฉันมีอะไรอยากถามเธอหน่อย"
+  character: Minnie
+
+- msg: "แบบนั้นก็ได้ค่ะ"
+  character: me
+  
+- msg: "ไม่ต้องบอกเธมส์นะ เจอกันร้านจันจิ"
+  character: Minnie
+
+- character: empty
+  position: center
+
+- msg: "(พูดจบมินนี่ก็เดินออกไป)"
+  character: me
+
+- msg: "(เฮ้อ ฉันจะทำยังไงดี)"
+  character: me

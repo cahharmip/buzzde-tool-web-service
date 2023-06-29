@@ -1,0 +1,276 @@
+﻿#BeU-9
+
+######################################
+- background: SeaSideNight
+- music: main-01
+- delay: 1
+
+- character: Thames
+  position: center
+  act: Idle-Half
+
+- msg: "ถึงแล้วคุณ "
+  character: Thames
+
+- msg: "ลมเย็นจัง"
+  character: me
+
+- msg: "(ฉันคิดว่าเธมส์จะพาไปนั่งร้านหรูๆตามสไตล์เขา)"
+  character: me
+
+- msg: "ฉันไม่คิดว่าคุณจะพามาริมทะเลนะเนี่ย"
+  character: me
+
+- msg: "ถ้ามีเวลาแบบนี้บ่อยๆคงดี"
+  character: Thames
+  
+- msg: "ผมชอบฟังเสียงคลื่น แล้วมองไปไกลๆสุดตา"
+  character: Thames
+
+- msg: "มันช่วยให้ผมสบายใจยิ่งกว่าอะไรๆเลย"
+  character: Thames
+   
+- msg: "(ฉันนั่งลงข้างเธมส์ ที่พูดพลางนั่งลงบนทรายในชุดสูทของเขา)"
+  character: me
+  
+- msg: "คุณชอบเวลาแบบนี้ไหม"
+  character: Thames
+  
+- choice:
+  - msg: "ฉันก็ชอบทะเล"
+    goto: ChoiceCh11-A1-1
+  - msg: "ฉันชอบมองเห็นต้นไม้เยอะๆมากกว่า"
+    goto: ChoiceCh11-A1-2
+  - msg: "ชอบมากเลยถ้าลมไม่เหนียวตัว"
+    goto: ChoiceCh11-A1-3
+  skip:
+    goto: ChoiceCh11-A1-Sk
+  state: ChoiceState11-V1
+  character: me
+
+- label: ChoiceCh11-A1-1
+  msg: "มันทำให้ฉันสบายใจขึ้นน่ะ"
+  character: me
+  
+- msg: "ใช่ไหมล่ะ"
+  character: Thames
+
+- goto: ChoiceCh11-A1-Sk
+
+- label: ChoiceCh11-A1-2
+  msg: "ไว้วันหลังค่อยไปนะ "
+  character: Thames
+
+- msg: "มองน้ำไปก่อนแล้วกัน"
+  character: Thames
+  
+- msg: "อื้มม"
+  character: me
+
+- goto: ChoiceCh11-A1-Sk
+
+- label: ChoiceCh11-A1-3
+  msg: "ฮ่าๆ ก็จริงนะ"
+  character: Thames
+
+- goto: ChoiceCh11-A1-Sk
+
+- label: ChoiceCh11-A1-Sk
+  msg: "แล้ว.. ไม่ใครตามคุณหรอ"
+  character: me
+
+- msg: "คุณหมายถึงใครล่ะ"
+  character: Thames
+
+- msg: "ถ้าเรื่องงานก็มีแต่คุณนี่แหละที่ตาม"
+  character: Thames
+  
+- msg: "ฉันหมายถึงน้องสาวคุณ"
+  character: me
+
+- msg: "ฮ่าๆ คุณยังห่วงเรื่องน้องสาวผมอีกหรอ"
+  character: Thames
+  
+- msg: "ก็เห็นดูหวงคุณจะตาย"
+  character: me
+
+- msg: "จริงๆที่มินนี่หวงขนาดนั้นมันก็มีเหตุผลนะ"
+  character: Thames
+  
+- msg: "เหตุผลอะไรหรอ"
+  character: me
+
+- msg: "(ฉันมองหน้าเขาแล้วตั้งใจฟังมาก อยากรู้เหมือนกันว่าไม)"
+  character: me
+
+- msg: "ที่ผ่านมาตั้งแต่ฉันเริ่มมีชื่อเสียง ก็มีคนพยายามเข้ามามากมาย"
+  character: Thames
+
+- msg: "แรกๆฉันก็หลงไปหมด ทุกคนดูจริงใจกับฉัน ทำดีกับฉันมากๆ"
+  character: Thames
+  
+- msg: "แต่สุดท้ายมันก็ไม่ใช่เรื่องจริง"
+  character: Thames
+
+- msg: "ฉันรู้สึกสมเพชตัวเองที่ดันไปให้ใจจริงๆ กี่ครั้งต่อกี่ครั้งก็แบบเดิม"
+  character: Thames
+
+##ไม่มีสีหน้าหรอ?
+
+- msg: "(สีหน้าเธมส์ดูเปลี่ยนไปอย่างเห็นได้ชัด)"
+  character: me
+
+- msg: "(ฉันไม่น่าถามเลย TT)"
+  character: me
+
+- msg: "เธอว่าไหม"
+  character: Thames
+
+- choice:
+  - msg: "ไม่ใช่แบบนั้นหรอก"
+    goto: ChoiceCh11-A2-1
+  - msg: "คุุณก็น่าจะชั่งใจหน่อยนะ"
+    goto: ChoiceCh11-A2-Sk
+  - msg: "ช่างมันเถอะคุณ มันผ่านไปแล้ว"
+    goto: ChoiceCh11-A2-2
+  skip:
+    goto: ChoiceCh11-A2-Sk
+  state: ChoiceState11-V2
+  character: me
+
+- label: ChoiceCh11-A2-1
+  msg: "มันดีแล้วแหละที่คุณจริงใจ"
+  character: me
+  
+- msg: "แค่โลกมันโหดร้ายกว่าที่คุณคิด"
+  character: me
+  
+- msg: "ฉันเป็นกำลังใจให้นะ"
+  character: me
+
+- goto: ChoiceCh11-A2-Sk
+
+- label: ChoiceCh11-A2-2
+  msg: "อย่างน้อยมันก็ทำให้คุณเป็นคุณทุกวันนี้นะ"
+  character: me
+
+- goto: ChoiceCh11-A2-Sk
+
+- label: ChoiceCh11-A2-Sk
+  msg: "แต่ก็นั่นแหละ มันเลยเปลี่ยนให้ผมเป็นคนไม่แคร์ใคร"
+  character: Thames
+
+- msg: "ผมไม่รู้สึกว่ามีใครจริงใจกับผมอีกเลย"
+  character: Thames
+
+- msg: "มินนี่รับรู้ทุกอย่างในช่วงชีวิตผม เพราะเราห่างกันแค่ปีเดียว"
+  character: Thames
+  
+- msg: "มินนี่เตือนผมตลอด แต่ผมก็ไม่เคยฟังหรอก"
+  character: Thames
+
+- msg: "ไม่แปลกที่มินนี่จะระแวงทุกคนที่เข้ามาในชีวิตผม"
+  character: Thames
+
+- msg: "เธอขอว่าเธอขอเป็นคนจัดการเอง"
+  character: Thames
+  
+- msg: "ต้องมีสิคนที่จริงใจกับนาย อย่างน้อยก็ฉันกับมินนี่นะ"
+  character: me
+
+- msg: "ก็คิดว่าแบบนั้นนะ"
+  character: Thames
+
+- msg: "ส่วนอีกคนที่ฉันไว้ใจคือจันจิ"
+  character: Thames
+  
+- msg: "(ไม่เคยเชื่อใคร แต่เชื่อจันจิ พวกเขาคงสนิทกันมากจริงๆ)"
+  character: me
+   
+- choice:
+  - msg: "คุณชอบจันจิหรอ"
+    goto: ChoiceCh11-A3-1
+  - msg: "คุณสนิทกับจันจิมากเลยหรอ"
+    goto: ChoiceCh11-A3-Sk
+  - msg: "คุณกับจันจิเป็นอะไรกันหรอ"
+    goto: ChoiceCh11-A3-Sk
+  skip:
+    goto: ChoiceCh11-A3-Sk
+  state: ChoiceState11-V3
+  character: me
+
+- label: ChoiceCh11-A3-1
+  msg: "ชอบสิ"
+  character: Thames
+  
+- msg: "แต่ไม่ได้ชอบแบบคนรักหรอกนะ"
+  character: Thames
+
+- goto: ChoiceCh11-A3-Sk
+
+- label: ChoiceCh11-A3-Sk
+  msg: "จันจิคือเพื่อนคนเดียวที่รู้จักผมตั้งแต่ผมไม่มีอะไร"
+  character: Thames
+  
+- msg: "และเธอก็ไม่เคยหวังผลประโยชน์อะไรจากผม"
+  character: Thames
+
+- msg: "ถ้าจะบอกว่าทำไมไม่คบกับจันจิ"
+  character: Thames
+
+- msg: "เพราะเราเป็นเพื่อนที่ดีต่อกันมากจนมองข้ามเรื่องความรักไปแล้วน่ะ"
+  character: Thames
+
+- msg: "มีเพื่อนแบบจันจินี่ดีจัง"
+  character: me
+  
+- msg: "จะว่าไปคนรวยนี่ก็ลำบากเรื่องความสัมพันธ์เหมือนกันนะ"
+  character: me
+  
+- msg: "ไม่รู้ว่าใครจะเข้ามาเพื่อหวังอะไรหรือเปล่า"
+  character: me
+
+- msg: "แล้วคุณล่ะ"
+  character: Thames
+
+- msg: "อะไรหรอ ?"
+  character: me
+
+- msg: "เคยเจอเรื่องแบบนี้เหมือนกับผมไหม"
+  character: Thames
+
+- msg: "ก่อนหน้านี้ก็มีคนเข้ามาเรื่อยๆนะ"
+  character: me
+  
+- msg: "ฉันเอาแต่เที่ยวตลอด ไม่แปลกที่จะเจอคนเยอะ"
+  character: me
+  
+- msg: "แต่ก็ไม่ได้คบใครจริงจังหรอก"
+  character: me
+
+- msg: "แล้วตอนนี้ล่ะ"
+  character: Thames
+
+- msg: "ตั้งแต่มีปัญหาที่บ้านฉันก็เอาแต่ทำงาน ฉันไม่ได้สนใจเลย"
+  character: me
+  
+- msg: "คงปิดใจไว้ก่อน โฟกัสเรื่องงานน่ะ"
+  character: me
+
+- msg: "ผมสืบเรื่องของคุณมาบ้างแล้วล่ะ"
+  character: Thames
+
+- msg: "ผมดีใจนะที่คุณไม่เคยทำงานหนักๆ แต่คุณอยู่กับผมคุณทำได้ดีมาก"
+  character: Thames
+
+- msg: "ขอบคุณนะ ฉันจะพยายามขึ้นทุกวันเลย"
+  character: me
+
+- msg: "เรากลับกันไหม เริ่มดึกแล้ว"
+  character: Thames
+
+- msg: "พรุ่งนี้เธอต้องขับรถกลับอีก"
+  character: Thames
+
+- msg: "อื้ม.."
+  character: me

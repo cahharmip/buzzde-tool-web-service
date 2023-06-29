@@ -1,0 +1,241 @@
+﻿#BeU-9
+
+######################################
+- background: SkyWalk
+- music: main-01
+- delay: 1
+
+- msg: "(ฉันวิ่งขึ้นมาจนถึงชั้นดาดฟ้า)"
+  character: me
+  
+- msg: "(ลมบนนี้พอจะทำให้น้ำตาบนหน้าฉันแห้งได้บ้าง)"
+  character: me
+  
+- msg: "(ฉันขอหนีปัญหาไปตลอดได้ไหมนะ)"
+  character: me
+ 
+- character: Thames
+  position: center
+  act: Sad-Half
+  
+- msg: "คุณ..."
+  character: Thames
+
+- msg: "(นี่เขายังตามฉันมาอยู่อีกหรอ)"
+  character: me
+
+- msg: "หนีมาแบบนี้แม่คุณจะไม่ว่าอะไรหรอ"
+  character: me
+
+- msg: "ผม.."
+  character: Thames
+  
+- msg: "ผมขอโทษแทนแม่ผมนะ"
+  character: Thames
+  
+- msg: "ไม่ต้องขอโทษหรอก"
+  character: me
+
+- msg: "ฉันเข้าใจแม่คุณนะ"
+  character: me
+  
+- msg: "ฉันเป็นใครก็ไม่รู้ ดูไม่คู่ควรกับคุณ ไม่มีหน้าตาในสังคมไม่ต้องขอโทษหรอก"
+  character: me
+
+- msg: "เป็นฉันเอง ฉันก็คงคิดว่าจะมาหลอกลูกเขาเหมือนที่ผ่านๆมาแหละ"
+  character: me
+
+- msg: "แต่มันก็ไม่ใช่เรื่องจริงนี่ คุณควรจะต้องต่อสู้เพื่อตัวเองนะ"
+  character: Thames
+
+- msg: "เรื่องนี้มันมีการเข้าใจผิดแน่ๆ"
+  character: Thames
+
+- msg: "ผมจะไปคุยกับจันจิเอง"
+  character: Thames
+
+- choice:
+  - msg: "พอเถอะคุณ"
+    goto: ChoiceCh24-A1-1
+  - msg: "อย่าเลยดีกว่า"
+    goto: ChoiceCh24-A1-2
+  - msg: "ฉันขอคุยเอง"
+    goto: ChoiceCh24-A1-3
+  skip:
+    goto: ChoiceCh24-A1-Sk
+  state: ChoiceState24-V1
+  character: me
+
+- label: ChoiceCh24-A1-1
+  msg: "ไม่มีประโยชน์หรอก"
+  character: me
+
+- msg: "ยังไงแม่คุณเขาก็คิดแบบนั้นไปแล้ว"
+  character: me
+  
+- msg: "มีแต่จะทำให้เรื่องมันใหญ่ขึ้นนะ"
+  character: me
+  
+- msg: "แล้วคุณจะยอมเป็นคนผิดทั้งๆที่คุณไม่ได้ทำอะไรหรอ"
+  character: Thames
+
+- msg: "ก็แค่ยังไม่ใช่ตอนนี้น่ะ"
+  character: me
+ 
+- goto: ChoiceCh24-A1-Sk
+
+- label: ChoiceCh24-A1-2
+  msg: "มันจะยิ่งปานปลายนะคุณ"
+  character: me
+  
+- msg: "แล้วคุณจะยอมเป็นคนผิดทั้งๆที่คุณไม่ได้ทำอะไรหรอ"
+  character: Thames
+
+- msg: "ก็แค่ยังไม่ใช่ตอนนี้น่ะ"
+  character: me
+ 
+  
+- goto: ChoiceCh24-A1-Sk
+
+- label: ChoiceCh24-A1-3
+  msg: "ถ้าคุณว่าแบบนั้นผมก็สบายใจ"
+  character: Thames
+  
+- msg: "อย่างน้อยคุณก็ไม่ปล่อยให้ตัวเองผิด"
+  character: Thames
+  
+- goto: ChoiceCh24-A1-Sk
+
+- label: ChoiceCh24-A1-Sk
+  msg: "คุณ"
+  character: Thames
+
+- msg: "(เธมส์พูดพลางกอดฉันจากด้านหลัง)"
+  character: me
+
+- msg: "(ในเวลาแบบนี้ ฉันรู้สึกอบอุ่นแบบบอกไม่ถูกเลย)"
+  character: me
+
+- msg: "ผมอยากปกป้องคุณมากกว่านี้จัง"
+  character: Thames
+
+- msg: "คุณอย่าคิดมากเลย"
+  character: me
+
+- msg: "สำหรับฉันที่คุณทำนี่ก็ถือว่ามากแล้วนะ"
+  character: me
+
+- msg: "{me} ผมว่าถึงเวลาแล้วนะที่คุณจะต้องตัดสินใจ"
+  character: Thames
+
+- msg: "..."
+  character: me
+
+- msg: "ผมจะได้ทำตัวถูกต่อจากนี้ว่าควรทำยังไง"
+  character: Thames
+  
+- msg: "ผมไม่รู้ว่าผมควรเปิดตัวคุณมากกว่านี้ได้ไหม"
+  character: Thames
+ 
+- msg: "ผมอยากพาคุณไปหาแม่นะ แต่ผมก็ต้องรอคุณพร้อมก่อน"
+  character: Thames
+ 
+- msg: "แต่ตอนนี้เรื่องมันเริ่มไปกันใหญ่แล้ว"
+  character: Thames
+ 
+- msg: "คุณพอจะบอกผมตอนนี้ได้ไหมว่าคุณอยากไปต่อกับผมไหม"
+  character: Thames
+ 
+- choice:
+  - msg: "ฉันยังไม่พร้อม"
+    goto: ChoiceCh24-A2-1
+  - msg: "คุณไปเถอะ"
+    goto: ChoiceCh24-A2-2
+  - msg: "ฉันพร้อมไปกับคุณ"
+    goto: ChoiceCh24-A2-3
+  skip:
+    goto: ChoiceCh24-A2-Sk
+  state: ChoiceState24-V2
+  character: me
+
+- label: ChoiceCh24-A2-1
+  msg: "ผมเข้าใจคุณนะ..."
+  character: Thames
+
+- msg: "แต่ผมว่าถ้าหลังจากวันนี้ผมจะไปต่อไม่ถูกแล้ว"
+  character: Thames
+  
+- msg: "คุณบอกผมตรงๆเถอะว่าคุณอยากไปต่อกับผมไหม"
+  character: Thames
+  
+- msg: "หรือถ้าคุณไม่โอเค ผมก็พร้อมยอมรับ"
+  character: Thames
+
+- image_on_exit:
+    - cg-02
+ 
+- goto: ChoiceCh24-A2-Sk
+
+- label: ChoiceCh24-A2-2
+  msg: "ฉันยังไม่พร้อมจริงๆ"
+  character: me
+  
+- msg: "แต่ไม่ใช่ว่าคุณไม่ดีนะ"
+  character: me
+
+- msg: "ไม่เป็นไรคุณ ผมเข้าใจแล้ว"
+  character: Thames
+  
+- msg: "(เธมส์ปล่อยมือที่กอดฉันเอาไว้)"
+  character: Thames
+  
+- msg: "คุณไม่ต้องห่วงเรื่องงานต่อจากนี้นะ"
+  character: Thames
+  
+- msg: "ทุกอย่างจะปกติ"
+  character: Thames
+    
+- msg: "เธมส์..."
+  character: me
+
+- msg: "เชื่อผมสิ ผมทำได้"
+  character: Thames
+      
+- msg: "(ฉันขอโทษนะ..เธมส์)"
+  character: me
+
+- image_on_exit:
+    - cg-02
+  
+- goto: ChoiceCh24-A2-Sk
+
+- label: ChoiceCh24-A2-3
+  msg: "ขอบคุณเธอนะ {me} "
+  character: Thames
+  
+- msg: "(เธมส์กระโดดเข้ามากอดฉันจนแทบหายใจไม่ออกเลย)"
+  character: me
+
+- msg: "แน่นไปหรือเปล่าคุณ"
+  character: me
+    
+- msg: "ผมขอโทษ ดีใจไปหน่อย"
+  character: Thames
+  
+- msg: "ผมสัญญานะผมจะทำให้ดีที่สุดเลย"
+  character: Thames
+  
+- msg: "(ฉันก็หวังว่าเรื่องของเราจะดีขึ้นนะ)"
+  character: me
+
+- msg: "ขอบคุณคุณเหมือนกัน"
+  character: me
+
+- image_on_exit:
+    - cg-01
+    
+- goto: ChoiceCh24-A2-Sk
+
+- label: ChoiceCh24-A2-Sk
+  msg: "ขอบคุณคุณเหมือนกัน"
+  character: me
